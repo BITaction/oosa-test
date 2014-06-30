@@ -3,7 +3,7 @@
   -- Do NOT remove the leading `#` character.
   -->
 
-# Your wiki name
+# Object Oriented Systems Analysis
 
 
 <!--
@@ -13,6 +13,7 @@
 
 [gimmick:theme](spacelab)
 
+[gimmick:themechooser](Choose theme)
 
 <!--
   -- Navigation
