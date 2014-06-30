@@ -3,7 +3,7 @@
   -- Do NOT remove the leading `#` character.
   -->
 
-# Object Oriented Systems Analysis
+# OOSA
 
 
 <!--
