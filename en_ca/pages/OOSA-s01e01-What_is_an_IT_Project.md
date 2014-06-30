@@ -2,9 +2,10 @@
 
 ## References
 
-- [Course Textbook][textbook]
+- [Course Textbook][jepm]
 
-## Introduction: Chapters 1 & 2
+## Learning Outcomes ##
+- Chapters 1 & 2
 - You will learn:
 	- Understand the concept of Project in IT
 	-  Describe and explain Project Management for IT
@@ -56,7 +57,7 @@ Capturing all things that need to get done – now, later, someday, big, little,
 
 Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment
 
-[textbook]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
+[jepm]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
 [Reference]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
 
 [software-project]: https://dl.dropboxusercontent.com/u/540785/oosa-wiki/software-project.jpg

@@ -1,12 +1,11 @@
-# COMP XXXX - Object Oriented Systems Analysis #
-
-## Week 4 Notes - Introduction to UML
+# Introduction to UML
 
 ## References
 
 - [Course Textbook][textbook]
 
-# Chapter 1 #
+## Learning Outcomes ##
+- Chapter 1
 - You will learn:
 	- Learning outcome here
 	- Learning outcome here
@@ -23,7 +22,7 @@
 - Current version is UML 2
 
 ## The future of UML &sect;1.4
-- Defined by a recent OMG initiative called ["Model Driven Architecture" (MDA)][MDA]
+- Defined by a recent OMG initiative called ["Model Driven Architecture" (MDA)][mda]
 - Ultimately, MDA sees the model drive the production of - and generate - code directly.
 
 ## Why Unified? &sect;1.5
@@ -61,7 +60,7 @@
 - Views into UML models
 - There are 13 different types - see figure 1.6
 
-## UML common Mechanisms &sect;1.9
+## UML Common Mechanisms &sect;1.9
 
 ### Specifications &sect;1.9.1
 - Graphical dimension
@@ -104,7 +103,7 @@
 	- Deployment view - models the physical deployment of artifacts onto a set of physical, computational nodes such as computers and peripherals.
 	- [+1] Use Case view - captures the basic requirements for the system as a set of use cases.
 
-[MDA]: http://www.omg.org/mda "Model Driven Architecture"
+[mda]: http://www.omg.org/mda "Model Driven Architecture"
 
 [textbook]: http://www.amazon.ca/UML-Unified-Process-Object-Oriented-Addison-Wesley/dp/B00E286B8G/ref=sr_1_3?ie=UTF8&qid=1403202307&sr=8-3&keywords=uml+2+and+unified+process "Text book"
 
