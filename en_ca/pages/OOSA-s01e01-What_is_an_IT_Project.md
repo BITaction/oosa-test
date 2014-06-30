@@ -27,7 +27,8 @@
 - involve uncertainty
 
 ## A Typical Software Project
-![](software-project.jpg)
+![Software Project][software-project]
+
 # Examples of Information Technology Projects
 - Upgrade hardware, software, networks
 - Enhance existing systems’ business functions
@@ -57,5 +58,7 @@ Disciplining yourself to make front-end decisions about all of the “inputs” 
 
 [textbook]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
 [Reference]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
+
+[software-project]: https://dl.dropboxusercontent.com/u/540785/oosa-wiki/software-project.jpg
 
 [slides-now-footer]: "Object Oriented Analysis and Design"
