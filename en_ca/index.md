@@ -1,10 +1,6 @@
-# COMP-1215 #
-
-# Object Oriented Systems Analysis #
+# COMP-1215: Object Oriented Systems Analysis #
 
 # Notes and Resource Materials #
-
-
 
 ## Project Management (PM)
 
