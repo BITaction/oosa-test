@@ -1,6 +1,4 @@
-# COMP 1215 - Object Oriented Systems Analysis #
-
-## Week 1 & 2  Notes - What is an IT Project
+# What is an IT Project
 
 ## References
 
