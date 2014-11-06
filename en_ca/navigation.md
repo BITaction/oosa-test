@@ -3,7 +3,7 @@
   -- Do NOT remove the leading `#` character.
   -->
 
-# COMP-1215a
+# COMP-1215
 
 
 <!--
