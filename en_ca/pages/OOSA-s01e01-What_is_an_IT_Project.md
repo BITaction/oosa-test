@@ -60,6 +60,6 @@ Disciplining yourself to make front-end decisions about all of the “inputs” 
 [jepm]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
 [Reference]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
 
-[software-project]: https://www.dropbox.com/s/jdzp3uzj6g4hqyw/software-project.jpg
+[software-project]: https://www.dropbox.com/s/jdzp3uzj6g4hqyw/software-project.jpg?raw=1
 
 [slides-now-footer]: "Object Oriented Analysis and Design"
