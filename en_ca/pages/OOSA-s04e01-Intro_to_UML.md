@@ -1,15 +1,16 @@
-# Introduction to UML
+# COMP XXXX - Object Oriented Systems Analysis #
+
+---
+
+## Week 4 Notes - Introduction to UML
 
 ## References
 
 - [Course Textbook][textbook]
 
-## Learning Outcomes ##
-- Chapter 1
-- You will learn:
-	- Learning outcome here
-	- Learning outcome here
-	- And so on
+---
+
+# Chapter 1
 
 ## What is UML? &sect;1.2
 - A general-purpose visual modeling language for systems.
@@ -22,11 +23,12 @@
 - Current version is UML 2
 
 ## The future of UML &sect;1.4
-- Defined by a recent OMG initiative called ["Model Driven Architecture" (MDA)][mda]
+- Defined by a recent OMG initiative called ["Model Driven Architecture" (MDA)][MDA]
 - Ultimately, MDA sees the model drive the production of - and generate - code directly.
 
 ## Why Unified? &sect;1.5
-- Unified also because it is unified across several domains:
+Unified also because it is unified across several domains:
+
 - Development life cycle
 - Application domains
 - Implementation languages & platforms
@@ -60,7 +62,7 @@
 - Views into UML models
 - There are 13 different types - see figure 1.6
 
-## UML Common Mechanisms &sect;1.9
+## UML common Mechanisms &sect;1.9
 
 ### Specifications &sect;1.9.1
 - Graphical dimension
@@ -103,8 +105,7 @@
 	- Deployment view - models the physical deployment of artifacts onto a set of physical, computational nodes such as computers and peripherals.
 	- [+1] Use Case view - captures the basic requirements for the system as a set of use cases.
 
-[mda]: http://www.omg.org/mda "Model Driven Architecture"
+[MDA]: http://www.omg.org/mda "Model Driven Architecture"
 
 [textbook]: http://www.amazon.ca/UML-Unified-Process-Object-Oriented-Addison-Wesley/dp/B00E286B8G/ref=sr_1_3?ie=UTF8&qid=1403202307&sr=8-3&keywords=uml+2+and+unified+process "Text book"
 
-[slides-now-footer]: "Object Oriented Analysis and Design"
