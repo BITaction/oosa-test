@@ -6,7 +6,7 @@
 
 ## References
 
-- [Course Textbook][textbook]
+- [Course Textbooks](textbooks.md)
 
 ---
 
@@ -107,5 +107,4 @@ Unified also because it is unified across several domains:
 
 [MDA]: http://www.omg.org/mda "Model Driven Architecture"
 
-[textbook]: http://www.amazon.ca/UML-Unified-Process-Object-Oriented-Addison-Wesley/dp/B00E286B8G/ref=sr_1_3?ie=UTF8&qid=1403202307&sr=8-3&keywords=uml+2+and+unified+process "Text book"
 
