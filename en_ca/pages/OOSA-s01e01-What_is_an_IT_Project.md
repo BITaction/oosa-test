@@ -1,8 +1,10 @@
-# What is an IT Project
+# What is an IT Project #
+
+[include](pages/textbooks.md)
 
 ## References
 
-- [Course / Module Textbook][jepm]
+- [Course Textbook][jepm]
 
 ## Learning Outcomes ##
 - Chapters 1 & 2
@@ -56,8 +58,6 @@ Based on 2 key objectives.
 Capturing all things that need to get done – now, later, someday, big, little, or in between, get them out of your head and off your mind.
 
 Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
-
-[include](pages/textbooks.md)
 
 [software-project]: https://www.dropbox.com/s/jdzp3uzj6g4hqyw/software-project.jpg?raw=1
 
