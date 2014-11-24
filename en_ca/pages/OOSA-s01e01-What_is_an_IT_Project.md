@@ -2,7 +2,7 @@
 
 ## References
 
-- [Course Textbook][jepm]
+- [Course / Module Textbook][jepm]
 
 ## Learning Outcomes ##
 - Chapters 1 & 2
@@ -56,9 +56,6 @@ Based on 2 key objectives.
 Capturing all things that need to get done – now, later, someday, big, little, or in between, get them out of your head and off your mind.
 
 Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
-
-[jepm]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
-[Reference]:http://www.amazon.ca/Just-Enough-Project-Management-Indispensable-ebook/dp/B001E53NX6/ref=sr_1_1?ie=UTF8&qid=1403805636&sr=8-1&keywords=Just+enough+Project+Management) "Text book"
 
 [software-project]: https://www.dropbox.com/s/jdzp3uzj6g4hqyw/software-project.jpg?raw=1
 
