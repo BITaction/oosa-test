@@ -4,8 +4,6 @@
 
 [include](textbooks.md)
 
-- [Course Textbook][jepm]
-
 ## Learning Outcomes ##
 - Chapters 1 & 2
 - You will learn:
