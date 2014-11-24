@@ -1,10 +1,8 @@
 # What is an IT Project #
 
-[include](pages/textbooks.md)
-
 ## References
 
-- [Course Textbook][jepm]
+[include](pages/textbooks.md)
 
 ## Learning Outcomes ##
 - Chapters 1 & 2
