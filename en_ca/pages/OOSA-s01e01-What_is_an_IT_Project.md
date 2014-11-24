@@ -57,6 +57,8 @@ Capturing all things that need to get done – now, later, someday, big, little,
 
 Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
 
+[include](textbooks.md)
+
 [software-project]: https://www.dropbox.com/s/jdzp3uzj6g4hqyw/software-project.jpg?raw=1
 
 [slides-now-footer]: "Object Oriented Analysis and Design"
