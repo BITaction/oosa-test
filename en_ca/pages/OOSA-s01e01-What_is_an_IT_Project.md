@@ -2,7 +2,7 @@
 
 ## References
 
-[include](textbooks.md)
+[Course Textbooks](textbooks.md)
 
 ## Learning Outcomes ##
 - Chapters 1 & 2
