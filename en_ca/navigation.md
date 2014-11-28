@@ -13,7 +13,7 @@
 
 [gimmick:theme](flatly)
 
-[gimmick:themechooser](Choose theme)
+[gimmick:themechooser](Theme)
 
 <!--
   -- Navigation

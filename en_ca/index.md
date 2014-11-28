@@ -1,6 +1,6 @@
 # COMP-1215: Object Oriented Systems Analysis (OOSA)#
 
-# Notes and Resource Materials #
+This site includes the notes and resource materials that are relevant to the course.
 
 ## Project Management (PM)
 

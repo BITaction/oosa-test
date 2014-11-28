@@ -2,15 +2,18 @@
 
 ## References
 
+- Chapter references can be matched to the JEPM textbook
+- Other material is gathered from the GTD book
+
 [Course Textbooks](textbooks.md)
 
 ## Learning Outcomes ##
 - Chapters 1 & 2
 - You will learn:
 	- Understand the concept of Project in IT
-	-  Describe and explain Project Management for IT
+	- Describe and explain Project Management for IT
 	- Perform in a team environment
-	-  Describe and practice GTD
+	- Describe and practice GTD
 	- Understand the role of the Project Manager
 	- Define and Describe the six types of feasibility
 	
@@ -37,26 +40,27 @@ A project is an endeavor to accomplish a specific objective through a unique set
 	- Develop an Application to allow residents to identify potholes using Google Maps
 	- A Manufacturer merges with a retail company and they need to merge their systems
 
-## What are the Steps (see Fig 1-1 in Text)
+## What are the Steps (see Fig 1-1)
 1. Initiate: What is the challenge or problem?
 - Plan: How should we go about it?
 - Control: Are we on track?
 - Close: Finish the job, assess how we did, and capture lessons learned
 
 ## New Practice For a New Reality
- “We are often overwhelmed by the number of things that we have to do and still function productively with a clear head and a positive sense of relaxed control”*
- 
-* David Allen , 2007
+
+> “We are often overwhelmed by the number of things that we have to do and still function productively with a clear head and a positive sense of relaxed control”*
+> 
+> -- David Allen, 2007
 
 ##  GETTING THINGS DONE  (GTD)
 
-Also referred to as the Art of Stress-Free Productivity.  Created by David Allen.
-Based on 2 key objectives.
+- Also referred to as the Art of Stress-Free Productivity
+- Created by David Allen
+- Based on 2 key objectives:
 
-Capturing all things that need to get done – now, later, someday, big, little, or in between, get them out of your head and off your mind.
+	1. Capturing all things that need to get done – now, later, someday, big, little, or in between, get them out of your head and off your mind.
 
-Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
+	- Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
 
 [software-project]: https://www.dropbox.com/s/jdzp3uzj6g4hqyw/software-project.jpg?raw=1
 
-[slides-now-footer]: "Object Oriented Analysis and Design"
