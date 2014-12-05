@@ -62,4 +62,4 @@ A project is an endeavor to accomplish a specific objective through a unique set
 
 	- Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
 
-[software-project]: https://dl.dropboxusercontent.com/content_link/KpT2Fp2Zs8aRDiQoZRcc7QNd8FaqbA4iss44lARkczUbjW85VBAXuAZfX72VstFL
+[software-project]: https://www.dropbox.com/s/fmyog1gel217hr5/software-project.jpg?raw=1
