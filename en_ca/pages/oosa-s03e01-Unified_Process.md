@@ -23,7 +23,7 @@
 
 ## What is UP? &sect;2.2 ##
 
-- UP is an acronym for the **Unified Process**
+- UP is an acronym for the **U**nified **P**rocess
 
 ## What is RUP? ##
 
