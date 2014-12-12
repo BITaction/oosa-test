@@ -15,7 +15,7 @@
 
 ## What is a SEP? &sect;2.2 ##
 
-- SEP is an acronym for **Software Engineering Process**, also known as [Software Development Process][sdp]
+- **SEP** is an acronym for **S**oftware **E**ngineering **P**rocess, also known as [Software Development Process][sdp]
 - A SEP defines the *who*, *what*, *when*, and *how* of software development
 - A SEP helps us turn user requirements into working software (see Fig 2.2, pg 29)
 - Discuss history of methodologies
@@ -23,7 +23,7 @@
 
 ## What is UP? &sect;2.2 ##
 
-- UP is an acronym for the **U**nified **P**rocess
+- **UP** is an acronym for the **U**nified **P**rocess
 
 ## What is RUP? ##
 
