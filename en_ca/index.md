@@ -18,7 +18,7 @@ A **S**oftware **E**ngineering **P**rocess (**SEP**) defines the *who*, *what*, 
 
 Modelling in software engineering is the approach of designing a solution without actually writing much code. To accomplish this we will look at expressive visual languages that allow us to represent our ideas and share them with others (who are also familiar with these languages).
 
-- [Introduction to UML](pages/OOSA-s04e01-Intro_to_UML.md)
+- [Introduction to UML](pages/oosa-s04e01-Intro_UML.md)
 
 ## Requirements
 
