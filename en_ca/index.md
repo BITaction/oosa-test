@@ -5,6 +5,7 @@ This site includes the notes and resource materials that are relevant to the cou
 ## Project Management (PM)
 
 - [What is an IT Project](pages/oosa-s01e01-What_is_IT_Project.md)
+- [Project Initiation](pages/oosa-s02e01-Project_Initiation.md)
 - [Feasibility Analysis](pages/oosa-s02e02-Feasibility.md)
 
 ## Software Engineering Process (SEP) ##
