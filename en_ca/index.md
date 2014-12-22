@@ -4,7 +4,7 @@ This site includes the notes and resource materials that are relevant to the cou
 
 ## Project Management (PM)
 
-- [What is an IT Project](pages/OOSA-s01e01-What_is_an_IT_Project.md)
+- [What is an IT Project](pages/oosa-s01e01-What_is_IT_Project.md)
 
 ## Software Engineering Process (SEP) ##
 

@@ -62,6 +62,8 @@ Unified also because it is unified across several domains:
 - Views into UML models
 - There are 13 different types - see figure 1.6
 
+![Class Diagram][class01]
+
 ## UML common Mechanisms &sect;1.9
 
 ### Specifications &sect;1.9.1
@@ -107,4 +109,5 @@ Unified also because it is unified across several domains:
 
 [MDA]: http://www.omg.org/mda "Model Driven Architecture"
 
+[class01]: http://yuml.me/diagram/scruffy/class/[Student]-[Card] "Sample Class Diagram"
 
