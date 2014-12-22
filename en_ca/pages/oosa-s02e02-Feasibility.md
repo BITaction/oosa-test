@@ -9,6 +9,7 @@
 ## Learning Outcomes ##
 - Chapters 3 & 4
 - You will learn:
+	- Define and explain the terms related to feasibility
 	- Define and Describe the six types of feasibility
 	- Develop a Feasibility Analysis Matrix
 	
@@ -34,7 +35,7 @@
 
 ## Feasibility Analysis Matrix ##
 
-[Feasibility Analysis Matrix][fam]
+[Feasibility Analysis Matrix Example][fame]
 
 
-[fam]]FeasibilityMatrixAnalysis.pdf]
+[fame]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/FeasibilityAnalysisMatrix.pdf "Feasibility Analysis Matrix Example"
