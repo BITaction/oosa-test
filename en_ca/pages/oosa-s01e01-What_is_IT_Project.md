@@ -71,6 +71,6 @@ A project is an endeavor to accomplish a specific objective through a unique set
 	5. Review regularly (at least weekly)
 
 
-[software-project]: https://www.dropbox.com/s/fmyog1gel217hr5/software-project.jpg?raw=1
+[software-project]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/software-project.jpg
 
 [gtd5]: http://www.thesimpledollar.com/getting-things-done-five-key-things/ "5 Key Points of GTD"
