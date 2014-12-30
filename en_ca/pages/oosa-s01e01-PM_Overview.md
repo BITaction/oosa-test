@@ -1,12 +1,12 @@
-# What is an IT Project #
+# Project Management Overview #
 
 ## References ##
+
+[Course Textbooks](textbooks.md)
 
 - Chapter references (&sect;) can be matched to the JEPM textbook
 - Other material is gathered from the GTD book
 - [5 Key Things about GTD][gtd5]
-
-[Course Textbooks](textbooks.md)
 
 ## Learning Outcomes ##
 
