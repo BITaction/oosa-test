@@ -112,12 +112,11 @@ Perform last minute checks and ensure all requirements have been satisfied.
 ![Triple Constraint][3constraint-image]
 
 > Image referenced from [How to Manage a Camel][3constraint-article]
-
-Type      | Trigger                     | 
-----------|-----------------------------|----------------------
-__Scope__ | Specifications of a project | The things you must do
-__Time__  | Schedule of a project       | The time you have to do them
-__Cost__  | Resources of a project      | The things you need to do them
+ 
++---+---+---+
+Scope| Specifications of a project | The things you must do
+Time| Schedule of a project       | The time you have to do them
+Cost| Resources of a project      | The things you need to do them
 
 ## New Practice For a New Reality ##
 
