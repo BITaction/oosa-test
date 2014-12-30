@@ -114,7 +114,7 @@ Perform last minute checks and ensure all requirements have been satisfied.
 > Image referenced from [How to Manage a Camel][3constraint-article]
  
 Constraint | What | Explanation
----|---|---
+-----------|------|------------
 Scope | Specifications of a project | The things you must do
 Time  | Schedule of a project       | The time you have to do them
 Cost  | Resources of a project      | The things you need to do them
@@ -145,7 +145,7 @@ Cost  | Resources of a project      | The things you need to do them
 
 [software-project]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/software-project.jpg "Software Project Cartoon"
 
-[4steps-pm]: uploads/images/4steps-pm.png "4 Steps of Project Management"
+[4steps-pm]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm.png "4 Steps of Project Management"
 
 [3constraint-article]: http://goo.gl/b4YDpp "What is Wrong with the Triple Constraint"
 
