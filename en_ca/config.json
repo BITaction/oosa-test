@@ -1,6 +1,6 @@
 {
     "useSideMenu": false,
     "lineBreaks": "gfm",
-    "additionalFooterText": "Content and images &copy; by various authors as indicated&nbsp;",
+    "additionalFooterText": "Content and images &copy; by various authors as indicated.&nbsp;",
     "anchorCharacter": "#"
 }
