@@ -10,7 +10,7 @@
 
 ## Learning Outcomes ##
 
-- Chapters &sect;1 & &sect;2
+- Chapter &sect;1
 - You will learn:
 	- Understand the concept of Project in IT
 	- Describe and explain Project Management for IT
@@ -21,7 +21,7 @@
 	
 ## What is a Project ##
 
-> A project is an endeavor to accomplish a specific objective through a unique set of interrelatedtasks and the effective utilization of resources
+> A project is an endeavor to accomplish a specific objective through a unique set of interrelated tasks and the effective utilization of resources
  
 ## Attributes of a Project ##
 
@@ -95,7 +95,7 @@ Determine the requirements and how to complete them.
 Do the work on time, within budget, and according to the specified requirements.
 
 - Project Team executes technical work according to the plan
-- Project Manager maintains control by monitoring, coordinating, and communicating efforts amoung the Project Team and senior management
+- Project Manager maintains control by monitoring, coordinating, and communicating efforts among the Project Team and senior management
 - Project Manager adjusts for variances and records them in an updated plan
 - Project status reports are generated to keep Stakeholders informed
 
@@ -111,13 +111,52 @@ Perform last minute checks and ensure all requirements have been satisfied.
 
 ![Triple Constraint][3constraint-image]
 
-> Image referenced from [How to Manage a Camel][3constraint-article]
+Image referenced from [How to Manage a Camel][3constraint-article]
  
 Constraint | What | Explanation
 -----------|------|------------
 Scope | Specifications of a project | The things you must do
 Time  | Schedule of a project       | The time you have to do them
 Cost  | Resources of a project      | The things you need to do them
+
+__Quality__: determined by the effects of the constraints and how they are managed
+
+- Constraints are what make it a project that needs project management
+- Remove a constraint and you greatly reduce the need for project management
+- The tighter the constraints the greater the need for project management
+
+## Values of Project Management &sect;1, pg 6 ##
+
+- Helps to get organized
+- Offers disciplined approach
+- Gateway to greater success
+
+Eight specific reasons outlined in the textbook:
+
+1. Establishes single point of contact in Project Manager with:
+	* _Authority_: given right to impose a degree of discipline
+	* _Accountability_: answerable to producing visible evidence of progress
+	* _Responsibility_: moral obligation to do the right thing 
+2. Focuses on meeting customer needs
+3. Improves team performance
+4. Obtains consistent results across business unit
+5. Focuses on managing project scope and controlling change
+6. Helps avoid disasters by managing risks
+7. Strengthens project teams and improves morale
+8. Improves bottom-line performance and grows the business
+
+## Too Much Project Management &sect;1, pg 10 ##
+
+- Some project management can benefit nearly every project
+- Too much project management can be detrimental if not matched to project size and complexity
+	* Demoralized teams
+	* Frustrated senior management
+	* Project failure!
+- Applying project management in smaller doses and measuring success can alleviate the risk
+
+Read and study the real world examples given in the textbook.
+
+---
 
 ## New Practice For a New Reality ##
 
@@ -134,7 +173,7 @@ Cost  | Resources of a project      | The things you need to do them
 	1. Capturing all things that need to get done – now, later, someday, big, little, or in between, get them out of your head and off your mind.
 	2. Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
 
-- [5 Key Things about GTD][gtd5]
+- [Five Key Things about GTD][gtd5]
 
 	1. Get it out of your head and into a reliable storage format (paper, digital, etc.)
 	2. Focus on the _next action_ to be productive
