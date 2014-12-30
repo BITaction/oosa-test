@@ -113,9 +113,10 @@ Perform last minute checks and ensure all requirements have been satisfied.
 
 > Image referenced from [How to Manage a Camel][3constraint-article]
 
-| __Scope__ | Specifications of a project | The things you must do |
-| __Time__  | Schedule of a project       | The time you have to do them |
-| __Cost__  | Resources of a project      | The things you need to do them |
+----------|-----------------------------|----------------------
+__Scope__ | Specifications of a project | The things you must do
+__Time__  | Schedule of a project       | The time you have to do them
+__Cost__  | Resources of a project      | The things you need to do them
 
 ## New Practice For a New Reality ##
 
