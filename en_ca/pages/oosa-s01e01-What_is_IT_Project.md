@@ -2,7 +2,7 @@
 
 ## References ##
 
-- Chapter references can be matched to the JEPM textbook
+- Chapter references (&sect;) can be matched to the JEPM textbook
 - Other material is gathered from the GTD book
 - [5 Key Things about GTD][gtd5]
 
