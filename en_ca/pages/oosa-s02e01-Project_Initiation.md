@@ -2,25 +2,43 @@
 
 ## References
 
-- Chapter references can be matched to the JEPM textbook
-- Other material is gathered from various sources
-
 [Course Textbooks](textbooks.md)
 
+- Chapter references (&sect;) can be matched to the JEPM textbook
+- Other material is gathered from various sources
+
 ## Learning Outcomes ##
-- Chapters 1 & 2
+- Chapter &sect;2
 - You will learn:
 	- Identify how to initiate a project (Kickoff)
-	- Write a project Charter
+	- Identify the elements of a Project Charter
 	- Describe a SWOT analysis
-	- Identify project stakeholder
-	- Create a Project Repository
+	- Identify the main Project Stakeholders
+	- Explain the purpose of a Project Repository
 	
-## Project Initiation
+## Project Initiation ##
 
-Requires a document that says “We have a Project and this is what it is about”
+- The process of formally launching a project
+- Requires a document, called the _Project Charter_ that states “We have a Project and this is what it is about”
+- An approved Project Charter is the sole deliverable of this step
 
-## The Project Charter
+## Is it a Project? &sect;1, pg 16 ##
+
+- Clear beginning and end
+- Measurable objective
+- One-of-a-kind effort requiring customized solution
+- Requires a relatively quick response
+- Requires coordinating and managing independent resources
+
+## Project Start-Up &sect;1, pg 16 ##
+
+- Determine key players (_Stakeholders_)
+- Understand their roles and responsibilities
+
+[gimmick:yuml (diag: 'usecase', scale: 150)]((Project Sponsor)-(Project Manager), (Stakeholders)-(Project Manager), (Project Manager)-(Customer), (Project Manager)-(Project Team))
+
+## The Project Charter &sect;1, pg 23 ##
+
 - the document that formally recognizes the existence of a project and provides direction on the project’s objectives and management
 - It is the absolute master document for the project – a bit like the Constitution for a country.
 
