@@ -35,7 +35,7 @@
 - Determine key players (_Stakeholders_)
 - Understand their roles and responsibilities
 
-[gimmick:yuml (diag: 'usecase', scale: 150)]('Project Sponsor'-'Project Manager')
+[gimmick:yuml (diag: 'usecase', scale: 150) ]( [Customer]-`Sign In´, [Customer]-`Buy Products´ )
 
 ## The Project Charter &sect;1, pg 23 ##
 
