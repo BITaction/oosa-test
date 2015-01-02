@@ -18,11 +18,11 @@
 	- Describe and practice GTD
 	- Understand the role of the Project Manager
 	- Define and Describe the six types of feasibility
-	
+
 ## What is a Project ##
 
 > A project is an endeavor to accomplish a specific objective through a unique set of interrelated tasks and the effective utilization of resources
- 
+
 ## Attributes of a Project ##
 
 - unique purpose with well-defined objectives
@@ -66,7 +66,9 @@
 - We will study the 4 steps of Figure 1-1
 - Other projects may be defined with additional, more refined steps
 
-### 1. Initiate a Project ###
+---
+
+### 1. Initiate a Project
 
 Recognize the project and make it official.
 
@@ -76,7 +78,9 @@ Recognize the project and make it official.
 - Launch the project with a _Project Charter_
 - Project Manager is selected and given authority to create the _Project Team_
 
-### 2. Plan a Project ###
+---
+
+### 2. Plan a Project
 
 Determine the requirements and how to complete them.
 
@@ -90,7 +94,9 @@ Determine the requirements and how to complete them.
 	* change control
 - Project Sponsor approves the plan (making it the _Project Baseline_)
 
-### 3. Control a Project ###
+---
+
+### 3. Control a Project
 
 Do the work on time, within budget, and according to the specified requirements.
 
@@ -99,7 +105,9 @@ Do the work on time, within budget, and according to the specified requirements.
 - Project Manager adjusts for variances and records them in an updated plan
 - Project status reports are generated to keep Stakeholders informed
 
-### 4. Close a Project ###
+---
+
+### 4. Close a Project
 
 Perform last minute checks and ensure all requirements have been satisfied.
 
@@ -112,7 +120,9 @@ Perform last minute checks and ensure all requirements have been satisfied.
 ![Triple Constraint][3constraint-image]
 
 Image referenced from [How to Manage a Camel][3constraint-article]
- 
+
+---
+
 Constraint | What | Explanation
 -----------|------|------------
 Scope | Specifications of a project | The things you must do
@@ -130,6 +140,8 @@ __Quality__: determined by the effects of the constraints and how they are manag
 - Helps to get organized
 - Offers disciplined approach
 - Gateway to greater success
+
+---
 
 Eight specific reasons outlined in the textbook:
 
@@ -156,8 +168,6 @@ Eight specific reasons outlined in the textbook:
 
 Read and study the real world examples given in the textbook.
 
----
-
 ## New Practice For a New Reality ##
 
 > “We are often overwhelmed by the number of things that we have to do and still function productively with a clear head and a positive sense of relaxed control”
@@ -173,14 +183,15 @@ Read and study the real world examples given in the textbook.
 	1. Capturing all things that need to get done – now, later, someday, big, little, or in between, get them out of your head and off your mind.
 	2. Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
 
-- [Five Key Things about GTD][gtd5]
+## [Five Key Things about GTD][gtd5]
 
-	1. Get it out of your head and into a reliable storage format (paper, digital, etc.)
-	2. Focus on the _next action_ to be productive
-	3. Clear your _Inbox_ on a daily basis
-	4. Build a reliable filing system __and use it!__
-	5. Review regularly (at least weekly)
+1. Get it out of your head and into a reliable storage format (paper, digital, etc.)
+2. Focus on the _next action_ to be productive
+3. Clear your _Inbox_ on a daily basis
+4. Build a reliable filing system __and use it!__
+5. Review regularly (at least weekly)
 
+---
 
 [software-project]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/software-project.jpg "Software Project Cartoon"
 
