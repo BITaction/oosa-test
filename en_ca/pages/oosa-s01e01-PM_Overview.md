@@ -129,7 +129,9 @@ Scope | Specifications of a project | The things you must do
 Time  | Schedule of a project       | The time you have to do them
 Cost  | Resources of a project      | The things you need to do them
 
-__Quality__: determined by the effects of the constraints and how they are managed
+---
+
+__Quality__ &rArr; determined by the effects of the constraints and how they are managed
 
 - Constraints are what make it a project that needs project management
 - Remove a constraint and you greatly reduce the need for project management
