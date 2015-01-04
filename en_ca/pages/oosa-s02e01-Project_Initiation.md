@@ -108,12 +108,12 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 
 ## Tasks ##
 
-- A project is usually divided into smaller parts called tasks.
+- A project is usually divided into smaller parts called tasks
 - A task has a unity of purpose (example: install a Local area Network (LAN), Program Order classes, etc.)
-- A task has a duration and is assigned to one or more persons (also knows as resources) who will perform it.
-- The division of a Project into groups of tasks & into tasks is called a Work Breakdown Structure (WBS).
-- For better understanding & managing, tasks are often laid out graphically from Project start to Project completion with time flowing from left to right and tasks listed from top to bottom.
-- This representation is called a GANTT chart.
+- A task has a duration and is assigned to one or more persons (also knows as resources) who will perform it
+- The division of a Project into groups of tasks & into tasks is called a Work Breakdown Structure (WBS)
+- For better understanding & managing, tasks are often laid out graphically from Project start to Project completion with time flowing from left to right and tasks listed from top to bottom
+- This representation is called a GANTT chart
 
 ![Sample Gantt Chart][gantt2]
 
