@@ -1,9 +1,9 @@
 # Course Textbooks #
 
-- Required: [UML 2 and the Unified Process][umlup] (UMLUP)
 - Required: [Just Enough Project Management][jepm] (JEPM)
+- Required: [UML 2 and the Unified Process][umlup] (UMLUP)
 - Optional: [Getting Things Done][gtd] (GTD)
-- Reference: [PMBOK Guide][pmbok]
+- Reference: [Project Management Body of Knowledge][pmbok] (PMBOK)
 
 
 [umlup]: http://www.amazon.ca/dp/0321321278 "UMLUP"
