@@ -18,13 +18,15 @@
 	
 ## Project Initiation ##
 
+![Project Initiation Step][4steps-pm-init]
+
 - The process of formally launching a project
 - Requires a document, called the _Project Charter_ that states “We have a Project and this is what it is about”
 - An approved Project Charter is the sole deliverable of this step
 
 ## Is it a Project? &sect;1, pg 16 ##
 
-- Clear beginning and end
+- Clear __beginning__ and __end__
 - Measurable objective
 - One-of-a-kind effort requiring customized solution
 - Requires a relatively quick response
@@ -54,13 +56,14 @@
 - Ultimately accountable for a project (for better or worse)
 - Study the main characteristics of Great Project Managers in the textbook
 
-### Project Stakeholders &sect;1, pg 18 ###
+### Other Stakeholders &sect;1, pg 18 ###
 
 - _Project Stakeholders_ are people (and sometimes institutions or companies) with a significant interest in a Project
-- They have a lot at stake in the Project – that’s why they are called Stakeholders
-- The Customer and Project Sponsor are key stakeholders
-- The Project Manager must identify all stakeholders
+- They have a lot at _stake_ in the Project – that’s why they are called Stakeholders
 - Each stakeholder will have expectations and the PM must identify and manage these
+- The Project Manager must identify all stakeholders
+- The Customer and Project Sponsor are key stakeholders (and often the same person/organization)
+- The members of the Project Team are valued stakeholders to help bring a project to fruition
 
 ## Project Repository &sect;1, pg 20 ##
 
@@ -101,7 +104,7 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 
 - Once approved, the charter is distributed to the project team and internal stakeholders
 - Not always advisable to distribute to external stakeholders like suppliers or consultants
-- Confidentiality and privacy is a major concern
+- Confidentiality and privacy are major concerns
 
 ## Tasks ##
 
@@ -112,7 +115,7 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 - For better understanding & managing, tasks are often laid out graphically from Project start to Project completion with time flowing from left to right and tasks listed from top to bottom.
 - This representation is called a GANTT chart.
 
-![Sample Gantt Chart][gantt]
+![Sample Gantt Chart][gantt2]
 
 ## Strategic Planning & Project Selection ##
 
@@ -132,7 +135,9 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 - Perform integrated change control: coordinating changes that affect the project’s deliverables and organizational process assets
 - Close the project: finalizing all project activities to formally close the project
 
-[gantt]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/gantt.jpg
+[4steps-pm-init]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-init.png
+
+[gantt2]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/GanttChart2.jpg
 
 [charter1]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/charters.pdf
 
