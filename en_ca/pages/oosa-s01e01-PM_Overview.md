@@ -170,6 +170,8 @@ Eight specific reasons outlined in the textbook:
 
 Read and study the real world examples given in the textbook.
 
+---
+
 ## New Practice For a New Reality ##
 
 > “We are often overwhelmed by the number of things that we have to do and still function productively with a clear head and a positive sense of relaxed control”
