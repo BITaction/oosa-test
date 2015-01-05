@@ -5,6 +5,7 @@ This site includes the notes and resource materials that are relevant to the cou
 ## Project Management
 
 - [Project Management Overview](pages/oosa-s01e01-PM_Overview.md)
+- [Need for Project Management](pages/oosa-s01e02-Need_for_PM.md)
 - [Getting Things Done](pages/oosa-s01e03-GTD.md)
 - [Project Initiation](pages/oosa-s02e01-Project_Initiation.md)
 - [Project Planning](pages/oosa-s02e02-Project_Planning.md)
