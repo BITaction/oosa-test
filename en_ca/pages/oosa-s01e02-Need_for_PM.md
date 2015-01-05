@@ -9,13 +9,13 @@
 ## Learning Outcomes ##
 
 - Explain the need for better project management (PM)
-- Describe the project management profession  
+- Describe the project management profession
 - Describe the history of project management
 - Explain the role of the Project Management Institute (PMI)
-- Explain the importance of certification and ethics  
-- Describe project management and discuss key elements  
-- Describe the career  IT project managers  
-- Describe the advancement of Project Management software  
+- Explain the importance of certification and ethics
+- Describe project management and discuss key elements
+- Describe the career of IT project managers
+- Describe the advancement of Project Management software
 
 ## Why do we need Project Management ##
 
