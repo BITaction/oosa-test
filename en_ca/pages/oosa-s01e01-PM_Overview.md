@@ -167,7 +167,7 @@ Eight specific reasons outlined in the textbook:
 	* Demoralized teams
 	* Frustrated senior management
 	* Project failure!
-- Applying project management in smaller doses and measuring success can alleviate the risk
+- Applying project management in smaller doses, measuring success, and adjusting can alleviate the risk
 
 Read and study the real world examples given in the textbook.
 
