@@ -5,8 +5,6 @@
 [Course Textbooks](textbooks.md)
 
 - Chapter references (&sect;) can be matched to the JEPM textbook
-- Other material is gathered from the GTD book
-- [5 Key Things about GTD][gtd5]
 
 ## Learning Outcomes ##
 
@@ -15,9 +13,7 @@
 	- Understand the concept of Project in IT
 	- Describe and explain Project Management for IT
 	- Perform in a team environment
-	- Describe and practice GTD
 	- Understand the role of the Project Manager
-	- Define and Describe the six types of feasibility
 
 ## What is a Project ##
 
@@ -173,90 +169,6 @@ Read and study the real world examples given in the textbook.
 
 ---
 
-## New Practice For a New Reality ##
-
-> “We are often overwhelmed by the number of things that we have to do and still function productively with a clear head and a positive sense of relaxed control”
-> 
-> -- David Allen, 2007
-
-## Getting Things Done (GTD) ##
-
-- Also referred to as the Art of Stress-Free Productivity
-- Created by David Allen
-- Based on 2 key objectives:
-
-	1. Capturing all things that need to get done – now, later, someday, big, little, or in between, get them out of your head and off your mind.
-	2. Disciplining yourself to make front-end decisions about all of the “inputs” you let into your life so that you will always have a plan for “next actions” that you can implement or renegotiate at any moment.
-
-## Out of Mind &rArr; Into INBOX ##
-
-- It it's on your mind, write it down and place in a trusted __INBOX__
-- Frees your mind from thinking about that item
-- Opens your mind to think about other things
-
-## Process INBOX ##
-
-- Go thru items in the INBOX on a regular basis
-- If you don't need an item, trash it
-- If it's just a reference item, file it
-- Otherwise, it's likely a task, so process it
-
-## Process Tasks ##
-
-- If you can complete it in under two minutes, do it right now
-- If it takes more that two minutes, organize it
-- Assign tasks to a _Project_
-	- What's a Project?
-	- If you need to do two or more things to accomplish something, then it's a project
-- Assign a _Context_ to each task
-	- What's a Context?
-	- A location or resource that can be utilized to accomplish a task
-	- Examples: @Home, @Office, @Phone, @Email, @Shopping
-	- Usually a single word and prefixed with "@" to distinguish from Projects
-	- Special context @Waiting to signify tasks that are waiting on something before moving forward
-	- Keep the number of contexts low (i.e., don't make too many and use a general term for each one)
-- Assign due dates to tasks where appropriate
-- Assign a deferral date to tasks where appropriate to delay them
-- Flag important tasks that need particular close attention
-- Arrange tasks within a project so that the _next action_ is listed first
-- There can be only one next action for each project
-
-## Do Tasks ##
-
-Look at your tasks from the perspective of projects, contexts, due dates, and flags to make decisions about what to do. Then pick something and do it.
-
-- Look at projects to see:
-	- the list of tasks to finish a project
-	- the next action for each project
-	- the due dates of tasks within a project
-	- the flagged items in a project
-- Look at contexts to see:
-	- the tasks that can be completed under that context
-	- the due dates of tasks within a context
-	- the flagged items under a context
-- Look at a calendar to see:
-	- the tasks that must be completed by a specific date
-	- the flagged items on the calendar
-	- the context needed to complete the tasks
-	- the projects where the tasks are assigned
-- Look at flagged status to see:
-	- the tasks flagged for close attention
-	- the due dates of flagged tasks
-	- the projects associated to these tasks
-	- the contexts needed to complete each task
-
-> Adjust tasks as needed &rArr; A renegotiated agreement is __not__ a broken agreement!
-
-## [Five Key Things about GTD][gtd5]
-
-1. Get it out of your head and into a reliable storage format (paper, digital, etc.)
-2. Focus on the _next action_ to be productive
-3. Clear your _Inbox_ on a daily basis
-4. Build a reliable filing system __and use it!__
-5. Review regularly (at least weekly)
-
----
-
 [software-project]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/software-project.jpg "Software Project Cartoon"
 
 [4steps-pm]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm.png "4 Steps of Project Management"
@@ -265,4 +177,3 @@ Look at your tasks from the perspective of projects, contexts, due dates, and fl
 
 [3constraint-image]: http://www.traue.com/media/project_triangle.png "Triple Constraint"
 
-[gtd5]: http://www.thesimpledollar.com/getting-things-done-five-key-things/ "5 Key Points of GTD"
