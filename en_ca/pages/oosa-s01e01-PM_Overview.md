@@ -12,6 +12,7 @@
 - You will learn:
 	- Understand the concept of Project in IT
 	- Describe and explain Project Management for IT
+	- Identify and describe the main steps of Project Management
 	- Perform in a team environment
 	- Understand the role of the Project Manager
 
@@ -28,7 +29,7 @@
 - should have a primary sponsor/customer
 - involve uncertainty
 
-## Illustration of Software Project :) ##
+## Illustration of a Software Project :) ##
 
 ![Software Project][software-project]
 
