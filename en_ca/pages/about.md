@@ -9,6 +9,3 @@ The Unified Software Development Process (or Unified Process) is introduced as a
 
 There is a project management component introduced in this course and completed in the next course, OO System Design. These two courses will allow students to have the necessary skills to solve business related software problems, which in turn helps students prepare for their professional careers.
 
-## About the Textbooks
-
-Needs a breif review here.
