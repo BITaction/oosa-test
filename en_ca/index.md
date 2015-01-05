@@ -2,7 +2,7 @@
 
 This site includes the notes and resource materials that are relevant to the course.
 
-## Project Management (PM)
+## Project Management
 
 - [Project Management Overview](pages/oosa-s01e01-PM_Overview.md)
 - [Getting Things Done](pages/oosa-s01e02-GTD.md)
