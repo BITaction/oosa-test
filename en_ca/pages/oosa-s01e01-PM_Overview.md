@@ -1,5 +1,12 @@
 # Project Management Overview #
 
+> A project is an endeavor to accomplish a specific objective through a unique set of interrelated tasks and the effective utilization of resources
+> 
+
+> Project management is a set of techniques to effectively complete a project on time, within budget, and according to specified requirements
+> 
+
+
 ## References ##
 
 [Course Textbooks](textbooks.md)
@@ -15,10 +22,6 @@
 	- Identify and describe the main steps of Project Management
 	- Perform in a team environment
 	- Understand the role of the Project Manager
-
-## What is a Project ##
-
-> A project is an endeavor to accomplish a specific objective through a unique set of interrelated tasks and the effective utilization of resources
 
 ## Attributes of a Project ##
 
