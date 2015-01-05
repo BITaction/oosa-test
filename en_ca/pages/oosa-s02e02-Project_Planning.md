@@ -8,13 +8,15 @@
 [Course Textbooks](textbooks.md)
 
 - Chapter references (&sect;) can be matched to the JEPM textbook
+- Other material is gathered from various sources
 
 ## Learning Outcomes ##
 
 - Chapter &sect;3
 - You will learn:
 	- Define the basic elements of a Project Plan
-	- That
+	- Identify the major steps of project planning
+	- Identify the steps of building effective project teams
 	
 ## Project Planning Basics &sect;3, pg 32 ##
 
@@ -39,16 +41,16 @@
 - Project Charter is the principal input to the project planning
 - Project Manager should insist on signed charter before planning
 
-Project planning is relatively straightforward (but hard work):
+Basic project planning is relatively straightforward (but hard work):
 
 1. Break the work into manageable "chunks", forming a _Work Breakdown Structure_ (WBS)
-2. Identify dependencies between tasks
-3. Identify the duration of each task
-4. Assign resources to tasks
-5. Review, analyze, and refine the plan
-6. Get it approved
+- Identify dependencies between tasks
+- Identify the duration of each task
+- Assign resources to tasks
+- Review, analyze, and refine the plan
+- Get it approved
 
-The refined plan can be used to produce:
+The refined plan is used to produce:
 
 - A _Project Schedule_ (what needs to be done and when)
 - A _Critical Path_  (the critical tasks that can affect the delivery date)
@@ -69,6 +71,39 @@ How much time should be spent on planning a project?
 
 > If you don't spend the time planning you will spend the time reacting to negative consequences that arise from poor planning
 > 
+
+## Forming the Team &sect;3, pg 35 ##
+
+
+### Forming ###
+
+### Storming ###
+
+### Norming ###
+
+### Performing ###
+
+## Planning Activities &sect;3, pg 36 ##
+
+- The major steps of project planning are highlighted in Figure 3-1, pg 37
+
+### Review Project Requirements ###
+
+> Don't solve the wrong problem in the perfect way
+> 
+
+### Clarify Roles and Responsibilities ###
+
+### Conduct Project Kickoff Meeting ###
+
+### Create WBS ###
+
+### Assign Resources ###
+
+### Schedule the Work ###
+
+### Measure and Track Progress ###
+
 
 ---
 
