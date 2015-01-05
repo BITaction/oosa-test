@@ -1,5 +1,9 @@
 # Getting Things Done (GTD) #
 
+> “We are often overwhelmed by the number of things that we have to do and still function productively with a clear head and a positive sense of relaxed control”
+> 
+> -- David Allen, 2007
+
 ## References ##
 
 [Course Textbooks](textbooks.md)
@@ -15,12 +19,6 @@
 	- Describe the purpose of Projects, Contexts, Due Dates, and Flags
 	- Identify and explain elements/tools of a Trusted System
 	- Apply GTD with a combination physical and software solutions
-
-## New Practice For a New Reality ##
-
-> “We are often overwhelmed by the number of things that we have to do and still function productively with a clear head and a positive sense of relaxed control”
-> 
-> -- David Allen, 2007
 
 ## Getting Things Done (GTD) ##
 
