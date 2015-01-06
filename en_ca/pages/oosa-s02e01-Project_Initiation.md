@@ -137,7 +137,7 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 
 [4steps-pm-init]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-init.png
 
-[gantt]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/GanttChart2.jpg
+[gantt]: http://www.gantt.com/images/image005.gif
 
 [charter1]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/charters.pdf
 
