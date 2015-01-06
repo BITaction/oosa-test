@@ -4,7 +4,7 @@
 
 [Course Textbooks](textbooks.md)
 
-- Other material is gathered from various resources
+- Material is gathered from various resources
 
 ## Learning Outcomes ##
 
@@ -18,10 +18,10 @@
 
 ## Why do we need Project Management ##
 
-> An IT project is a collaborative enterprise, frequently involving research or design, that is carefully planned to achieve a particular aim.
-> -- [Wikipedia]
-
--  Each project is _unique_ and _temporary_
+- Provides the values expressed in Chapter &sect;1
+- Each project is _unique_ and has unique challenges
+- Offers disciplined approach to getting organized
+- To manage the Scope, Time, and Cost constraints
 
 ## Project Success Rates ##
 
@@ -41,6 +41,9 @@
 - There are specific interest groups in many areas like engineering, financial services, health care, IT, etc.
 - Project management research and certification programs continue to grow
 
+> __READ MORE__: [PMI Website](http://www.pmi.org/)
+> 
+
 ## Project Management Certification ##
 
 - PMI provides certification as a _Project Management Professional_ (PMP)
@@ -49,7 +52,10 @@
 	* agree to follow a code of ethics
 	* pass the PMP exam
 - The number of people earning PMP certification is increasing quickly
-- Average salary for a PMPs is higher
+- Average salary for a PMP is higher
+
+> __READ MORE__: [PMI Certifications](http://www.pmi.org/certification.aspx)
+> 
 
 ## Improvement to IT Projects ##
 
