@@ -30,7 +30,7 @@
 - Is developed using progressive elaboration
 - require resources, often from various areas
 - should have a primary sponsor/customer
-- involve uncertainty
+- involves uncertainty
 
 ## Illustration of a Software Project :) ##
 
