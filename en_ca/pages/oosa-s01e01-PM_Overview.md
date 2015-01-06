@@ -18,7 +18,7 @@
 - Chapter &sect;1
 - You will learn:
 	- Understand the concept of Project in IT
-	- Describe and explain Project Management for IT
+	- Describe project management and discuss key elements
 	- Identify and describe the main steps of Project Management
 	- Perform in a team environment
 	- Understand the role of the Project Manager
@@ -119,8 +119,6 @@ Perform last minute checks and ensure all requirements have been satisfied.
 
 ![Triple Constraint][3constraint-image]
 
-Image referenced from [How to Manage a Camel][3constraint-article]
-
 ---
 
 Constraint | What | Explanation
@@ -137,6 +135,9 @@ Cost  | Resources of a project      | The things you need to do them
 - Constraints are what make it a project that needs project management
 - Remove a constraint and you greatly reduce the need for project management
 - The tighter the constraints the greater the need for project management
+
+> __READ MORE__: [Project Management Triangle][3constraint-article]
+> 
 
 ## Values of Project Management &sect;1, pg 6 ##
 
@@ -158,7 +159,7 @@ Eight specific reasons outlined in the textbook:
 5. Focuses on managing project scope and controlling change
 6. Helps avoid disasters by managing risks
 7. Strengthens project teams and improves morale
-8. Improves bottom-line performance and grows the business
+8. Improves bottom-line performance and grows the business (higher profits, lower costs)
 
 ## Too Much Project Management &sect;1, pg 10 ##
 
@@ -177,7 +178,7 @@ Read and study the real world examples given in the textbook.
 
 [4steps-pm]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm.png "4 Steps of Project Management"
 
-[3constraint-article]: http://goo.gl/b4YDpp "What is Wrong with the Triple Constraint"
+[3constraint-article]: http://www.tutorialspoint.com/management_concepts/project_management_triangle.htm
 
-[3constraint-image]: http://www.traue.com/media/project_triangle.png "Triple Constraint"
+[3constraint-image]: http://www.tutorialspoint.com/management_concepts/images/project_management_triangle.jpg
 

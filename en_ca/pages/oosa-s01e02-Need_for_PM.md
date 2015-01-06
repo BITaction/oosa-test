@@ -13,7 +13,6 @@
 - Describe the history of project management
 - Explain the role of the Project Management Institute (PMI)
 - Explain the importance of certification and ethics
-- Describe project management and discuss key elements
 - Describe the career of IT project managers
 - Describe the advancement of Project Management software
 
@@ -26,17 +25,6 @@
 
 ## Project Success Rates ##
 
-![PM Triangle Diagram][pm-tri-diag]
-
--  Results are based upon The Triple Constraint:
-	1.  Scope
-	-  Time
-	-  Cost
-- These constraints limit and contribute to the _quality_ of a project
-
-> __READ MORE__: [Project Triangle][pm-tri]
-> 
-
 - 1995 Standish Group study (CHAOS) found that only 16.2% of IT projects were successful
 - Over 31% were canceled before completion, costing over $81 B in the U.S. alone
 - Software & hardware projects fail at a 65% rate
@@ -44,18 +32,6 @@
 - Up to 75% of all software projects are cancelled
 - Only 2.5% of global businesses achieve 100% project success
 - Average success of business-critical application development projects is 35%.
-	
-## IT Project Management has Advantages ##
-
-- Better control of financial, physical, and human resources
-- Improved customer relations
-- Shorter development times
-- Lower costs
-- Higher quality and increased reliability
-- Higher profit margins
-- Improved productivity
-- Better internal coordination
-- Higher worker morale
 
 ## The Project Management Institute ##
 
@@ -93,6 +69,8 @@
 
 ![Sample Gantt Chart][gantt]
 
+> __READ MORE__: [Gantt Charts][gantt-read]
+
 ![Sample Network Diagram][network-diag]
 
 ## Project Management Software ##
@@ -103,17 +81,15 @@
 	* Midrange tools: Handle multiple projects and users, cost $200-500 per user, Microsoft Project is very popular
 	* High-end tools: Also called enterprise project management software, oPen licensed on a per-user basis
 
-> __READ MORE__: [Comparison of PM Software][pm-software-compare]
+> __READ MORE__: [Comparison of PM Software][pm-sw-comp]
 > 
 
 ---
 
-[gantt]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/GanttChart2.jpg
+[gantt]: http://www.gantt.com/images/image005.gif
+
+[gantt-read]: http://www.gantt.com/
 
 [network-diag]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/network-diag.jpg
 
-[pm-tri-diag]: http://www.tutorialspoint.com/management_concepts/images/project_management_triangle.jpg
-
-[pm-tri]: http://www.tutorialspoint.com/management_concepts/project_management_triangle.htm "Project Management Triangle"
-
-[pm-software-compare]: http://en.wikipedia.org/wiki/Comparison_of_project_management_software "PM Software Comparison"
+[pm-sw-comp]: http://en.wikipedia.org/wiki/Comparison_of_project_management_software "PM Software Comparison"

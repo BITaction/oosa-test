@@ -115,7 +115,7 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 - For better understanding & managing, tasks are often laid out graphically from Project start to Project completion with time flowing from left to right and tasks listed from top to bottom
 - This representation is called a GANTT chart
 
-![Sample Gantt Chart][gantt2]
+![Sample Gantt Chart][gantt]
 
 ## Strategic Planning & Project Selection ##
 
@@ -137,7 +137,7 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 
 [4steps-pm-init]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-init.png
 
-[gantt2]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/GanttChart2.jpg
+[gantt]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/GanttChart2.jpg
 
 [charter1]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/charters.pdf
 
