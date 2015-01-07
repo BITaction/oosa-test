@@ -97,6 +97,9 @@ Look at your tasks from the perspective of projects, contexts, due dates, and fl
 - One single approach is not likely to suffice for everything
 - Iteration, review, and adjustment is a fundamental mantra of success
 
+> [PCMAG: Top Free Task Managers](http://www.pcmag.com/article2/0,2817,2419258,00.asp)
+> 
+
 ## [Wunderlist](http://www.wunderlist.com) ##
 
 - A software solution for making to-do lists
@@ -106,6 +109,9 @@ Look at your tasks from the perspective of projects, contexts, due dates, and fl
 - Tags can be used as contexts
 - Due dates can be entered per task
 - Tasks can be flagged
+
+> [Wunderlist Downloads](https://www.wunderlist.com/download/)
+> 
 
 ## [Five Key Things about GTD][gtd5] ##
 
