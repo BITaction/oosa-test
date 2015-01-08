@@ -22,9 +22,9 @@
 
 - The process of formally launching a project
 - Requires a document, called the _Project Charter_ that states “We have a Project and this is what it is about”
-- An approved Project Charter is the sole deliverable of this step
+- An approved Project Charter is the major deliverable of this step
 
-## Is it a Project? &sect;1, pg 16 ##
+## Is it a Project? &sect;2, pg 16 ##
 
 - Clear __beginning__ and __end__
 - Measurable objective
@@ -32,14 +32,14 @@
 - Requires a relatively quick response
 - Requires coordinating and managing independent resources
 
-## Project Start-Up &sect;1, pg 16 ##
+## Project Start-Up &sect;2, pg 16 ##
 
 - Determine key players (_Project Stakeholders_)
 - Understand their roles and responsibilities
 
 ![Project Participants][project-participants]
 
-### Project Sponsor (Owner) &sect;1, pg 17 ###
+### Project Sponsor (Owner) &sect;2, pg 17 ###
 
 - A _Project Sponsor_ is the ultimate approval authority over a project
 - Must be identified and must champion the project
@@ -48,7 +48,7 @@
 - Should likely be the one who appointed the Project Manager
 - Project Manager must be absolutely clear of this stakeholder (and hopefully has a direct communication with them)
 
-### Project Manager (PM) &sect;1, pg 18 ###
+### Project Manager (PM) &sect;2, pg 18 ###
 
 - The _Project Manager_ has the experience, competence, knowledge, and skill to successfully manage a project
 - Should usually be appointed by the Project Sponsor
@@ -56,7 +56,7 @@
 - Ultimately accountable for a project (for better or worse)
 - Study the main characteristics of Great Project Managers in the textbook
 
-### Other Stakeholders &sect;1, pg 18 ###
+### Other Stakeholders &sect;2, pg 18 ###
 
 - _Project Stakeholders_ are people (and sometimes institutions or companies) with a significant interest in a Project
 - They have a lot at _stake_ in the Project – that’s why they are called Stakeholders
@@ -65,14 +65,14 @@
 - The Customer and Project Sponsor are key stakeholders (and often the same person/organization)
 - The members of the Project Team are valued stakeholders to help bring a project to fruition
 
-## Project Repository &sect;1, pg 20 ##
+## Project Repository &sect;2, pg 20 ##
 
 - A _Project Repository_ is a common place to file documentation for a project
 - Could be as simple as a ring binder or manilla folder
 - Usually a combination of paper and electronic based filing
 - See Table 2-2 for possible contents of a project repository
 
-## The Project Charter &sect;1, pg 23 ##
+## The Project Charter &sect;2, pg 23 ##
 
 - A _Project Charter_ is the document that formally recognizes the existence of a project and provides direction on the project’s objectives and management
 - It is the absolute master document for the project – a bit like the Constitution for a country
@@ -80,7 +80,7 @@
 - The Project Sponsor is "officially" the originator of the charter
 - The Project Manager is usually tasked in preparing it for the sponsor's approval (signature)
 
-### Project Charter Sample &sect;1, Figure 2-3 ###
+### Project Charter Sample &sect;2, Figure 2-3 ###
 
 Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the textbook, plus the points below for example items on typical project charters.
 
@@ -98,9 +98,13 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 
 ### Other Sample Charters ###
 
-[Sample Charter][charter1]
+Project charters come in many variations of detail and complexity. Here is just a small sample of some project charter formats you might encounter.
 
-### Distribution of the Charter &sect;1, pg 31 ###
+- [Sample Charter][charter1]
+- [Project Charter Information and Template][charter3]
+- [Microsoft Word Project Charter Template][charter2]
+
+### Distribution of the Charter &sect;2, pg 31 ###
 
 - Once approved, the charter is distributed to the project team and internal stakeholders
 - Not always advisable to distribute to external stakeholders like suppliers or consultants
@@ -111,11 +115,13 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 - A project is usually divided into smaller parts called tasks
 - A task has a unity of purpose (example: install a Local area Network (LAN), Program Order classes, etc.)
 - A task has a duration and is assigned to one or more persons (also knows as resources) who will perform it
-- The division of a Project into groups of tasks & into tasks is called a Work Breakdown Structure (WBS)
-- For better understanding & managing, tasks are often laid out graphically from Project start to Project completion with time flowing from left to right and tasks listed from top to bottom
+- The division of a Project into groups of tasks & into tasks is called a _Work Breakdown Structure_ (WBS)
+- For better understanding & managing, tasks are often laid out graphically from project start to project completion with time flowing from left to right and tasks listed from top to bottom
 - This representation is called a GANTT chart
 
 ![Sample Gantt Chart][gantt]
+
+> __READ MORE__: [Gantt Chart Information][gantt-read]
 
 ## Strategic Planning & Project Selection ##
 
@@ -138,7 +144,10 @@ Many variations of Project Charters exist. See Figure 2-3 and pages 24-30 of the
 [4steps-pm-init]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-init.png
 
 [gantt]: http://www.gantt.com/images/image005.gif
+[gantt-read]: http://www.gantt.com
 
 [charter1]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/charters.pdf
+[charter2]: http://office.microsoft.com/en-ca/templates/project-charter-TC001141418.aspx
+[charter3]: http://www.pmdocuments.com/project-initiation-documents/project-charter-document/
 
 [project-participants]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/project-participants.png
