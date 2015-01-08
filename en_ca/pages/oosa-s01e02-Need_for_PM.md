@@ -53,6 +53,9 @@
 	* pass the PMP exam
 - The number of people earning PMP certification is increasing quickly
 - Average salary for a PMP is higher
+- Another popular certification is _Certified Associate in Project Management_ (CAPM)
+	* Lower requirements than PMP
+	* A way to get some qualifications and work toward PMP
 
 > __READ MORE__: [PMI Certifications](http://www.pmi.org/certification.aspx)
 > 
