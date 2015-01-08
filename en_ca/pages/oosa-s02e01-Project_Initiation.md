@@ -42,11 +42,17 @@
 ### Project Sponsor (Owner) &sect;2, pg 17 ###
 
 - A _Project Sponsor_ is the ultimate approval authority over a project
-- Must be identified and must champion the project
+- Must be identified and must "Champion" the project
 - Can allocate and prioritize resources
 - Provides funding for the project
 - Should likely be the one who appointed the Project Manager
 - Project Manager must be absolutely clear of this stakeholder (and hopefully has a direct communication with them)
+
+### Customer ###
+
+- Principal beneficiaries of the project outcome
+- Often includes the Project Sponsor
+- For IT projects includes the users of the technology (software, hardware)
 
 ### Project Manager (PM) &sect;2, pg 18 ###
 
@@ -61,7 +67,8 @@
 - _Project Stakeholders_ are people (and sometimes institutions or companies) with a significant interest in a Project
 - They have a lot at _stake_ in the Project – that’s why they are called Stakeholders
 - Each stakeholder will have expectations and the PM must identify and manage these
-- The Project Manager must identify all stakeholders
+- The PM must identify all stakeholders and their requirements
+- Stakeholders must be "kept in the loop" during the course of a project  
 - The Customer and Project Sponsor are key stakeholders (and often the same person/organization)
 - The members of the Project Team are valued stakeholders to help bring a project to fruition
 
