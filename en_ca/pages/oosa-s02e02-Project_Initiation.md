@@ -158,7 +158,7 @@ SWOT analysis groups key pieces of information into two main categories:
 - __internal factors__: the strengths and weaknesses internal to the organization
 - __external factors__: the opportunities and threats presented by the environment external to the organization
 
-> __READ MORE__: [What Is a SWOT Analysis?][swot]
+> __READ MORE__: [Bplans: What Is a SWOT Analysis?][swot]
 > 
 
 ## Project Integration Management Processes ##
