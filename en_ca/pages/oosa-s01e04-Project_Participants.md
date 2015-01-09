@@ -38,9 +38,7 @@ Recall the major participants of a project.
 ## Customer ##
 
 - Principal beneficiary of the project outcome
-
-> For example, the users of the software in an IT project
-> 
+- Often the end users of the software in an IT project
 
 ## Other Key Stakeholders ##
 
@@ -49,6 +47,18 @@ Recall the major participants of a project.
 - Must be "kept in the loop" during the course of a project  
 
 [Software Stakeholder Example][stakeholders]
+
+## The Core Team &sect;3, pg 35 ##
+
+> Most important element of a project is an effective team; without it, the project cannot succeed
+> 
+
+- Project team will plan, implement, and monitor the work
+- Project manager as a team member:
+	* responsible for maintaining a cohesive, functioning, and capable team
+	* involved with day-to-day interaction and operation of the team
+	* a good leader, listener, learner, and lecturer
+	* a source of motivation and encouragement to the team
 
 ## What is a Team ##
 
@@ -82,17 +92,20 @@ Teams tend to go through four phases:
 3. __Norming__: Members focus on their tasks
 4. __Performing__: The team is a well-oiled machine
 	
-## Team Formation - Forming ##
+## Team Forming ##
 
 - Team is first brought together
 - Members are quiet, they size up the situation
-- The PM should:
+- The Project Manager should:
+	- Identify key team members based on nature of work
 	- Introduce the project
-	- Establish roles
-	- Share the vision: Sell the project, Establish buy-in
+	- Share the vision: sell the project, establish buy-in, obtain commitment
+	- Establish roles & responsibilities
+	- Ensure proper resources are allocated for team members
+	- Conduct kickoff meeting to engage team members and generate excitement
 	- Create situations for members to interact (assign a short term deliverable)
 
-## Team Formation - Storming ##
+## Team Storming ##
 
 - Members establish dominance and stake out their territories
 - May be a fair bit of conflict &rArr; must always have some conflict
@@ -102,14 +115,14 @@ Teams tend to go through four phases:
 	* Be aware of people’s perspective when resolving conflicts
 	* Remind members that their jobs depend on them working with everyone on the team
 
-## Team Formation - Norming ##
+## Team Norming ##
 
 - Individuals focus on their tasks
 - Personal conflicts die down &rArr; conflicts about project work is regular and healthy
 - Slight risk that members may avoid discussing issues that should be addressed
 - At this stage a project leader should make sure that good solutions aren’t ignored because members want to avoid conflict
 
-## Team Formation - Performing ##
+## Team Performing ##
 
 - Member roles are clear
 - New tasks are handled automatically
@@ -137,13 +150,16 @@ Teams tend to go through four phases:
 
 ## Conflict Management Styles ##
 
-Style | Cooperation | Assertiveness
-------|-------------|--------------
-Avoiding | Too Low | Too Low
-Accommodating | Healthy | Too Low
-Competing | Too Low | Too High
-Collaborating | Healthy | Healthy
-Compromising | Medium | Medium
+> Conflict is a natural and healthy aspect of any team project. It must not be personal, but rather about the project itself and it's up to the project manager to control this.
+> 
+
+Type | Cooperation | Assertiveness | Notes
+-----|-------------|---------------|------
+Avoiding | Low | Low | Parties withdraw
+Accommodating | High | Low | Parties are overly accepting
+Competing | Low | High | Parties push for their way (or the highway)
+Collaborating | High | High | Parties work effectively with high degree of trust
+Compromising | Medium | Medium | Parties negotiate with give and take
 
 ## The Project Manager &sect;2, pg 18 ##
 

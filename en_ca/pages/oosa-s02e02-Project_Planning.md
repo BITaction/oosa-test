@@ -16,7 +16,6 @@
 - You will learn:
 	- Define the basic elements of a Project Plan
 	- Identify the major steps of project planning
-	- Identify the steps of building effective project teams
 	
 ## Project Planning Basics &sect;3, pg 32 ##
 
@@ -72,30 +71,10 @@ How much time should be spent on planning a project?
 > If you don't spend the time planning you will spend the time reacting to negative consequences that arise from poor planning
 > 
 
-## Building a Team &sect;3, pg 35 ##
 
-> Most important element of a project is the team; without it, the project cannot succeed
-> 
 
-- Project team participates in planning, implementing, and monitoring the work
-- Project manager is responsible for maintaining a cohesive, functioning, and capable team
-- Project manager must be involved with day-to-day interaction and operation of the team
-- Project manager must be a good leader, listener, learner, and lecturer
-- Project mamager must motivate and encourage the team
 
-### Forming ###
 
-- Identify key team members based on nature of work
-- Obtain commitment from team members
-- Assign roles and responsibilities
-- Ensure they have necessary resources
-- Conduct kickoff meeting to engage team members and generate excitement
-
-### Storming ###
-
-### Norming ###
-
-### Performing ###
 
 ## Planning Activities &sect;3, pg 36 ##
 
