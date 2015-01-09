@@ -138,6 +138,29 @@ Project charters come in many variations of detail and complexity. Here is just 
 	- Use realistic methods to select which projects to work on
 	- Formalize project initiation by issuing a project charter
 
+## SWOT Analysis ##
+
+> A SWOT analysis is a structured planning method used to evaluate the strengths, weaknesses, opportunities and threats involved in a project or business venture.
+> 
+
+- __Strengths__: characteristics of the business or project that give it an advantage over others
+- __Weaknesses__: characteristics that place the business or project at a disadvantage relative to others
+- __Opportunities__: elements that the project could exploit to its advantage
+- __Threats__: elements in the environment that could cause trouble for the business or project
+
+## Internal and External Factors ##
+
+> SWOT analysis aims to identify the key internal and external factors seen as important to achieving an objective.
+> 
+
+SWOT analysis groups key pieces of information into two main categories:
+
+- __internal factors__: the strengths and weaknesses internal to the organization
+- __external factors__: the opportunities and threats presented by the environment external to the organization
+
+> __READ MORE__: [What Is a SWOT Analysis?][swot]
+> 
+
 ## Project Integration Management Processes ##
 
 - Develop the project charter: working with stakeholders to create the document that formally authorizes a project—the charter
@@ -158,3 +181,5 @@ Project charters come in many variations of detail and complexity. Here is just 
 [charter3]: http://www.pmdocuments.com/project-initiation-documents/project-charter-document/
 
 [project-participants]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/project-participants.png
+
+[swot]: http://articles.bplans.com/how-to-perform-swot-analysis
