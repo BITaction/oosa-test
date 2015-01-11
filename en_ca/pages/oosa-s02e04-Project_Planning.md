@@ -135,10 +135,10 @@ How much time should be spent on planning a project?
 > __READ MORE__: See [Sample OO Project Plan][ootemplate] used as a basis for planning projects in the BIT Project Course
 > 
 
-> __READ MORE__: Microsoft Office Templates
-> 
-> 	- [Microsoft Word WBS Template][ms-word-wbs]
->	- [Microsoft Project WBS Template][ms-proj-wbs]
+Microsoft Office Sample Templates
+
+- [Microsoft Word WBS Template][ms-word-wbs]
+- [Microsoft Project WBS Template][ms-proj-wbs]
 
 ### Assigning Resources ###
 
