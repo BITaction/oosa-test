@@ -154,8 +154,7 @@ Microsoft Office Sample Templates
 ### Schedule the Work ###
 
 > The only reason for time is so that everything doesn't happen at once.
-> 
-> 	-- Albert Einstein
+> -- Albert Einstein
 
 - Project Manager must create a _realistic_ schedule, with assistance from the project team
 - Tasks performed within reasonable time and in a reasonable sequence
