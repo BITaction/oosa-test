@@ -110,6 +110,36 @@ How much time should be spent on planning a project?
 
 ### Create WBS ###
 
+> A _Work Breakdown Structure_ (WBS) is a family tree of all the project work...
+> 
+
+- Creating a WBS is a major step of detailed project planning
+- A WBS is list of tasks that must be performed
+- Tasks are numbered to represent an organized tree structure
+- Compare graphical WBS Figure 3-3 with Outline WBS Figure 3-4
+
+![Graphical WBS][wbs-fig3-3]
+
+- Good judgement, which comes from experience and training, is the key to good WBS structure
+- A WBS structure should include:
+	- Reference number for each task (natural number) 
+	- WBS hierarchy numbering using dotted notation (1.1, 1.1.1, 1.1.2, etc.)
+	- Task names
+	- Durations (can use PERT formula to help determine these)
+	- Predecessors (use reference number field)
+	- Resource assignments
+	- Measurable deliverable for each task, where possible
+- Organizations will develop WBS templates over time
+- Project Managers will look to use templates as a basis for future projects
+
+> __READ MORE__: See [Sample OO Project Plan][ootemplate] used as a basis for planning projects in the BIT Project Course
+> 
+
+> __READ MORE__: Microsoft Office Templates
+> 
+> 	- [Microsoft Word WBS Template][ms-word-wbs]
+>	- [Microsoft Project WBS Template][ms-proj-wbs]
+
 ### Assigning Resources ###
 
 - Assign resources to tasks on the WBS structure
@@ -122,6 +152,21 @@ How much time should be spent on planning a project?
 - Assign resources by name ([Fred Penner][fredpenner]) or by role (Musician) if specific details are not yet known
 
 ### Schedule the Work ###
+
+> The only reason for time is so that everything doesn't happen at once.
+> 
+> 	-- Albert Einstein
+
+- Project Manager must create a _realistic_ schedule, with assistance from the project team
+- Tasks performed within reasonable time and in a reasonable sequence
+- The Project Schedule is the "guts" of the project plan and is bound by time
+- Six fundamental steps to creating a Project Schedule:
+	1. Create WBS to the task level
+	2. Specify the person who will accomplish each task
+	3. Establish dependencies (order) between tasks
+	4. Determine completion date for tasks in consultation with responsible team members
+	5. Record completion dates on the task list
+	6. Create overall Project Schedule showing projected project end date
 
 ## Project Management Software &sect;3, pg 43 ##
 
@@ -145,6 +190,14 @@ How much time should be spent on planning a project?
 ---
 
 [4steps-pm-plan]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-plan.png
+
+[wbs-fig3-3]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/WBS-ex.png
+
+[ootemplate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/documents/OO_Project_Template.xlsx
+
+[ms-word-wbs]: http://office.microsoft.com/en-ca/templates/work-breakdown-structure-TC001141726.aspx
+
+[ms-proj-wbs]: http://office.microsoft.com/en-ca/templates/work-breakdown-structure-TC103360093.aspx
 
 [msproject]: http://products.office.com/en-CA/project/project-professional-2013-desktop-software
 
