@@ -94,13 +94,62 @@ How much time should be spent on planning a project?
 
 ### Conduct Project Kickoff Meeting ###
 
+- Opportunity for all team members and stakeholders to learn about the project
+- Project Manager responsible for calling and running the meeting:
+	* Start the meeting on time
+	* Achieve objectives by using an agenda (see sample Figure 3-2, pg 41)
+	* Describe the project
+	* Establish team identity (challenge, teamwork, collaboration)
+	* Generate excitement
+	* Finish the meeting on time
+	* Make notes and distribute to attendees after meeting
+- Review checklist in Table 3-1, pg 39
+
+> Give the Project Sponsor opportunity to participate. They can show support for the project and explain how it fits into the overall business strategy of the organization.
+> 
+
 ### Create WBS ###
 
-### Assign Resources ###
+### Assigning Resources ###
+
+- Assign resources to tasks on the WBS structure
+- Consider and resolve the following issues:
+	- Who and what is needed for project success?
+	- Who and what is available?
+	- How can we make up for resource shortfalls?
+	- What consequence will resource slippage have on the schedule?
+- Discuss shortfalls with project sponsor to mitigate risks
+- Assign resources by name ([Fred Penner][fredpenner]) or by role (Musician) if specific details are not yet known
 
 ### Schedule the Work ###
 
+## Project Management Software &sect;3, pg 43 ##
+
+> Project Management Software requires training and experience to use effectively!
+> 
+
+- Can assist in developing and maintaining project plans
+- Can automatically organize the WBS structure based on indenting levels
+- Can generate network diagrams and calculate critical paths
+- Can manage resource assignments, work schedules, and costing
+- Can track project progress and compare actuals with estimates
+- Can do many, many specialized things...
+- Can be relatively expensive and overkill for smaller projects
+
+> __READ MORE__: Some example Project Management Software:
+> 
+>	- [Microsoft Project][msproject] on Windows
+>	- [OmniPlan][omniplan] on Mac
+>	- [OpenProj][openproj] a free, open source, platform independent distribution
 
 ---
 
 [4steps-pm-plan]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-plan.png
+
+[msproject]: http://products.office.com/en-CA/project/project-professional-2013-desktop-software
+
+[omniplan]: http://www.omnigroup.com/omniplan
+
+[openproj]: http://sourceforge.net/projects/openproj
+
+[fredpenner]: http://www.fredpenner.com
