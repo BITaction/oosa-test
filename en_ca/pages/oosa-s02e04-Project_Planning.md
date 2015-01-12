@@ -16,10 +16,16 @@
 - You will learn:
 	- Define the basic elements of a Project Plan
 	- Identify the major steps of the planning process
+	- List the documents produced as part of a Project Plan
+	- Identify and explain the basic project planning activities
+	- Give examples of common project planning software
+	- Define a WBS and explain its purpose
+	- Identify and explain various parts of a WBS
+	- List benefits provided by project planning software
 	
 ## Project Planning Basics &sect;3, pg 32 ##
 
-![Project Initiation Step][4steps-pm-plan]
+![Project Planning Step][4steps-pm-plan]
 
 - Keep the plan as simple as possible relative to the size of the project
 - Project Plans should cover the following:
