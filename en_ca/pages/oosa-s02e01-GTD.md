@@ -10,6 +10,7 @@
 
 - Material is gathered from the GTD book
 - [5 Key Things about GTD][gtd5]
+- [Wunderlist][wunderlist]
 
 ## Learning Outcomes ##
 
@@ -100,7 +101,7 @@ Look at your tasks from the perspective of projects, contexts, due dates, and fl
 > [PCMAG: Top Free Task Managers](http://www.pcmag.com/article2/0,2817,2419258,00.asp)
 > 
 
-## [Wunderlist](http://www.wunderlist.com) ##
+## [Wunderlist][wunderlist] ##
 
 - A software solution for making to-do lists
 - Can be used in a GTD fashion
@@ -124,3 +125,5 @@ Look at your tasks from the perspective of projects, contexts, due dates, and fl
 ---
 
 [gtd5]: http://www.thesimpledollar.com/getting-things-done-five-key-things/ "5 Key Points of GTD"
+
+[wunderlist]: http://www.wunderlist.com
