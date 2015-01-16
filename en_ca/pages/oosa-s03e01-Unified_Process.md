@@ -108,7 +108,7 @@
 - RUP as a product supplies all the standards, tools, and other necessities to help turn requirements into working software
 - With UP, you need to discover and supply these yourself from various sources (commercial or open source)
 
-### Summary of Developments ###
+### UP Timeline Summary ###
 
 Year | Development
 -----|------------
@@ -120,10 +120,9 @@ Year | Development
 1999 | Unified Software Development Process (USDP) published, aka Unified Process (UP)
 2003 | IBM acquires Rational for $2.1 Billion
 
-
 ---
 
-[sep-use]: uploads/images/SEP-use.png
+[sep-use]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/SEP-use.png
 [ivar]: http://en.wikipedia.org/wiki/Ivar_Jacobson
 [ivar-intl]: http://www.ivarjacobson.com
 [grady]: http://en.wikipedia.org/wiki/Grady_Booch
