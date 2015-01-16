@@ -57,6 +57,7 @@
 
 - Other major contributors were [Grady Booch][grady] and [James Rumbaugh][james]
 - Jacobson, Booch, and Rumbaugh were affectionately known as "the Three Amigos"
+- Refer to Figure 2.3
 
 ### 1967 ###
 
@@ -117,7 +118,7 @@ Year | Development
 1995 | Rational acquires Objectory AB
 1998 | Rational Unified Process (RUP) released
 1999 | Unified Software Development Process (USDP) published, aka Unified Process (UP)
-2003 | IBM acquires Rational
+2003 | IBM acquires Rational for $2.1 Billion
 
 
 ---
