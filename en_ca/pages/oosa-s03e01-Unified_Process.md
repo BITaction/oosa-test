@@ -17,7 +17,9 @@
 	- Define the Unified Process and its role as a SEP
 	- Define the workflows and phases of UP
 	- Explain the differences between UP and RUP
-	- Explain iterative and incremental software development within UP/RUP
+	- Define Waterfall process along with its advantages and criticisms
+	- Explain the Agile Manifesto
+	- Identify various Agile approaches
 
 ## What is UP? &sect;2.2 ##
 
@@ -120,6 +122,148 @@ Year | Development
 1999 | Unified Software Development Process (USDP) published, aka Unified Process (UP)
 2003 | IBM acquires Rational for $2.1 Billion
 
+## Waterfall / Traditional Approach ##
+
+- This traditional approach is a sequential design process
+- One works through successive steps in sequence
+- Iterations are not part of the process
+- It has been around since the 1960s
+
+![Waterfall Lifecycle][waterfall]
+
+> __READ MORE__: [Understanding the Waterfall Model][waterfall-techrep]
+> 
+
+### Requirements Analysis ###
+
+- Gather customer requirements
+- Understand business context and constraints
+- Capture in _Requirements Specification_ document
+- Include _Acceptance Test Specifications_ to use after Installation step
+
+### Design ###
+
+- _Software and Hardware Architecture Specification_ is produced
+- Define performance and security parameters
+- User interface design is addressed
+- Various design specifications are output of this step
+- Include _Sub-System Test Specifications_ and _Unit Test Specifications_
+
+### Implementation ###
+
+- Construct the software according to the design specifications
+- Write the code, develop the interface, and other specialized tasks
+- Output is a running set of code
+
+### Testing ###
+
+- Code is tested and verified 
+- Unit tests are performed for individual code modules
+- System testing is performed for integration between sub-systems and the overall system
+- Acceptance testing is done to validate the end user experience
+- Product documentation and user manual is produced
+- __NOTE__: Inevitably there will be bugs so feedback is provided back to the Implementation team and  iterations start to occur between Implementation and Testing
+
+### Installation ###
+
+- Installation of software at customer site
+- Customer trained and provided user manuals
+- Customer runs acceptance test to validate correctness
+- The result is operational software at the customer location
+
+### Maintenance ###
+
+- _Change Requests_ initiate modifications
+- The fix defects, add functionality, or improve performance
+- _Maintenance Releases_ are produced, tested, and installed
+
+### Advantages of Waterfall ###
+
+- Disciplined approach with each stage clearly identified
+- Each phase has a defined start and end point
+- Project progress can be evaluated at the end of each phase
+- Emphasis on Requirements, Analysis, and Design before coding anything
+- Useful for managing projects with high risk
+- Different teams can be specialized for each phase
+- Can pipeline separate projects through the various teams
+
+### Criticisms of Waterfall ###
+
+- Real projects rarely follow such a well laid out liner sequence
+- Customers rarely know what all they want up front
+- Customer involvement is only at the beginning and end of the process
+- Lapsed time between Requirements Analysis and Installation can be long (many months or years)
+- Iterations are inevitable, which break the process and cause disruptions in process
+
+## The Future is Agile ##
+
+### The Agile Manifesto ###
+
+> We are uncovering better ways of developing software  
+> by doing it and helping others do it.  
+> Through this work we have come to value:  
+>
+> Individuals and interactions over processes and tools  
+> Working software over comprehensive documentation  
+> Customer collaboration over contract negotiation  
+> Responding to change over following a plan  
+>
+> That is, while there is value in the items on  
+> the right, we value the items on the left more.  
+
+> __READ MORE__: [The Agile Manifesto][agile-manifesto]
+> 
+
+> __READ MORE__: [Principles of Agile Software][agile-principles]
+>
+
+### Scrum ###
+
+- A management framework that utilizes one or more cross-functional teams to complete a project
+- Provides structure and rules to roles, meetings, artifacts, etc.
+- Introduces fixed-length iterations called _Sprints_ that typically last 1-2 weeks
+- Each Sprint is an incrementally significant function of the overall project
+- Scrum teams attempt to produce a complete and tested _product-increment_ for every iteration
+
+![SCRUM Iterations][scrum-iter]
+
+> __READ MORE__: [SCRUM Reference Card][scrum-card]
+> 
+
+> __READ MORE__: [SCRUM as an Agile Approach][agile-scrum]
+> 
+
+### The Essence Kernel ###
+
+- Introduced by Ivar Jacobson International in 2014
+- Includes a standard that defines the smallest set of concepts that are common to all software projects
+- Aims to help teams assess health of software projects and improve the way they work
+- Includes practical tools and assets that helps software teams put theory into practice
+- It helps teams turn requirements into working software
+
+> __READ MORE__: [SEMAT and The Essence Kernel][essence-ivar]
+> 
+
+### Agility Abounds ###
+
+> The field of Agile Approaches is itself very agile.
+> 
+
+Consider the following approaches that you might encounter as part of your career:
+
+- Adaptive Software Development (ASD)
+- Agile Unified Process (AUP)
+- Disciplined Agile Delivery (DAD) &lArr; A descendant of AUP
+- Dynamic Systems Development Method (DSDM)
+- eXtreme Programming (XP)
+- Feature Driven Development (FDD) aka Behavior Driven Development (BDD)
+- Test Driven Development (TDD)
+- Kanban (development)
+
+> __READ MORE__: [Agile Approaches][agile-list]
+> 
+
+
 ---
 
 [sep-use]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/SEP-use.png
@@ -136,3 +280,18 @@ Year | Development
 [usdp-book]: http://www.amazon.ca/dp/0201571692 "Unified Software Development Process"
 
 [rup-best]: https://www.ibm.com/developerworks/rational/library/content/03July/1000/1251/1251_bestpractices_TP026B.pdf "RUP Best Practices White Paper"
+
+[waterfall]: uploads/images/waterfall.png
+[waterfall-techrep]: http://www.techrepublic.com/article/understanding-the-pros-and-cons-of-the-waterfall-model-of-software-development/
+
+[agile-manifesto]: http://agilemanifesto.org/
+[agile-principles]: http://agilemanifesto.org/principles.html
+
+[scrum-card]: http://scrumreferencecard.com/scrum-reference-card/
+[scrum-iter]: http://scrumreferencecard.com/scrumreferencecard-content/uploads/2013/03/scrum-iteration-detail.png
+[agile-scrum]: http://agilemethodology.org/
+
+[essence-ivar]: http://www.ivarjacobson.com/Software_Engineering_Method_and_Theory/
+
+[agile-list]: http://en.wikipedia.org/wiki/Agile_software_development
+
