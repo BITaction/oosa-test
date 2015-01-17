@@ -129,9 +129,9 @@ Year | Development
 
 ## Waterfall / Traditional Approach ##
 
-- This traditional approach is a sequential design process
+- This traditional approach is a sequential development process
 - One works through successive steps in sequence
-- Iterations are not part of the process
+- Iterations are NOT explicitly part of the process
 - It has been around since the 1960s
 
 ![Waterfall Lifecycle][waterfall]
@@ -185,11 +185,11 @@ Year | Development
 ### Advantages of Waterfall ###
 
 - Disciplined approach with each stage clearly identified
-- Each phase has a defined start and end point
-- Project progress can be evaluated at the end of each phase
+- Each step has a defined start and end point
+- Project progress can be evaluated at the end of each step
 - Emphasis on Requirements, Analysis, and Design before coding anything
 - Useful for managing projects with high risk
-- Different teams can be specialized for each phase
+- Different teams can be specialized for each step
 - Can pipeline separate projects through the various teams
 
 ### Criticisms of Waterfall ###
