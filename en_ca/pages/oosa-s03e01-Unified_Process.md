@@ -28,7 +28,8 @@
 
 ![Purpose of SEP][sep-use]
 
-- __SEP__ is an acronym for _Software Engineering Process_, also referred to as [Software Development Process (SDP)][sdp]
+- __SEP__ is an acronym for _Software Engineering Process_,
+- SEP referred to as [Software Development Process (SDP)][sdp]
 - A SEP defines the _who, what, when, and how_ of software development
 - A SEP helps turn user requirements into working software (see Figure 2.2)
 - The _Unified Software Development Process (USDP)_ is a SEP
@@ -70,15 +71,15 @@
 ### 1980 ###
 
 - CCITT released Specification Description Language (SDL), which was the first object-based visual modeling language
-- SDL was designed to capture the behavior of telecommunications systems
+- SDL was designed to capture the behavior of telecommunication systems
 - SDL-92 was a widely accepted object modeling standard
 
 ### 1987 ###
 
 - Jacobson founded Objectory AB
 - Objectory SEP formalized into 5 workflows (Requirements, Analysis, Design, Implementation, Test)
-- Objectory SEP was sold as a package to help turn requirements into working software
 - Objectory SEP provided templates, documentation, and a tool that should be used to customize your specific software solution
+- Objectory SEP was sold as a package to help turn requirements into working software
 
 ### 1995 ###
 
@@ -87,7 +88,9 @@
 - Iterative development was formalized into 4 phases (Inception, Elaboration, Construction, Transition)
 - _Rational Objectory Process_ (ROP) was the result of unifying Objectory with Rational
 - ROP became the SEP sold by Rational to help turn requirements into working software
-- Booch, Jacobson, and Rumbaugh were developing UML at this time
+
+> Booch, Jacobson, and Rumbaugh were developing UML during their time at Rational
+> 
 
 ### 1998 ###
 
@@ -101,14 +104,14 @@
 - USDP and UP are used interchangeably
 - UP is an open SEP, accessible to all
 - RUP is commercial process product
-- UP and RUP are closely related
+- UP and RUP are closely related, more similar than different
 
 ### 2003 ###
 
 - [IBM acquires Rational for $2.1 Billion][ibm-rational]
 - [IBM sells and maintains RUP][rup-ibm] as a process product
-- RUP as a product supplies all the standards, tools, and other necessities to help turn requirements into working software
-- With UP, you need to discover and supply these yourself from various sources (commercial or open source)
+- RUP, as a product, supplies all the standards, tools, and other necessities to help turn requirements into working software
+- With UP, you need to discover and supply these yourself from various sources (commercial and/or open source)
 
 ### UP Timeline Summary ###
 
@@ -119,7 +122,7 @@ Year | Development
 1987 | Objectory AB founded; produced Objectory SEP
 1995 | Rational acquires Objectory AB
 1998 | Rational Unified Process (RUP) released
-1999 | Unified Software Development Process (USDP) published, aka Unified Process (UP)
+1999 | Unified Software Development Process (USDP) published
 2003 | IBM acquires Rational for $2.1 Billion
 
 ## Waterfall / Traditional Approach ##
@@ -246,7 +249,7 @@ Year | Development
 
 ### Agility Abounds ###
 
-> The field of Agile Approaches is itself very agile.
+> The field of Agile Approaches is itself very agile (growing and changing)
 > 
 
 Consider the following approaches that you might encounter as part of your career:
@@ -281,7 +284,7 @@ Consider the following approaches that you might encounter as part of your caree
 
 [rup-best]: https://www.ibm.com/developerworks/rational/library/content/03July/1000/1251/1251_bestpractices_TP026B.pdf "RUP Best Practices White Paper"
 
-[waterfall]: uploads/images/waterfall.png
+[waterfall]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/waterfall.png
 [waterfall-techrep]: http://www.techrepublic.com/article/understanding-the-pros-and-cons-of-the-waterfall-model-of-software-development/
 
 [agile-manifesto]: http://agilemanifesto.org/
