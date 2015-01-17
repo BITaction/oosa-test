@@ -28,8 +28,8 @@
 
 ![Purpose of SEP][sep-use]
 
-- __SEP__ is an acronym for _Software Engineering Process_,
-- SEP referred to as [Software Development Process (SDP)][sdp]
+- __SEP__ is an acronym for _Software Engineering Process_
+- SEP also referred to as [Software Development Process (SDP)][sdp]
 - A SEP defines the _who, what, when, and how_ of software development
 - A SEP helps turn user requirements into working software (see Figure 2.2)
 - The _Unified Software Development Process (USDP)_ is a SEP
