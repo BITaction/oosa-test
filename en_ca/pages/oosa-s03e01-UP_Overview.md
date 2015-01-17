@@ -232,12 +232,12 @@ Year | Development
 - Each Sprint is an incrementally significant function of the overall project
 - Scrum teams attempt to produce a complete and tested _product-increment_ for every iteration
 
-![SCRUM Iterations][scrum-iter]
+![Scrum Iterations][scrum-iter]
 
-> __READ MORE__: [SCRUM Reference Card][scrum-card]
+> __READ MORE__: [Scrum Reference Card][scrum-card]
 > 
 
-> __READ MORE__: [SCRUM as an Agile Approach][agile-scrum]
+> __READ MORE__: [Scrum as an Agile Approach][agile-scrum]
 > 
 
 ### The Essence Kernel ###
