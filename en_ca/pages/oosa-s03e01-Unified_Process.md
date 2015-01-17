@@ -125,6 +125,8 @@ Year | Development
 1999 | Unified Software Development Process (USDP) published
 2003 | IBM acquires Rational for $2.1 Billion
 
+---
+
 ## Waterfall / Traditional Approach ##
 
 - This traditional approach is a sequential design process
@@ -198,6 +200,8 @@ Year | Development
 - Lapsed time between Requirements Analysis and Installation can be long (many months or years)
 - Iterations are inevitable, which break the process and cause disruptions in process
 
+---
+
 ## The Future is Agile ##
 
 ### The Agile Manifesto ###
@@ -265,7 +269,6 @@ Consider the following approaches that you might encounter as part of your caree
 
 > __READ MORE__: [Agile Approaches][agile-list]
 > 
-
 
 ---
 
