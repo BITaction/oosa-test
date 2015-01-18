@@ -18,4 +18,4 @@ This site includes the notes and resource materials that are relevant to the cou
 ## Unified Process ##
 
 - [Unified Process Overview](pages/oosa-s03e01-UP_Overview.md)
-
+- [Unified Process Detail](pages/oosa-s03e02-Unified_Process.md)
