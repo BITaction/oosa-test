@@ -127,6 +127,35 @@ Year | Development
 
 ---
 
+## Prototyping ##
+
+> A prototype lifecycle is a separate process that can be invoked during a project
+> 
+
+- Prototypes help evaluate technologies and solution ideas
+- Prototypes are a "throwaway" artifact of a project
+- Prototyping should typically last only a few hours to a few days
+- Gather the lessons learned from a prototype and "shelve" it for future reference
+- All too often there is the temptation to use a prototype as the start of the project solution
+
+![Prototype Lifecycle][sep-prototype]
+
+- Advantages of prototyping include:
+	* early demonstration of system functionality
+	* help identify misunderstandings in user interface
+	* help generate excitement about the product
+	* help evaluate the feasibility of various technologies (networks, databases, coding frameworks)
+
+- Problems with prototyping include:
+	* client might perceive the prototype as part of the working system
+	* client may want to start using the prototype in daily business operations
+	* may divert attention away from functional aspects toward user interface details
+	* can involve significant user involvement, which can be difficult to obtain
+	* managing the lifecycle requires careful decision making at the evaluate step
+
+
+---
+
 ## Waterfall / Traditional Approach ##
 
 - This traditional approach is a sequential development process
@@ -286,6 +315,8 @@ Consider the following approaches that you might encounter as part of your caree
 [usdp-book]: http://www.amazon.ca/dp/0201571692 "Unified Software Development Process"
 
 [rup-best]: https://www.ibm.com/developerworks/rational/library/content/03July/1000/1251/1251_bestpractices_TP026B.pdf "RUP Best Practices White Paper"
+
+[sep-prototype]: uploads/images/sep-prototype.png
 
 [waterfall]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/waterfall.png
 [waterfall-techrep]: http://www.techrepublic.com/article/understanding-the-pros-and-cons-of-the-waterfall-model-of-software-development/
