@@ -171,7 +171,7 @@ Transition | Product Release | Table 2.4
 
 ### Elaboration - Goals &sect;2.9.4 ###
 
-- Create an executable architectural baseline (a "first cut" of the desired system)
+- Create an _executable architectural baseline_ (a "first cut" of the desired system)
 - Capture majority of _Use Cases_ (more on this in later weeks)
 - Create a detailed plan for construction
 - Provide details about risk, quality, resources, and time
@@ -210,7 +210,7 @@ Transition | Product Release | Table 2.4
 
 ---
 
-> __Transition__ is about deploying the completed system to the user community
+> __Transition__ is about deploying the completed system to the user location
 > 
 
 ### Transition - Goals &sect;2.9.10 ###
@@ -231,5 +231,5 @@ Transition | Product Release | Table 2.4
 
 [axiom-wolfram]: http://mathworld.wolfram.com/Axiom.html
 
-[up-phases]: uploads/images/up-linear.png
-[up-chart]: uploads/images/up-chart.png
+[up-phases]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/up-linear.png
+[up-chart]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/up-chart.png
