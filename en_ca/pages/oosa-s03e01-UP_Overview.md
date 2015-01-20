@@ -144,7 +144,7 @@ Year | Development
 	* early demonstration of system functionality
 	* help identify misunderstandings in user interface
 	* help generate excitement about the product
-	* help evaluate the feasibility of various technologies (networks, databases, coding frameworks)
+	* help evaluate the feasibility of various technologies (networks, databases, coding frameworks, etc.)
 
 - Problems with prototyping include:
 	* client might perceive the prototype as part of the working system
@@ -152,7 +152,6 @@ Year | Development
 	* may divert attention away from functional aspects toward user interface details
 	* can involve significant user involvement, which can be difficult to obtain
 	* managing the lifecycle requires careful decision making at the evaluate step
-
 
 ---
 
