@@ -291,8 +291,9 @@ Consider the following approaches that you might encounter as part of your caree
 - Disciplined Agile Delivery (DAD) &lArr; A descendant of AUP
 - Dynamic Systems Development Method (DSDM)
 - eXtreme Programming (XP)
-- Feature Driven Development (FDD) aka Behavior Driven Development (BDD)
+- Feature Driven Development (FDD)
 - Test Driven Development (TDD)
+- Behavior Driven Development (BDD)
 - Kanban (development)
 
 > __READ MORE__: [Agile Approaches][agile-list]
