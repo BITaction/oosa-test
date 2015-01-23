@@ -11,6 +11,15 @@
 
 - Section &sect;1.11 of the UML 2 course textbook (UMLUP)
 - You will learn to:
+	* Identify UML as a language and not a methodology
+	* Describe the history of UML
+	* Explain the concept of Model Driven Architecture (MDA)
+	* Identify how UML supports MDA
+	* Define UML structure and basic building blocks
+	* Illustrate the hierarchy of UML diagrams and abstract categories
+	* Identify and explain the four common mechanisms of UML
+	* Illustrate and explain the 4+1 Architecture
+	* Identify how UML supports the 4+1 Architecture
 
 ## What is UML? &sect;1.2
 - A general-purpose visual modeling language for systems.
