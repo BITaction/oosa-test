@@ -62,7 +62,7 @@ Unified also because it is unified across several domains:
 - Views into UML models
 - There are 13 different types - see figure 1.6
 
-[gimmick:yuml (type: 'scruffy')]([Student]-[idCard])
+[gimmick:yuml (style: 'scruffy')]([Student]-[idCard])
 
 ## UML common Mechanisms &sect;1.9
 
