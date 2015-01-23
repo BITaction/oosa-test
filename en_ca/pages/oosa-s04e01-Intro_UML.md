@@ -1,16 +1,16 @@
-# COMP XXXX - Object Oriented Systems Analysis #
+# Introduction to UML #
 
----
+## References ##
 
-## Week 4 Notes - Introduction to UML
+[Course Textbooks](textbooks.md)
 
-## References
+- Chapter &sect;1 of the UML 2 course textbook
+- Additional references to external reading material as provided
 
-- [Course Textbooks](textbooks.md)
+## Learning Outcomes ##
 
----
-
-# Chapter 1
+- Section &sect;1.11 of the UML 2 course textbook (UMLUP)
+- You will learn to:
 
 ## What is UML? &sect;1.2
 - A general-purpose visual modeling language for systems.
@@ -62,7 +62,7 @@ Unified also because it is unified across several domains:
 - Views into UML models
 - There are 13 different types - see figure 1.6
 
-![Class Diagram][class01]
+[gimmick:yuml]([Student]-[idCard])
 
 ## UML common Mechanisms &sect;1.9
 
@@ -108,6 +108,4 @@ Unified also because it is unified across several domains:
 	- [+1] Use Case view - captures the basic requirements for the system as a set of use cases.
 
 [MDA]: http://www.omg.org/mda "Model Driven Architecture"
-
-[class01]: http://yuml.me/diagram/scruffy/class/[Student]-[Card] "Sample Class Diagram"
 
