@@ -69,7 +69,9 @@ Unified also because it is unified across several domains:
 
 ### Diagrams &sect;1.8.3
 - Views into UML models
-- There are 13 different types - see figure 1.6
+- 13 different types of diagrams (See Figure 1.6)
+
+[gimmick:yuml (type: 'class' style: 'scruffy')]([Diagram]^-[Structure Diagram], [Diagram]^-[Behavior Diagram])
 
 [gimmick:yuml (type: 'class' style: 'scruffy')]([Student]-[idCard])
 
