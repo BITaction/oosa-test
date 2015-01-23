@@ -87,11 +87,15 @@ Unified also because it is unified across several domains:
 
 ### Class Diagrams ###
 
-[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[StudentCard])
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard])
 
-[gimmick:yuml (type: 'class', style: 'scruffy')]([Instructor]-[StaffCard])
+---
 
-[gimmick:yuml (type: 'class' style: 'scruffy')]([Student]-[StudentCard], [Instructor]-[StaffCard], [IdCard]^-[StudentCard], [IdCard]^-[StaffCard])
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard]-[Instructor])
+
+---
+
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[StudentCard], [Instructor]-[StaffCard], [IdCard]^-[StudentCard], [IdCard]^-[StaffCard])
 
 ## UML common Mechanisms &sect;1.9
 
