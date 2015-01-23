@@ -107,5 +107,7 @@ Unified also because it is unified across several domains:
 	- Deployment view - models the physical deployment of artifacts onto a set of physical, computational nodes such as computers and peripherals.
 	- [+1] Use Case view - captures the basic requirements for the system as a set of use cases.
 
+---
+
 [MDA]: http://www.omg.org/mda "Model Driven Architecture"
 
