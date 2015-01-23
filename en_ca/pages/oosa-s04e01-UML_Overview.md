@@ -83,9 +83,15 @@ Unified also because it is unified across several domains:
 
 ![UML Diagrams Types][uml-diags]
 
-### Sample UML Diagrams ###
+## Sample UML ##
 
-[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[idCard])
+### Class Diagrams ###
+
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[StudentCard])
+
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Instructor]-[StaffCard])
+
+[gimmick:yuml (type: 'class' style: 'scruffy')]([Student]-[StudentCard], [Instructor]-[StaffCard], [IdCard]^-[StudentCard], [IdCard]^-[StaffCard])
 
 ## UML common Mechanisms &sect;1.9
 
