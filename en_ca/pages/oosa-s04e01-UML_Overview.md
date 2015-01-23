@@ -89,13 +89,27 @@ Unified also because it is unified across several domains:
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard])
 
+- Students are associated to an IdCard
+
 ---
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard], [IdCard]-[Instructor])
 
+- Instructors are also associated to an IdCard
+
 ---
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[StudentCard], [Instructor]-[StaffCard], [IdCard]^-[StudentCard], [IdCard]^-[StaffCard])
+
+- Instructors are associated to a specialized version of IdCard called StaffCard
+- Students are associated to a specialized version of IdCard called StudentCard
+
+### Object Diagrams ###
+
+[gimmick:yuml (type: 'class', style: 'scruffy')]([joe:Student]-[123:IdCard], [mary:Student]-[456:IdCard])
+
+- The Student joe (object) is linked to IdCard 123 (object)
+- The Student mary (object) is linked to IdCard 456 (object)
 
 ## UML common Mechanisms &sect;1.9
 
