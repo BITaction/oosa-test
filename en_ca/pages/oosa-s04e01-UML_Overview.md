@@ -69,11 +69,17 @@ Unified also because it is unified across several domains:
 
 ### Diagrams &sect;1.8.3
 - Views into UML models
-- 13 different types of diagrams (See Figure 1.6)
+- 13 different types of diagrams (see Figure 1.6)
+- _White_: with _italics text_ are abstract categories
+- __Green__: with __bold text__ are diagrams we study in this course
+- Yellow: with plain text are diagrams we study in OO Systems Design course
+- Grey: with plain text are diagrams we don't directly study
 
-[gimmick:yuml (type: 'class' style: 'scruffy')]([Diagram]^-[Structure Diagram], [Diagram]^-[Behavior Diagram])
+![UML Diagrams Types][uml-diags]
 
-[gimmick:yuml (type: 'class' style: 'scruffy')]([Student]-[idCard])
+### Sample UML Diagrams ###
+
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[idCard])
 
 ## UML common Mechanisms &sect;1.9
 
@@ -122,3 +128,4 @@ Unified also because it is unified across several domains:
 
 [MDA]: http://www.omg.org/mda "Model Driven Architecture"
 
+[uml-diags]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/uml-diags.png
