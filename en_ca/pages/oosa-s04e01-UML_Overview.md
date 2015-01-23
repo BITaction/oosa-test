@@ -91,7 +91,7 @@ Unified also because it is unified across several domains:
 
 ---
 
-[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard]-[Instructor])
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard], [IdCard]-[Instructor])
 
 ---
 
