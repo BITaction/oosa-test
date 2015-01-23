@@ -27,18 +27,43 @@
 	* Illustrate and explain the 4+1 Architecture
 	* Identify how UML supports the 4+1 Architecture
 
-## What is UML? &sect;1.2
-- A general-purpose visual modeling language for systems.
-- Can be used with ALL existing methodologies.
-- 'Unified' because it unifies the previous attempts at visual modeling languages and software engineering processes.
+## What is UML? &sect;1.2 ##
 
-## The birth of UML &sect;1.3
-- Started in 1994 as an attempt to fix the existing OO methods mess.
-- UML 1.0 was approved in 1997.
-- Current version is UML 2
+- A general-purpose visual modeling language for systems
+- An open industry standard approved by the [Object Management Group (OMG)][omg]
+- Can be used with ALL existing methodologies
+- It is very well suited to be used with UP
+- 'Unified' because it unifies the previous attempts at visual modeling languages and software engineering processes (SEPs)
+
+## The birth of UML &sect;1.3 ##
+
+- Started in 1994 as an attempt to fix the existing OO methods mess
+- Booch and Rumbaugh joined Rational in 1994 to work on UML
+- Jacobson came on board with Rational in 1995 (and also worked on UML)
+- UML 1.0 was approved in 1997 by OMG
+- UML 2.0 was finalized in 2005
+- See Figure 1.2 for a visual summary
+
+> __READ MORE__: [The original publication by the inventors][uml-1-book]
+> 
+
+> __READ MORE__: [The updated version incorporating UML 2][uml-2-book]
+> 
+
+> __READ MORE__: [OMG Formal Versions Of UML&reg;][uml-spec] provides the latest information
+> 
+
+Year | Event | Significance
+-----|-------|-------------
+1994 | Booch | Joins Rational to work on UML
+1994 | Rumbaugh | Joins Rational to work on UML
+1995 | Jacobson | Joins Rational thru acquisition of Objectory AB
+1997 | UML 1.0 | First approved version by OMG
+2000 | UML 1.x | Significant improvements to the initial version
+2005 | UML 2.0 | Introduced a lot of new visual syntax
 
 ## The future of UML &sect;1.4
-- Defined by a recent OMG initiative called ["Model Driven Architecture" (MDA)][MDA]
+- Defined by a recent OMG initiative called [Model Driven Architecture (MDA)][mda]
 - Ultimately, MDA sees the model drive the production of - and generate - code directly.
 
 ## Why Unified? &sect;1.5
@@ -156,6 +181,10 @@ Unified also because it is unified across several domains:
 
 ---
 
-[MDA]: http://www.omg.org/mda "Model Driven Architecture"
+[omg]: http://www.omg.org
+[uml-1-book]: http://www.amazon.ca/dp/020130998X
+[uml-2-book]: http://www.amazon.ca/dp/0321245628
+[uml-spec]: http://www.omg.org/spec/UML/
+[mda]: http://www.omg.org/mda
 
 [uml-diags]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/uml-diags.png
