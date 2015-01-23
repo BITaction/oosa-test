@@ -1,6 +1,6 @@
 # Introduction to UML #
 
-> UML is an object-oriented visual modeling language - it is not a methodology
+> UML is a general-purpose visual modeling language - it is not a methodology
 > 
 
 > UP is a methodology
