@@ -110,7 +110,7 @@ Unified also because it is unified across several domains:
 
 ## Sample UML ##
 
-### Class Diagrams ###
+### Class Diagram ###
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard])
 
@@ -129,12 +129,25 @@ Unified also because it is unified across several domains:
 - Instructors are associated to a specialized version of IdCard called StaffCard
 - Students are associated to a specialized version of IdCard called StudentCard
 
-### Object Diagrams ###
+### Object Diagram ###
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([joe:Student]-[123:IdCard], [mary:Student]-[456:IdCard])
 
 - The Student joe (object) is linked to IdCard 123 (object)
 - The Student mary (object) is linked to IdCard 456 (object)
+
+### Activity Diagram ###
+
+[gimmick:yuml (type: 'activity', style: 'scruffy')]((start)->(Replace IdCard)->(end))
+
+- Have your IdCard replaced
+
+---
+
+[gimmick:yuml (type: 'activity', style: 'scruffy')]((start)-><a>[picture missing]->(Take Picture)-><b>->(Replace IdCard)->(end), <a>[picture onfile]-><b>)
+
+- If your picture is missing, take a new picture, then replace the IdCard
+- If the picture is on file, just go ahead and replace the IdCard
 
 ## UML common Mechanisms &sect;1.9
 
