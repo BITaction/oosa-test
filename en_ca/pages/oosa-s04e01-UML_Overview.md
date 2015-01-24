@@ -93,34 +93,62 @@ Its own internal concepts | Consistent and uniform within itself
 
 ## Objects and UML &sect;1.6 ##
 
-> UML models a system as a set of interacting objects
+> UML models a system as a _collection of interacting objects_
 > 
 
-- Two aspects of UML models:
-	- Static structure
-	- Dynamic behaviour
+Two aspects of UML models:
 
-## UML Structure &sect;1.7
-- Building blocks
-- Common mechanisms
-- Architecture
+1. Static Structure
+	* defines the types of objects in a system
+	* defines how the objects are related
+2. Dynamic Behavior
+	* describes the life cycles of the objects
+	* describes how objects interact to deliver system functionality
 
-## UML Building Blocks &sect;1.8
+## UML Structure &sect;1.7 ##
 
-### Things &sect;1.8.1
-- The modeling elements themselves
-- Structural things (class, interface, use case, etc.) 
-- Behavioural things (interactions, activities, etc.)
-- Grouping things (packages)
-- Diagrams 
+- Building Blocks - basic elements (things), relationships, diagrams
+- Common Mechanisms - ways of achieving specific goals
+- Architecture - UML view of system architecture
 
-### Relationships &sect;1.8.2
-- They tie things together
+## UML Building Blocks &sect;1.8 ##
+
+> UML is composed of three building blocks: Things, Relationships, Diagrams
+> 
+
+### Things &sect;1.8.1 ###
+
+> The modeling elements themselves
+> 
+
+UML Thing | Example
+----------|--------
+Structural | class, interface, use case, etc.
+Behavioral | interactions, activities, etc.
+Grouping | packages
+Annotational | notes
+
+### Relationships &sect;1.8.2 ###
+
+> They tie things together
+> 
+
 - They show how 2 or more things relate to each other
+- They capture meaningful (semantic) connections between things
+- See Table 1.1 for relationships between structural and grouping things
+- Table 1.1 is important throughout this course and the next one
 
-### Diagrams &sect;1.8.3
-- Views into UML models
+### Diagrams &sect;1.8.3 ###
+
+> The views into a model that help visualize _what_ the system will do and _how_ it will do it
+> 
+
 - 13 different types of diagrams (see Figure 1.6)
+- No particular order in which UML diagrams must be created
+- Often end up working on several kinds in parallel
+
+For diagram below:
+
 - _White_: with _italics text_ are abstract categories
 - __Green__: with __bold text__ are diagrams we study in this course
 - Yellow: with plain text are diagrams we study in OO Systems Design course
@@ -128,7 +156,10 @@ Its own internal concepts | Consistent and uniform within itself
 
 ![UML Diagrams Types][uml-diags]
 
-## Sample UML ##
+## Sample Diagrams ##
+
+> Visually presenting a view of some _Things_ and their _Relationships_
+> 
 
 ### Class Diagrams ###
 
@@ -169,7 +200,7 @@ Its own internal concepts | Consistent and uniform within itself
 - If picture missing, take a picture, then replace the IdCard
 - If picture on file, then just replace the IdCard
 
-## UML common Mechanisms &sect;1.9
+## UML common Mechanisms &sect;1.9 ##
 
 ### Specifications &sect;1.9.1
 - Graphical dimension
