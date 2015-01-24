@@ -138,7 +138,7 @@ Unified also because it is unified across several domains:
 
 ### Activity Diagram ###
 
-[gimmick:yuml (type: 'activity', style: 'scruffy')]('start'->'Replace IdCard'->'end')
+[gimmick:yuml (type: 'activity', style: 'plain') ](`Make Coffee´->`want more coffee´)
 
 - Have your IdCard replaced
 
