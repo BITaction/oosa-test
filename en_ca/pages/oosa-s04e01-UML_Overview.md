@@ -29,6 +29,8 @@
 
 ## What is UML? &sect;1.2 ##
 
+> UML is an acronym for _Unified Modeling Language_
+
 - A general-purpose visual modeling language for systems
 - An open industry standard approved by the [Object Management Group (OMG)][omg]
 - Can be used with ALL existing methodologies
@@ -62,20 +64,38 @@ Year | Event | Significance
 2000 | UML 1.x | Significant improvements to the initial version
 2005 | UML 2.0 | Introduced a lot of new visual syntax
 
-## The future of UML &sect;1.4
+## The Future of UML &sect;1.4 ##
+
 - Defined by a recent OMG initiative called [Model Driven Architecture (MDA)][mda]
-- Ultimately, MDA sees the model drive the production of - and generate - code directly.
+- Ultimately, MDA sees the model drive the production of - and generate - code directly
+- Model transformations guide the process (see Figure 1.3)
+	* Computer Independent Model (CIM) transformed to Platform Independent Model (PIM)
+	* PIM mapped to Platform Specific Model (PSM)
+	* PSM used to generate Code
+	* Code deployed to Hardware
+- MDA Modeling tools assist with the process
 
-## Why Unified? &sect;1.5
-Unified also because it is unified across several domains:
+> __READ MORE__: [Eclipse Modeling Framework][emf], an open source MDA
+> 
 
-- Development life cycle
-- Application domains
-- Implementation languages & platforms
-- Development processes
-- Its own internal concepts
+## Why Unified? &sect;1.5 ##
 
-## Objects and UML &sect;1.6
+> UML is unified across several domains
+> 
+
+Domain | Unification
+-------|------------
+Development life cycle | Provides visual syntax thru entire life cycle
+Application domains | Useful for a large variety of applications
+Implementation languages & platforms | Language neural; Platform neutral
+Development processes | Supports a variety of SEPs
+Its own internal concepts | Consistent and uniform within itself
+
+## Objects and UML &sect;1.6 ##
+
+> UML models a system as a set of interacting objects
+> 
+
 - Two aspects of UML models:
 	- Static structure
 	- Dynamic behaviour
@@ -110,7 +130,7 @@ Unified also because it is unified across several domains:
 
 ## Sample UML ##
 
-### Class Diagram ###
+### Class Diagrams ###
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([Student]-[IdCard])
 
@@ -129,18 +149,25 @@ Unified also because it is unified across several domains:
 - Instructors are associated to a specialized version of IdCard called StaffCard
 - Students are associated to a specialized version of IdCard called StudentCard
 
-### Object Diagram ###
+### Object Diagrams ###
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([joe:Student]-[123:IdCard], [mary:Student]-[456:IdCard])
 
 - The Student joe (object) is linked to IdCard 123 (object)
 - The Student mary (object) is linked to IdCard 456 (object)
 
-### Activity Diagram ###
+### Activity Diagrams ###
 
-http://yuml.me/diagram/plain/activity/(start)->(Replace IdCard)->(end)
+![][activity-replaceid]
 
 - Have your IdCard replaced
+
+---
+
+![][activity-addpic]
+
+- If picture missing, take a picture, then replace the IdCard
+- If picture on file, then just replace the IdCard
 
 ## UML common Mechanisms &sect;1.9
 
@@ -192,5 +219,16 @@ http://yuml.me/diagram/plain/activity/(start)->(Replace IdCard)->(end)
 [uml-2-book]: http://www.amazon.ca/dp/0321245628
 [uml-spec]: http://www.omg.org/spec/UML/
 [mda]: http://www.omg.org/mda
+[emf]: http://www.eclipse.org/modeling/emf/
 
 [uml-diags]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/uml-diags.png
+
+<!--
+(start)->(Replace IdCard)->(end)
+-->
+[activity-replaceid]: http://yuml.me/63e10674
+
+<!--
+(start)-><a>[picture missing]->(Take Picture)-><b>->(Replace IdCard)->(end), <a>[picture onfile]-><b>
+-->
+[activity-addpic]: http://yuml.me/56ae0bb7
