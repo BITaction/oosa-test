@@ -142,13 +142,6 @@ Unified also because it is unified across several domains:
 
 - Have your IdCard replaced
 
----
-
-[gimmick:yuml (type: 'activity', style: 'scruffy')]((start)-><a>[picture missing]->(Take Picture)-><b>->(Replace IdCard)->(end), <a>[picture onfile]-><b>)
-
-- If your picture is missing, take a new picture, then replace the IdCard
-- If the picture is on file, just go ahead and replace the IdCard
-
 ## UML common Mechanisms &sect;1.9
 
 ### Specifications &sect;1.9.1
