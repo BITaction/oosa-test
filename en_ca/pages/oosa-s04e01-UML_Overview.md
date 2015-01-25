@@ -86,7 +86,7 @@ Domain | Unification
 -------|------------
 Development life cycle | Provides visual syntax thru entire life cycle
 Application domains | Useful for a large variety of applications
-Implementation languages & platforms | Language neural; Platform neutral
+Implementation languages & platforms | Language neutral; Platform neutral
 Development processes | Supports a variety of SEPs
 Its own internal concepts | Consistent and uniform within itself
 
