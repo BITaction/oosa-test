@@ -107,9 +107,11 @@ Two aspects of UML models:
 
 ## UML Structure &sect;1.7 ##
 
-- Building Blocks - basic elements (things), relationships, diagrams
-- Common Mechanisms - ways of achieving specific goals
-- Architecture - UML view of system architecture
+UML Structure consists of:
+
+1. __Building Blocks__: basic elements (things), relationships, diagrams
+2. __Common Mechanisms__: ways of achieving specific goals
+3. __Architecture__: UML view of system architecture
 
 ## UML Building Blocks &sect;1.8 ##
 
@@ -200,16 +202,40 @@ For diagram below:
 - If picture missing, take a picture, then replace the IdCard
 - If picture on file, then just replace the IdCard
 
-## UML common Mechanisms &sect;1.9 ##
+## UML Common Mechanisms &sect;1.9 ##
 
-### Specifications &sect;1.9.1
-- Graphical dimension
-- Textual dimension
+> Four common mechanisms of UML describe four strategies for approaching object modeling
+> 
+
+1. Specifications
+2. Adornments
+3. Common Divisions
+4. Extensibility Mechanisms
+
+### Specifications &sect;1.9.1 ###
+
+> The textual descriptions of the semantics of an element
+> 
+
+UML Models can be perceived along two dimensions:
+
+Dimension | Purpose
+----------|--------
+Graphical | Visualize the model
+Textual | Specify the semantics of model elements
+
+- The graphical dimension can visually represent a class
+- The textual dimension would capture the _real_ semantics behind the class 
+- Without the specifications, you can only guess what the visual element represents
+- Diagrams are visual projections of the semantics
+- UML modeling tools are used to help maintain the semantic specifications
+- Typically start with diagrams and add more specifications with time
+- Novices often over-diagram and under-specify
 
 ### Adornments &sect;1.9.2
 - They are added to make visible aspects of the element's specification - as needed. See fig. 1.11 (p.18).
 
-### Common divisions &sect;1.9.3
+### Common Divisions &sect;1.9.3
 
 #### Classifier and instance &sect;1.9.3.1
 - There are 33 classifiers in UML.
@@ -220,7 +246,7 @@ For diagram below:
 - Interfaces specify WHAT must be done.
 - Implementation specifies HOW it will be done.
 
-### Extensibility mechanisms &sect;1.9.4
+### Extensibility Mechanisms &sect;1.9.4
 
 #### Constraints &sect;1.9.4.1
 -  A constraint specifies some condition or rule about the modeling element that MUST be maintained as true.
@@ -235,13 +261,28 @@ For diagram below:
 #### UML Profiles &sect;1.9.4.4
 - Profiles are collections of constraints, stereotypes and tagged values. See Table 1.4 (p. 22)
 
-## Architecture &sect;1.10
-- Represented in the 4+1 Views (see figure 1.13)
-	- Logical view - captures the vocabulary of the problem domain as a set of classes and objects.
-	- Process view - models the executable threads and processes in system classes.
-	- Implementation view - models the files and components that make up the physical code base of the system.
-	- Deployment view - models the physical deployment of artifacts onto a set of physical, computational nodes such as computers and peripherals.
-	- [+1] Use Case view - captures the basic requirements for the system as a set of use cases.
+## Architecture &sect;1.10 ##
+
+> Architecture captures the strategic aspects of the high-level structure of a system
+> 
+
+- The [4+1 View by Krutchen][krutchen95] captures strategic aspects in four different views, plus one more
+- See Figure 1.13 for a representation of the 4+1 views
+
+View | Purpose in a System
+-----|--------------------
+Logical | Captures the vocabulary of the problem domain as a set of classes and objects
+Process | Models the executable threads and processes in classes
+Implementation | Models the files and components that make up the physical code base
+Deployment | Models the physical deployment of artifacts onto hardware
+[+1] Use Case | Captures the requirements as a set of use cases
+
+- UML provides excellent support for creating the 4+1 views
+- Creating 4+1 views explores all key aspects of a system architecture
+- Used with UP, a 4+1 architecture evolves along with the iterations
+
+> __READ MORE__: [The 4+1 View Model of architecture][krutchen95-pdf]
+> 
 
 ---
 
@@ -253,6 +294,9 @@ For diagram below:
 [emf]: http://www.eclipse.org/modeling/emf/
 
 [uml-diags]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/uml-diags.png
+
+[krutchen95]: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=469759
+[krutchen95-pdf]: https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf
 
 <!--
 (start)->(Replace IdCard)->(end)
