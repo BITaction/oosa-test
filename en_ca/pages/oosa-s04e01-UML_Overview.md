@@ -322,7 +322,7 @@ Textual | Specify the semantics of model elements
 - Can be shown as an icon or as descriptive text enclosed in &laquo; &raquo;
 - Each element can have zero or more stereotypes
 
-[gimmick:yuml (type: 'class', style: 'plain')]([&laquo;boundary&raquo;;Window], [&laquo;entity&raquo;;Instructor], [&laquo;entity&raquo;;Student])
+[gimmick:yuml (type: 'class', style: 'plain', direction: 'TB')]([&laquo;boundary&raquo;;Window], [&laquo;entity&raquo;;Instructor], [&laquo;entity&raquo;;Student])
 
 #### Tagged values &sect;1.9.4.3
 - Allow to indicate properties of new modeling elements defined by the stereotype.
