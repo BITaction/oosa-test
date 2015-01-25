@@ -192,13 +192,11 @@ For diagram below:
 
 [gimmick:yuml (type: 'activity', style: 'plain')](`start´->`Replace IdCard´->`end´)
 
-![][activity-replaceid]
-
 - Have your IdCard replaced
 
 ---
 
-![][activity-addpic]
+[gimmick:yuml (type: 'activity', style: 'plain')](`start´-><a>[picture missing]->`Take Picture´-><b>->`Replace IdCard´->`end´, <a>[picture onfile]-><b>)
 
 - If picture missing, take a picture, then replace the IdCard
 - If picture on file, then just replace the IdCard
@@ -383,11 +381,6 @@ Deployment | Models the physical deployment of artifacts onto hardware
 
 [krutchen95]: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=469759
 [krutchen95-pdf]: https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf
-
-<!--
-(start)->(Replace IdCard)->(end)
--->
-[activity-replaceid]: http://yuml.me/63e10674
 
 <!--
 (start)-><a>[picture missing]->(Take Picture)-><b>->(Replace IdCard)->(end), <a>[picture onfile]-><b>
