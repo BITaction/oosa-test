@@ -252,7 +252,7 @@ Textual | Specify the semantics of model elements
 
 [gimmick:yuml (type: 'class', style: 'plain')]([Student|firstName;lastName|FullName`´])
 
-[gimmick:yuml (type: 'class', style: 'plain')]([Student|-firstName:string;-lastName:string;-birthdate:date|+FullName`´:string;+Age`´:integer])
+[gimmick:yuml (type: 'class', style: 'plain')]([Student|-firstName:string;-lastName:string;-birthDate:date|+FullName`´:string;+Age`´:integer])
 
 > ### In Class Activity ###
 >
