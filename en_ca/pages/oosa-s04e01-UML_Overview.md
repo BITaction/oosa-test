@@ -234,9 +234,17 @@ Textual | Specify the semantics of model elements
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([ | | ])
 
+---
+
 [gimmick:yuml (type: 'class', style: 'scruffy')]([Student||])
 
-[gimmick:yuml (type: 'class', style: 'plain')]([Student|firstName;lastName|FullName()])
+---
+
+![][class-student]
+
+---
+
+![][class-student-full]
 
 ### Adornments &sect;1.9.2
 - They are added to make visible aspects of the element's specification - as needed. See fig. 1.11 (p.18).
@@ -313,3 +321,13 @@ Deployment | Models the physical deployment of artifacts onto hardware
 (start)-><a>[picture missing]->(Take Picture)-><b>->(Replace IdCard)->(end), <a>[picture onfile]-><b>
 -->
 [activity-addpic]: http://yuml.me/56ae0bb7
+
+<!--
+[Student|firstName;lastName|FullName()]
+-->
+[class-student]: http://yuml.me/031d7b92
+
+<!--
+[Student|-firstName:string;-lastName:string;-birthDate:date|+FullName():string;+Age():integer]
+-->
+[class-student-full]: http://yuml.me/1fa662fd
