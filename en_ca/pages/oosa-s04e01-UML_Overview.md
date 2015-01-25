@@ -20,8 +20,9 @@
 	* Identify UML as a language and not a methodology
 	* Describe the history of UML
 	* Explain the concept of Model Driven Architecture (MDA)
-	* Identify how UML supports MDA
+	* Identify ways in which UML supports MDA
 	* Define UML structure and basic building blocks
+	* Explain the difference between model and diagram
 	* Illustrate the hierarchy of UML diagrams and abstract categories
 	* Identify and explain the four common mechanisms of UML
 	* Illustrate and explain the 4+1 Architecture
@@ -37,7 +38,7 @@
 - It is very well suited to be used with UP
 - 'Unified' because it unifies the previous attempts at visual modeling languages and software engineering processes (SEPs)
 
-## The birth of UML &sect;1.3 ##
+## The Birth of UML &sect;1.3 ##
 
 - Started in 1994 as an attempt to fix the existing OO methods mess
 - Booch and Rumbaugh joined Rational in 1994 to work on UML
@@ -46,13 +47,10 @@
 - UML 2.0 was finalized in 2005
 - See Figure 1.2 for a visual summary
 
-> __READ MORE__: [The original publication by the inventors][uml-1-book]
-> 
-
-> __READ MORE__: [The updated version incorporating UML 2][uml-2-book]
-> 
-
-> __READ MORE__: [OMG Formal Versions Of UML&reg;][uml-spec] provides the latest information
+> ### READ MORE
+> - [The original publication by the inventors][uml-1-book]
+> - [The updated version incorporating UML 2][uml-2-book]
+> - [OMG Formal Versions Of UML&reg;][uml-spec] provides the latest information
 > 
 
 Year | Event | Significance
@@ -75,7 +73,8 @@ Year | Event | Significance
 	* Code deployed to Hardware
 - MDA Modeling tools assist with the process
 
-> __READ MORE__: [Eclipse Modeling Framework][emf], an open source MDA
+> ### READ MORE
+> - [Eclipse Modeling Framework][emf], an open source MDA
 > 
 
 ## Why Unified? &sect;1.5 ##
@@ -226,54 +225,111 @@ Textual | Specify the semantics of model elements
 
 - The graphical dimension can visually represent a class
 - The textual dimension would capture the _real_ semantics behind the class 
-- Without the specifications, you can only guess what the visual element represents
 - Diagrams are visual projections of the semantics
 - UML modeling tools are used to help maintain the semantic specifications
-- Typically start with diagrams and add more specifications with time
-- Novices often over-diagram and under-specify
+- Look for commands to "Open Specification..." of visual elements
+- Effort typically starts with diagrams and adds more specifications over time
 
-[gimmick:yuml (type: 'class', style: 'scruffy')]([ | | ])
+> Novices often over-diagram and under-specify
+> 
 
----
+### Adornments &sect;1.9.2 ###
 
-[gimmick:yuml (type: 'class', style: 'scruffy')]([Student||])
+> They highlight important details on a diagram
+> 
 
----
+- They are added to visibly show aspects of an element's specification
+- Only show adornments to highlight important features of a model
+- They should increase overall clarity and readability of a diagram
+- See Figure 1.11
+
+### Adornment Example ###
+
+> An increasing level of adornments that highlight the specifications on a class
+> 
+
+[gimmick:yuml (type: 'class', style: 'plain')]([Student||])
 
 ![][class-student]
 
----
-
 ![][class-student-full]
 
-### Adornments &sect;1.9.2
-- They are added to make visible aspects of the element's specification - as needed. See fig. 1.11 (p.18).
+> ### In Class Activity ###
+>
+> Using a UML modeling tool, set up a simple class model with specifications and illustrate with various adornments
+> 
+> 1. Create the class
+> 2. Add specifications
+> 3. Show class using various adornments
 
-### Common Divisions &sect;1.9.3
+### Common Divisions &sect;1.9.3 ###
 
-#### Classifier and instance &sect;1.9.3.1
-- There are 33 classifiers in UML.
-- See Table 1.2 (p.19) for the 7 more common classifiers.
+> They describe ways of thinking about the world you are trying to model
+> 
 
-#### Interface and implementation &sect;1.9.3.2
-- Need to separate WHAT something does from HOW it actually does it.
-- Interfaces specify WHAT must be done.
-- Implementation specifies HOW it will be done.
+#### Classifier and Instance &sect;1.9.3.1 ####
 
-### Extensibility Mechanisms &sect;1.9.4
+- Classifier is an abstract notion like `Student`
+- Instance is a concrete example of an abstraction like `The Student Joe Smith`
+- Instances on UML diagrams usually use the same icon as their classifier, but the name is underlined
+- There are 33 classifiers in UML 2
+- See Table 1.2 for 7 common classifiers
 
-#### Constraints &sect;1.9.4.1
--  A constraint specifies some condition or rule about the modeling element that MUST be maintained as true.
+		Student is classifier
+		The Student Joe Smith is an instance
+		The Student with the highest mark is an instance
+		The Student sitting in the front row nearest the instructor is an instance
 
-#### Stereotypes &sect;1.9.4.2
-- Represents a variation of an existing element with the same form but a modified intent.
-- Can be shown as an icon or as text enclosed in &laquo; &raquo;.
+#### Interface and Implementation &sect;1.9.3.2 ####
+
+- Need to separate _what_ something promises to do from _how_ it actually does it
+- Interface specifies what something promises to do
+- Implementation specifies how it will be done
+
+		Computers have a similar physical interface (keyboard, mouse, screen, etc.)
+		Brands implement computers in very different ways
+
+### Extensibility Mechanisms &sect;1.9.4 ###
+
+> UML is an extensible visual modeling language
+> 
+
+- Designers of UML realized it was not possible to satisfy everyone
+- UML incorporates three simple extensibility mechanisms
+- See Table 1.3
+
+#### Constraints &sect;1.9.4.1 ####
+
+> They extend the semantics of an element by allowing the definition of new rules
+> 
+
+-  Specifies some condition or rule about a modeling element that _must_ be maintained as true
+-  _Constrains_ something about an element in some way
+-  Express constraints in UML as descriptive text string within curly braces {}
+
+		firstName:string {not null}
+		age:integer {>=0}
+
+> #### READ MORE
+> - The [Object Constraint Language (OCL)][omg-ocl] is a standard maintained by OMG
+
+#### Stereotypes &sect;1.9.4.2 ####
+
+> They allow you to define new modeling elements as variations of existing ones
+> 
+
+- Represents a variation of an existing element with the same form but a modified intent
+- Can be shown as an icon or as descriptive text enclosed in &laquo; &raquo;
+- Each element can have zero or more stereotypes
+
+[gimmick:yuml (type: 'class', style: 'plain')]([&laquo;boundary&raquo;;Window], [&laquo;entity&raquo;;Instructor], [&laquo;entity&raquo;;Student])
 
 #### Tagged values &sect;1.9.4.3
 - Allow to indicate properties of new modeling elements defined by the stereotype.
 
-#### UML Profiles &sect;1.9.4.4
-- Profiles are collections of constraints, stereotypes and tagged values. See Table 1.4 (p. 22)
+#### UML Profiles &sect;1.9.4.4 ####
+
+> Profiles are collections of constraints, stereotypes, and tagged values that customize UML for a specific purpose. See Table 1.4
 
 ## Architecture &sect;1.10 ##
 
@@ -295,7 +351,8 @@ Deployment | Models the physical deployment of artifacts onto hardware
 - Creating 4+1 views explores all key aspects of a system architecture
 - Used with UP, a 4+1 architecture evolves along with the iterations
 
-> __READ MORE__: [The 4+1 View Model of architecture][krutchen95-pdf]
+> ### READ MORE
+> - [The 4+1 View Model of architecture][krutchen95-pdf]
 > 
 
 ---
@@ -308,6 +365,8 @@ Deployment | Models the physical deployment of artifacts onto hardware
 [emf]: http://www.eclipse.org/modeling/emf/
 
 [uml-diags]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/uml-diags.png
+
+[omg-ocl]: http://www.omg.org/spec/OCL/
 
 [krutchen95]: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=469759
 [krutchen95-pdf]: https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf
