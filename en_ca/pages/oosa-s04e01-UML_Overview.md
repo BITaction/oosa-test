@@ -382,19 +382,9 @@ Deployment | Models the physical deployment of artifacts onto hardware
 [krutchen95]: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=469759
 [krutchen95-pdf]: https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf
 
+[activity-addpic]: http://yuml.me/56ae0bb7
 <!--
 (start)-><a>[picture missing]->(Take Picture)-><b>->(Replace IdCard)->(end), <a>[picture onfile]-><b>
 -->
-[activity-addpic]: http://yuml.me/56ae0bb7
 
-<!--
-[Student|firstName;lastName|FullName()]
 
-[class-student]: http://yuml.me/031d7b92
--->
-
-<!--
-[Student|-firstName:string;-lastName:string;-birthDate:date|+FullName():string;+Age():integer]
-
-[class-student-full]: http://yuml.me/1fa662fd
--->
