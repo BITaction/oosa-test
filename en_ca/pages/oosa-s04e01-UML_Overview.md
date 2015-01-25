@@ -322,10 +322,21 @@ Textual | Specify the semantics of model elements
 - Can be shown as an icon or as descriptive text enclosed in &laquo; &raquo;
 - Each element can have zero or more stereotypes
 
-[gimmick:yuml (type: 'class', style: 'plain', direction: 'TB')]([&laquo;boundary&raquo;;Window], [&laquo;entity&raquo;;Instructor], [&laquo;entity&raquo;;Student])
+[gimmick:yuml (type: 'class', style: 'scruffy', direction: 'TB')]([&laquo;boundary&raquo;;Window], [&laquo;entity&raquo;;IdCard], [&laquo;entity&raquo;;Student])
 
-#### Tagged values &sect;1.9.4.3
-- Allow to indicate properties of new modeling elements defined by the stereotype.
+#### Tagged Values &sect;1.9.4.3 ####
+
+> They allow you to add your own properties to model elements
+> 
+
+- A property is a value attached to a model element
+- Most elements have a large number of properties
+- Some exist just in the model specification
+- Some can be visualized on diagrams
+- You can define your own properties with `tag=value` pairs
+- New tag/value pair properties should be attached to a stereotype
+- When you apply that stereotype to an element, this then adds those properties
+- You can change the values of the properties for different elements
 
 #### UML Profiles &sect;1.9.4.4 ####
 
