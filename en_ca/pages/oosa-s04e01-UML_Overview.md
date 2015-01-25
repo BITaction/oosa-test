@@ -232,6 +232,10 @@ Textual | Specify the semantics of model elements
 - Typically start with diagrams and add more specifications with time
 - Novices often over-diagram and under-specify
 
+[gimmick:yuml (type: 'class', style: 'scruffy')]([ | | ])
+
+[gimmick:yuml (type: 'class', style: 'scruffy')]([Student||])
+
 ### Adornments &sect;1.9.2
 - They are added to make visible aspects of the element's specification - as needed. See fig. 1.11 (p.18).
 
