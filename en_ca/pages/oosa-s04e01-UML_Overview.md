@@ -250,6 +250,8 @@ Textual | Specify the semantics of model elements
 
 [gimmick:yuml (type: 'class', style: 'plain')]([Student||])
 
+[gimmick:yuml (type: 'class', style: 'plain')]([Student|-firstName|+FullName`´])
+
 ![][class-student]
 
 ![][class-student-full]
