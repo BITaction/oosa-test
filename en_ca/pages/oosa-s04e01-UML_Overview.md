@@ -190,7 +190,7 @@ For diagram below:
 
 ### Activity Diagrams ###
 
-[gimmick:yuml (type: 'activity', style: 'plain')](`start´->`Replace IdCard´->`end´)
+![][activity-replaceid]
 
 - Have your IdCard replaced
 
@@ -382,9 +382,13 @@ Deployment | Models the physical deployment of artifacts onto hardware
 [krutchen95]: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=469759
 [krutchen95-pdf]: https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf
 
-[activity-addpic]: http://yuml.me/56ae0bb7
+<!--
+(start)->(Replace IdCard)->(end)
+-->
+[activity-replaceid]: http://yuml.me/63e10674
+
 <!--
 (start)-><a>[picture missing]->(Take Picture)-><b>->(Replace IdCard)->(end), <a>[picture onfile]-><b>
 -->
-
+[activity-addpic]: http://yuml.me/56ae0bb7
 
