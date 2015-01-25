@@ -190,6 +190,8 @@ For diagram below:
 
 ### Activity Diagrams ###
 
+[gimmick:yuml (type: 'activity', style: 'plain')](`start´->`Replace IdCard´->`end´)
+
 ![][activity-replaceid]
 
 - Have your IdCard replaced
@@ -252,11 +254,7 @@ Textual | Specify the semantics of model elements
 
 [gimmick:yuml (type: 'class', style: 'plain')]([Student|firstName;lastName|FullName`´])
 
-[gimmick:yuml (type: 'class', style: 'plain')]([Student|-firstName:string;+lastName:string;+birthdate:date|+FullName`´:string;+Age`´:integer])
-
-![][class-student]
-
-![][class-student-full]
+[gimmick:yuml (type: 'class', style: 'plain')]([Student|-firstName:string;-lastName:string;-birthdate:date|+FullName`´:string;+Age`´:integer])
 
 > ### In Class Activity ###
 >
@@ -398,10 +396,12 @@ Deployment | Models the physical deployment of artifacts onto hardware
 
 <!--
 [Student|firstName;lastName|FullName()]
--->
+
 [class-student]: http://yuml.me/031d7b92
+-->
 
 <!--
 [Student|-firstName:string;-lastName:string;-birthDate:date|+FullName():string;+Age():integer]
--->
+
 [class-student-full]: http://yuml.me/1fa662fd
+-->
