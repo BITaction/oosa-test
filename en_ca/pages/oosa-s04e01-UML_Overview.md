@@ -196,7 +196,7 @@ For diagram below:
 
 ---
 
-[gimmick:yuml (type: 'activity', style: 'plain')](`start´-><a>[picture missing]->`Take Picture´-><b>->`Replace IdCard´->`end´, <a>[picture onfile]-><b>)
+![][activity-addpic]
 
 - If picture missing, take a picture, then replace the IdCard
 - If picture on file, then just replace the IdCard
