@@ -236,7 +236,7 @@ Textual | Specify the semantics of model elements
 
 [gimmick:yuml (type: 'class', style: 'scruffy')]([Student||])
 
-[gimmick:yuml (type: 'class', style: 'plain')]([Student|firstName;lastName|FullName&#40;&#41;])
+[gimmick:yuml (type: 'class', style: 'plain')]([Student|firstName;lastName|FullName()])
 
 ### Adornments &sect;1.9.2
 - They are added to make visible aspects of the element's specification - as needed. See fig. 1.11 (p.18).
