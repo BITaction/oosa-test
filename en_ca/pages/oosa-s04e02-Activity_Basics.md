@@ -96,7 +96,7 @@ object flow | represents the flow of objects through an activity
 
 ## Activity Semantics &sect;14.5 ##
 
-> Activity diagrams are based on [Petri Nets][petri-nets] and model behavior by using a _token game_
+> Activity diagrams are based on [Petri Nets][petri-nets] and model behavior by using a _token game_ semantic description
 > 
 
 - Tokens in an activity diagram can represent:
