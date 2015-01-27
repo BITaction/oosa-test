@@ -121,7 +121,8 @@ object flow | represents the flow of objects through an activity
 
 - Activity partitions are sometimes referred to as _swimlanes_ (a leftover from UML 1.x)
 - Partitions can be vertical or horizontal
-- Partitions have a name, where you define its semantics
+- Partitions have a name, which should give a good indication of its semantics
+- Partitions can be structured into multiple levels
 - Partitions are commonly used to represent:
 	* locations where actions occur
 	* organization units
@@ -130,7 +131,7 @@ object flow | represents the flow of objects through an activity
 
 > ### In Class Activity
 > - Reproduce activity `Course production` in Figure 14.6 in the modeling tool
->
+> - only use the single level of 3 partitions
 
 ## Action Nodes &sect;14.7 ##
 
