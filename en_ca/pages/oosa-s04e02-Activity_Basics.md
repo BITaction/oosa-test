@@ -239,6 +239,12 @@ Join node | Synchronizes concurrent flows into a single output flow
 - There is only one token and the first edge to accept it gets it
 - __NOTE__: Object node semantics can be very interesting. Create object nodes with maximum one input edge and maximum one output edge.
 
+![][activity-product-obj]
+
+- Designing a new product produces a `Product Spec` (object)
+- The `Product Spec` is used to manufacture the `Product` (object)
+- The `Product` is the object that is going to be sold
+
 > ### In Class Activity
 > - Reproduce activity `Product process` in Figure 14.19 in the modeling tool
 >
@@ -291,4 +297,7 @@ Join node | Synchronizes concurrent flows into a single output flow
 -->
 [activity-product]: http://yuml.me/b0b086dc
 
-
+<!--
+(start)->(Design new product)->|a|,|a|->(Manufacture product)->|b|,|a|->(Market product)->|b|,|b|->(Sell product)->(end),(Design new product)->[Product Spec]->(Manufacture product),(Manufacture product)->[Product]->(Sell product)
+-->
+[activity-product-obj]: http://yuml.me/cab7706f

@@ -227,7 +227,7 @@ Textual | Specify the semantics of model elements
 - The textual dimension would capture the _real_ semantics behind the class 
 - Diagrams are visual projections of the semantics
 - UML modeling tools are used to help maintain the semantic specifications
-- Look for commands to "Open Specification..." of visual elements
+- Look for a command like "Open Specification..." within a modeling tool
 - Effort typically starts with diagrams and adds more specifications over time
 
 > Novices often over-diagram and under-specify
@@ -241,6 +241,7 @@ Textual | Specify the semantics of model elements
 - They are added to visibly show aspects of an element's specification
 - Only show adornments to highlight important features of a model
 - They should increase overall clarity and readability of a diagram
+- Look for a command like "Presentation Options" within a modeling tool
 - See Figure 1.11
 
 ### Adornment Example ###
