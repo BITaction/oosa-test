@@ -23,4 +23,4 @@ This site includes the notes and resource materials that are relevant to the cou
 ## Unified Modeling Language ##
 
 - [UML Overview](pages/oosa-s04e01-UML_Overview.md)
-
+- [Activity Diagram Basics](pages/oosa-s04e02-Activity_Basics.md)
