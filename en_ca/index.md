@@ -24,3 +24,7 @@ This site includes the notes and resource materials that are relevant to the cou
 
 - [UML Overview](pages/oosa-s04e01-UML_Overview.md)
 - [Activity Diagram Basics](pages/oosa-s04e02-Activity_Basics.md)
+
+## Requirements ##
+
+- [Gathering Requirements](pages/oosa-s05e01-Requirements_Workflow.md)
