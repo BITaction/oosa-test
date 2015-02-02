@@ -59,8 +59,15 @@ So...
 
 ## Requirements Workflow Detail &sect;3.4 ##
 
-- Figures 3.4 & 3.5 show specific tasks and who performs them
-- Picture these figures as activity diagrams with partitions
+- Figure 3.4 shows tasks for UP requirements gathering in terms of developing use cases:
+
+![Requirements as Use Cases][act-req-uc]
+
+- Figure 3.5 show tasks that are part of traditional requirements gathering:
+
+![Requirements Workflow][act-req-flow]
+
+- Picture these figures as activity diagrams with partitions being the worker icons in the figures
 - The workflow is a guideline and real projects may deviate or do several tasks in parallel
 - In this course, the tasks of interest will include:
     - Finding Actors and Use Cases
@@ -114,13 +121,16 @@ So...
 
 - To keep things simple and useful, requirements are identified as functional and non-functional
 - Functional requirements state what the system should do:
-	1. The ATM shall check the validity of an inserted ATM card
-	2. The ATM shall validate the PIN number entered by the customer
-	3. The ATM shall dispense no more that the customer's maximum registered amount
+
+		1. The ATM shall check the validity of an inserted ATM card
+		2. The ATM shall validate the PIN number entered by the customer
+		3. The ATM shall dispense no more that the customer's maximum registered amount
+
 - Non-functional requirements are constraints placed on the system:
-	1. The ATM shall be written in C#
-	2. The ATM shall communicate with the bank central system with 256-bit encryption
-	3. The ATM shall validate the PIN in under 3 seconds
+
+		1. The ATM shall be written in C#
+		2. The ATM shall communicate with the bank central system with 256-bit encryption
+		3. The ATM shall validate the PIN in under 3 seconds
 
 ### Organizing requirements &sect;3.6.4 ###
 
@@ -247,9 +257,17 @@ generalization | information is abstracted into rules, beliefs, principles, etc.
 <!--
 [System Analyst]-(Find actors and use cases), [System Analyst]-(Structure use case model), [Architect]-(Prioritize use cases), [Specifier]-(Detail use case), [Interface Designer]-(Prototype user interface)
 -->
+
 [uc-req-flow]: http://yuml.me/83359ddd
 
 <!--
 (start)->(Find actors and use cases)->(Prioritize use cases)->(Detail use case)->|a|, |a|->(Structure use case model)->|b|, |a|->(Prototype user interface)->|b|->(end)
 -->
-[act-req-flow]: http://yuml.me/885d94eb
+
+[act-req-uc]: http://yuml.me/885d94eb
+
+<!--
+(start)->(Find functional requirements)->(Find non-functional requirements)->(Prioritize requirements)->(Trace requirements to use cases)->(end)
+-->
+
+[act-req-flow]: http://yuml.me/356fb2cf
