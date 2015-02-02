@@ -33,8 +33,8 @@
 ![UP Workflows][up-chart]
 
 - Requirements engineering captures both _functional_ and _non-functional requirements_
-- __Functional Requirements__: statements about _what the system will do_
-- __Non-Functional Requirements__: statements about the _constraints_ on the system
+	1. __Functional Requirements__: statements about _what the system will do_
+	2. __Non-Functional Requirements__: statements about the _constraints_ on the system
 - OO Analyst/Designer will:
 	* discuss both types of requirements with various stakeholders
 	* strive to reach agreement about _what the system will do_ and its _constraints_
