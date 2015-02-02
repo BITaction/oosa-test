@@ -129,7 +129,7 @@ So...
 - Non-functional requirements are constraints placed on the system:
 
 		1. The ATM shall be written in C#
-		2. The ATM shall communicate with the bank central system with 256-bit encryption
+		2. The ATM shall communicate with the bank using 256-bit encryption
 		3. The ATM shall validate the PIN in under 3 seconds
 
 ### Organizing requirements &sect;3.6.4 ###
