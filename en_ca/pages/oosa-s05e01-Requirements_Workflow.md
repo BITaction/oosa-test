@@ -124,7 +124,7 @@ So...
 
 		1. The ATM shall check the validity of an inserted ATM card
 		2. The ATM shall validate the PIN number entered by the customer
-		3. The ATM shall dispense no more that the customer's maximum registered amount
+		3. The ATM shall dispense no more than the customer's max daily amount
 
 - Non-functional requirements are constraints placed on the system:
 
@@ -198,16 +198,20 @@ generalization | information is abstracted into rules, beliefs, principles, etc.
 
 ### Interviews &sect;3.7.2 ###
 
-> The most direct way of gathering requirements - best done one-on-one
+> The most direct way of gathering requirements; best done one-on-one
 > 
 
-- Don't hallucinate a solution - set your pre-conceptions aside during the interview (hard to do!)
-- Ask context-free questions - ones that don't presuppose an answer and will encourage discussion
-- Listen - give the interviewee time to talk
-- Don't mind-read - a form of hallucinating that we know what someone feels, wants or is thinking
+Guidelines for a good interviewer:
+
+- Don't hallucinate a solution: set your pre-conceptions aside during the interview (hard to do!)
+- Ask context-free questions:  ones that don't presuppose an answer and will encourage discussion
+- Listen:  give the interviewee time to talk
+- Don't mind-read:  a form of hallucinating that we know what someone feels, wants or is thinking
 - Listen
 - Have patience!
 - Listen
+
+Good technique during interviews:
 
 - Pen and paper (or tablets) are good, non-distracting ways of recording interviews
 - Mind-maps are a graphically rich way of collecting and organizing information
