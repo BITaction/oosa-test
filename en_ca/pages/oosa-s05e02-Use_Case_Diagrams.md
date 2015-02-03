@@ -7,12 +7,12 @@
 
 [Course Textbooks](textbooks.md)
 
-- Parts of Chapter &sect;4 & Chapter &sect;5 of the UML 2 course textbook
+- Parts of Chapter &sect;4 of the UML 2 course textbook
 - Additional references to external reading material as provided
 
 ## Learning Outcomes ##
 
-- Sections &sect;4.8 & &sect;5.8 of the UML 2 course textbook (UMLUP)
+- Section &sect;4.8 of the UML 2 course textbook (UMLUP)
 - You will learn to:
 	* Define Use Case modeling in relation to a Use Case model
 	* Describe the typical process of Use Case modeling
