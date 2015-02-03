@@ -28,3 +28,4 @@ This site includes the notes and resource materials that are relevant to the cou
 ## Requirements ##
 
 - [Gathering Requirements](pages/oosa-s05e01-Requirements_Workflow.md)
+- [Use Case Modeling (Outline)](pages/oosa-s05e02-Use_Case_Diagrams.md)
