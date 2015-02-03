@@ -1,4 +1,4 @@
-# Use Case Modeling #
+# Use Case Modeling (Outline)#
 
 > Use Case Modeling is a form of requirements engineering
 > 
@@ -20,13 +20,14 @@
 	* Describe the activity of finding actors and use cases
 	* Define the system boundary (the _subject_)
 	* Give examples of what's inside a system and what's outside a system
+	* Draw a simple use case diagram and identify its components
 	* Define a project glossary and list it's advantages
 	* Describe where use case modeling is useful
 	* Describe where use case modeling is not useful
 
 ## Use Case Modeling &sect;4.2 ##
 
-> Use Cases capture requirements
+> Use Case Modeling captures functional requirements
 > 
 
 - Chapter &sect;3 discussed "traditional" ways to build the `Requirements model`
