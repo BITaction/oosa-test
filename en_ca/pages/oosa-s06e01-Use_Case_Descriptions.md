@@ -179,7 +179,7 @@ Consider:
 
 A way to start each use case main flow:
 
-		1. The use case starts when <actor> <function>
+	1. The use case starts when <actor> <function>
 
 - Recall that `Time` can be an actor
 - Additional steps of the main flow are a time-ordered sequence
@@ -307,10 +307,10 @@ Even though there may be *many* alternative flows, they should be limited to the
 - CASE tools often provide support with _requirements traceability matrix_
 - Can be done manually using spreadsheets (see Table 4.2)
 
-| Requirement | UC01 | UC02 | UC03 | UC04 |
-|:-----------:|:----:|:----:|:----:|:----:|
-| R001 | x |  |  |  |
-| R002 |  | x | x |  |
-| R003 |  |  | x |  |
-| R004 |  |  |  | x |
-| R005 |  |  |  |  |
+Requirement | UC01 | UC02 | UC03 | UC04
+------------|------|------|------|------
+R001 | x 
+R002 |  | x | x
+R003 |  |  | x
+R004 |  |  |  | x
+R005 | x
