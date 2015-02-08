@@ -18,6 +18,8 @@
 	* Name and describe the two types of actors
 	* Identify good and bad steps in a main flow
 	* Explain simple and complex deviations from a main flow
+	* Describe the use of `if`, `for`, and `while` in a main flow
+	* Describe the use of alternative flows
 
 ## Detailing Use Cases &sect;4.4 ##
 
