@@ -23,20 +23,27 @@
 
 > After creating a use case diagram with actors and key use cases, we should detail each use case
 
-The output is a more detailed use case that consists of at least a use case name and a use case specification (description). See summary diagram in Figure 4.7 (p. 78).
+- Inputs are the `requirements model` and `use case model` to date
+- Output is more detailed `use case model` that adds a specification (description) to each use case
+- See summary diagram in Figure 4.7
 
-## Use Case Specification (Description) &sect;4.5
+## Use Case Specification (Description) &sect;4.5 ##
 
-> There is no UML standard for use case specification. Use a template and keep things simple.
+> Write use case specifications in structured English (or other natural languages)
 > 
 
-Figure 4.8 details the basic parts of a simple use case specification
+- There is no UML standard for a use case specification
+- Define a standard template and keep things simple
+- Use case specifications are written from the perspective of the actors
+- Choose a gender style and stick with it consistently
+- Figure 4.8 identifies basic parts of a simple use case specification
+- The typical (minimum) parts for consideration are:
 
 Part | Purpose
 --------|---------------------
 Use case name | Short descriptive name of the use case (matches name in diagram)
-Use case identifier | Company standard identifier (pick a standard and stick with it)
-Brief description | Brief sentence to describe the main purpose of the use case
+Use case identifier (ID) | Company standard identifier (pick a standard and stick with it)
+Purpose | Brief paragraph describing the main purpose / goals of the use case
 Primary actors | The actor(s) that invoke the use case (they want the benefit of the use case)
 Secondary actors | The actor(s) that participate in fulfilling the use case (drawn on the right side of a diagram)
 Preconditions |The system state before the use case can begin
@@ -44,7 +51,7 @@ Main flow | The main steps that occur with the use case when all goes well (the 
 Postconditions | The system state after the use case is complete
 Alternative flows | The different steps that might occur if certain conditions or events happen during the main flow
 
-Writing a use case:
+Detailing a use case:
 
 ---
 
@@ -71,7 +78,7 @@ Writing a use case:
 > General rules summarized from [Alistair Cockburn's sampler page](http://alistair.cockburn.us/Sampler+of+good+and+bad+use+cases)
 > 
 
-Good Use Cases...
+__Good__ Use Case specifications have these characteristics:
 
 - text
 - do not describe GUI
@@ -81,7 +88,7 @@ Good Use Cases...
 - written at the user’s goal level
 - record of decisions made
 
-Bad Use Cases...
+__Bad__ Use Case specifications have these characteristics:
 
 - just UML use case diagrams
 - describe the GUI
@@ -154,7 +161,6 @@ Consider:
 - If not relevant then write "None"
 - Don't leave them blank - that is ambiguous
 
-
 ### Main Flow &sect;4.5.6 ###
 
 > Represents the "perfect world" or "happy path" steps of a use case
@@ -189,7 +195,7 @@ A way to start each use case main flow:
 
 ---
 
-Excerpt of good main flow:
+Excerpt of a **good** main flow:
 
 	1. The use case starts when the Customer selects "Place Order"
 	2. The system presents a blank order request to the Customer
@@ -200,7 +206,7 @@ Excerpt of good main flow:
 
 ---
 
-Excerpt of bad main flow:
+Excerpt of a **bad** main flow:
 
 	1. The use case starts by clicking "Place Order"
 	2. Customer Details are entered
@@ -287,13 +293,49 @@ Alternative flows:
 
 ### Alternative Flows &sect;4.5.7 ###
 
-Each use case MUST have a main flow and may have many alternative flows. 
+> They capture errors, branches, and interrupts that may happen in the main flow
+> 
 
-These alternative paths typically capture errors, branches and interrupts to the main flow. See the diagram in Figure 4.12 (p.86).
+- Each use case has _only one_ main flow
+- There may be _many_ alternative flows per use case
+- - See Figure 4.12 for visual representation of flows
+- Alternative flows:
+	 * capture errors, branches, and interrupts to the main flow
+	 * sometimes do not return to the main flow
+	 * are sometimes documented separately
+	 * are sometimes appended to the use case
+- The textbook documents them separately (see Figures 4.13, 4.14, 4.15)
+- The notes document them appended to the use case (for comparison of styles)
 
-Alternative flows can be documented separately or be appended to the main flow.
+---
 
-In this course, we will document them separately. See Figures 4.13 and 4.14 (p.87) for an example.
+- Use case: Create New Customer Account
+- ID: 5
+- Purpose: The system creates a new account for the Customer
+- Primary actors: Customer
+- Secondary actors: none
+- Preconditions: none
+- Main flow:
+	1. The use case begins when the Customer selects "Create Account"
+	2. The system asks the Customer to provide her account details
+		- (email, password, password again for confirmation)
+	3. The Customer provides the account details
+	4. The system validates the Customer's account details
+	5. The system creates a new account for the Customer
+- Postconditions:
+	1. A new account has been created for the Customer
+- Alternate flows:
+
+		3a. The Customer cancels account creation
+			This ends the use case
+		4a. The Customer provides an invalid email address
+			4a.1 The system informs the Customer that she entered an invalid email address
+			4a.2 Return to step 2
+		4b. The Customer provides an invalid password OR the passwords do not match
+			4b.1 The system informs the Customer that she entered an invalid password
+			4b.2 Return to step 2
+
+---
 
 #### Finding Alternative Flows &sect;4.5.7.1 ####
 
@@ -309,8 +351,6 @@ While inspecting the main flow, look for:
 > Specify the most important alternative flows that add to understanding the use case behavior
 > 
 
-- Each use case has _only one_ main flow
-- There may be _many_ alternative flows per use case
 - "How many?" are the right number of alternatives?
 - Two strategies for deciding how many:
 	1. Pick the most important alternative flows
