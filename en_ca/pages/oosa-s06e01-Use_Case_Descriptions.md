@@ -103,7 +103,7 @@ Bad Use Cases...
 - Shorter names are better, as long as they are descriptive
 - Must be unique so that one use case is not confused with another
 
-### Use case ID &sect;4.5.2 ###
+### Use Case ID &sect;4.5.2 ###
 
 > A unique immutable identifier
 > 
@@ -112,8 +112,8 @@ Bad Use Cases...
 - Use case identifiers do not change (they are immutable!)
 - Simple numbers are often used
 - Sometimes letter prefixes representing a system component are used:
-	* **IN-17** for use case **17** of the **IN**ventory system component
-	* **SO-11** for use case **11** of the **S**ales **O**rder system component
+	- **IN-17** for use case **17** of the **IN**ventory system component
+	- **SO-11** for use case **11** of the **S**ales **O**rder system component
 
 ### Brief description &sect;4.5.3 ###
 
@@ -189,23 +189,29 @@ A way to start each use case main flow:
 
 ---
 
-- Excerpt of good main flow:
+Excerpt of good main flow:
+
 	1. The use case starts when the Customer selects "Place Order"
 	2. The system presents a blank order request to the Customer
 	3. The Customer provides her name and address on the order request
+
 - Good, well formed statements
 - Clear who, what, when, where
 
 ---
 
-- Excerpt of bad main flow:
+Excerpt of bad main flow:
+
 	1. The use case starts by clicking "Place Order"
 	2. Customer Details are entered
+
 - Expressing GUI by stating _clicking_
 - Who does the clicking?
 - Who enters the customer details?
 - Into what are the customer details entered?
 - What specifically are the "customer details"?
+
+---
 
 #### Simple deviation: branching within a flow &sect;4.5.6.1 ####
 
