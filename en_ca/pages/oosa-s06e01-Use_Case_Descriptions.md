@@ -213,9 +213,9 @@ Excerpt of bad main flow:
 
 ---
 
-#### Simple deviation: branching within a flow &sect;4.5.6.1 ####
+#### Branching &sect;4.5.6.1 - &sect;4.5.6.2 ####
 
-- UML does not specify and standard for showing branching in a flow
+- UML does not specify a standard for showing branching in a flow
 - Some modelers use simple `if <condition>` statements within the main flow
 - Some modelers insist that branching is a diversion and must be in the alternative flows
 - Adding branches in the main flow means it is no longer strictly "the happy path"
@@ -250,23 +250,42 @@ Alternative Flows:
 		2b.1 The system removes the item from the basket
 		This completes the use case
 
-#### Simple deviations: Keyword IF &sect; 4.5.6.2
+---
 
-Use the keyword IF to indicate a branch in the flow. It has to be associated with a Boolean expression such as 'If the user types in a new quantity', which is either true or false. See sample in Figure 4.9 (p.83).
+#### Repetition &sect;4.5.6.3 - &sect;4.5.6.5 ####
 
-#### Simple deviations: repetition within a flow &sect; 4.5.6.3
+- Sometimes we have to document the repetition of an action within a flow
+- It is rare, but when when required, we need a strategy to deal with it
+- A simple `For <iteration expression>` statement can be used to indicate repetition
 
-Sometimes we have to document the repetition of an action within a flow of events. It is rare, when when required, we need a strategy to deal with it.
+---
 
-#### Simple deviations: Repetitions 1: Keyword FOR &sect; 4.5.6.4
+Excerpt of Find Product (see Figure 4.10 for comparison)
 
-The keyword For can be used to indicate repetition - see Figure 4.10 (p.84) for an example.
+Main flow:
 
-#### Simple deviations: Repetitions 2: Keyword WHILE &sect; 4.5.6.5
+	1. The use case starts when the Customer selects "Find Product"
+	2. The system asks the Customer for search criteria
+	3. The Customer provides the search criteria
+	4. The system searches for products that match the Customer's criteria
+	5. For each product found
+		5.1 The system displays a thumbnail sketch of the product
+		5.2 The system displays a summary of the product details
+		5.3 The system displays the product price
+		
+Alternative flows:
 
-The keyword While can be used to document a sequence of events that must be repeated while a Boolean expression is true. See Figure 4.11 (p.85) for an example.
+	5a. The system finds no matching products
+		5a.1 The system tells the Customer that no matching products were found
 
-### Alternative flows &sect; 4.5.7
+---
+
+- A `While <condition>` can also be used to indicate repetition
+- Repeats a sequence of steps _while_ the `<condition>` is true
+- See Figure 4.11 for an example
+- `While` and `For` should be used sparingly
+
+### Alternative Flows &sect;4.5.7 ###
 
 Each use case MUST have a main flow and may have many alternative flows. 
 
@@ -276,21 +295,29 @@ Alternative flows can be documented separately or be appended to the main flow.
 
 In this course, we will document them separately. See Figures 4.13 and 4.14 (p.87) for an example.
 
-#### Finding alternative flows &sect; 4.5.7.1
+#### Finding Alternative Flows &sect;4.5.7.1 ####
 
 While inspecting the main flow, look for:
 
-- possible alternatives to the main flow.
-- errors that might be raised in the main flow.
-- interrupts that might occur at a particular point in the main flow.
-- interrupts that might occur at *any* point in the main flow.
+- possible alternatives to the main flow
+- errors that might be raised in the main flow
+- interrupts that might occur at a particular point in the main flow
+- interrupts that might occur at _any_ point in the main flow
 
-#### How many alternative flows? &sect; 4.5.7.2
+#### How Many Alternative Flows? &sect;4.5.7.2 ####
 
-Even though there may be *many* alternative flows, they should be limited to the necessary minimum. This can be done through the following 2 strategies:
+> Specify the most important alternative flows that add to understanding the use case behavior
+> 
 
-1. pick the most important alternative flows and document them.
-2. Where there are groups of alternative flows that are all very similar, document one of them and add notes describing how the others differ from that one.
+- Each use case has _only one_ main flow
+- There may be _many_ alternative flows per use case
+- "How many?" are the right number of alternatives?
+- Two strategies for deciding how many:
+	1. Pick the most important alternative flows
+	2. Where there are groups of alternative flows that are all very similar, document one of them and add notes describing how the others differ from that one
+- Keep things to a _necessary minimum_ for understanding the use case behavior
+- Stop use case modeling when you've reached a desired understanding
+- You want use case specifications to be **READ** by the stakeholders
 
 ## Requirements Tracing &sect;4.6 ##
 
