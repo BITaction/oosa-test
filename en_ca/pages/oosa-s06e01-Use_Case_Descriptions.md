@@ -20,6 +20,7 @@
 	* Explain simple and complex deviations from a main flow
 	* Describe the use of `if`, `for`, and `while` in a main flow
 	* Describe the use of alternative flows
+	* Define requirements tracing and produce a requirements traceability matrix
 
 ## Detailing Use Cases &sect;4.4 ##
 
