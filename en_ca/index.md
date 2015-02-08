@@ -25,7 +25,11 @@ This site includes the notes and resource materials that are relevant to the cou
 - [UML Overview](pages/oosa-s04e01-UML_Overview.md)
 - [Activity Diagram Basics](pages/oosa-s04e02-Activity_Basics.md)
 
-## Requirements ##
+## Requirements Workflow ##
 
 - [Gathering Requirements](pages/oosa-s05e01-Requirements_Workflow.md)
 - [Use Case Modeling (Outline)](pages/oosa-s05e02-Use_Case_Diagrams.md)
+
+---
+
+- [Use Case Modeling (Detail)](pages/oosa-s06e01-Use_Case_Descriptions.md)
