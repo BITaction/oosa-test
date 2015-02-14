@@ -339,10 +339,10 @@ Alternative flows:
 			This ends the use case
 		4a. The Customer provides an invalid email address
 			4a.1 The system informs the Customer that she entered an invalid email address
-			4a.2 Return to step 2
+			Restart the use case at step 2
 		4b. The Customer provides an invalid password OR the passwords do not match
 			4b.1 The system informs the Customer that she entered an invalid password
-			4b.2 Return to step 2
+			Restart the use case at step 2
 
 ---
 
