@@ -28,7 +28,7 @@
 
 - Inputs are (artifacts to date):
 	1. requirements model
-	2. use case model
+	2. use case model (outline)
 	3. project glossary
 - Output is more detailed `use case model` that adds a specification (description) to each use case
 - See summary diagram in Figure 4.7
