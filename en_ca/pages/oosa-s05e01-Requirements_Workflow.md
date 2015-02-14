@@ -230,6 +230,12 @@ Good technique during interviews:
 
 - They can be useful supplements to interviews
 - You might interview a cross-section of stakeholders and then send questionnaires to validate results
+- They can be useful to gather a small amount of information from a large group of stakeholders
+
+> ### READ MORE
+> - See [Survey Monkey](https://www.surveymonkey.com) for making online surveys
+> - There are many other online survey services
+
 
 ### Requirements Workshop &sect;3.7.4 ###
 

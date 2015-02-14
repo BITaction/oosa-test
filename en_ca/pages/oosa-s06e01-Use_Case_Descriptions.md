@@ -26,7 +26,10 @@
 
 > After creating a use case diagram with actors and key use cases, we should detail each use case
 
-- Inputs are the `requirements model` and `use case model` to date
+- Inputs are (artifacts to date):
+	1. requirements model
+	2. use case model
+	3. project glossary
 - Output is more detailed `use case model` that adds a specification (description) to each use case
 - See summary diagram in Figure 4.7
 
@@ -87,7 +90,7 @@ __Good__ Use Case specifications have these characteristics:
 - do not describe GUI
 - do not describe data formats
 - 3 – 9 steps in the main flow
-- easy to read
+- easy to read and understand
 - written at the user’s goal level
 - record of decisions made
 
@@ -97,7 +100,7 @@ __Bad__ Use Case specifications have these characteristics:
 - describe the GUI
 - describe data formats
 - multi-page main flow
-- complicated to read
+- complicated to read and hard to understand
 - written at the program-feature level
 - written as a tutorial on the domain
 
@@ -360,7 +363,7 @@ While inspecting the main flow, look for:
 	2. Where there are groups of alternative flows that are all very similar, document one of them and add notes describing how the others differ from that one
 - Keep things to a _necessary minimum_ for understanding the use case behavior
 - Stop use case modeling when you've reached a desired understanding
-- You want use case specifications to be **READ** by the stakeholders
+- You want use case specifications to be **READ** and **UNDERSTOOD** by the stakeholders
 
 ## Requirements Tracing &sect;4.6 ##
 
@@ -374,7 +377,7 @@ While inspecting the main flow, look for:
 - The relationship between the models is many-to-many, which can be complicated
 	* One use case can cover many requirements
 	* One requirement can manifest itself in several use cases
-- CASE tools often provide support with _requirements traceability matrix_
+- Modeling tools (like Visual Paradigm) often provide support with a _requirements traceability matrix_
 - Can be done manually using spreadsheets (see Table 4.2)
 
 Requirement | UC01 | UC02 | UC03 | UC04
