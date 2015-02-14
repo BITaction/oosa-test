@@ -287,8 +287,11 @@ Main flow:
 		
 Alternative flows:
 
+	3a. The Customer cancels the search option
+		This ends the use case
 	5a. The system finds no matching products
-		5a.1 The system tells the Customer that no matching products were found
+		5a.1 The system informs the Customer that no matching products were found
+		Restart the use case at step 2
 
 ---
 
