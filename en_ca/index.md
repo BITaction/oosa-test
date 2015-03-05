@@ -33,3 +33,8 @@ This site includes the notes and resource materials that are relevant to the cou
 ---
 
 - [Use Case Modeling (Detail)](pages/oosa-s06e01-Use_Case_Descriptions.md)
+
+---
+
+- [Use Case Modeling (Advanced)](pages/oosa-s06e02-Advanced_Use_Case_Modeling.md)
+
