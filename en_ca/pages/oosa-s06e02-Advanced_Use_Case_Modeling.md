@@ -78,17 +78,16 @@
 
 - &laquo;include&raquo; indicates that a **base** use case **MUST always** include the functionality of the **inclusion** use case pointed to by the arrow
 - Inclusion use cases can be _incomplete_ or _complete_
-
-Include type | Purpose
--------------|--------
-Incomplete | not directly connected to an actor
-&nbsp; | not directly triggered by an actor
-&nbsp; | partial flow of events
-&nbsp; | makes sense only as part of some other base use case
-Complete | directly connected to an actor
-&nbsp; | can be directly triggered by an actor
-&nbsp; | makes sense as a fully functional self-contained use case
-&nbsp; | makes sense as part of some other base use case
+- Incomplete inclusion use case:
+	* not directly connected to an actor
+	* not directly triggered by an actor
+	* partial flow of events
+	* makes sense only as part of some other base use case
+- Complete inclusion use case:
+	* directly connected to an actor
+	* can be directly triggered by an actor
+	* makes sense as a fully functional self-contained use case
+	* makes sense as part of some other base use case
  
 - See Figure 5.7 as an example
 
@@ -120,7 +119,7 @@ Complete | directly connected to an actor
 - Preconditions:
 	1. The Manager is logged onto the system
 - Main flow:
-	1. The use case starts when the Manager chooses to `Change Employee Details`
+	1. The use case starts when the Manager chooses to Change Employee Details
 	2. `include`(Find Employee Details)
 	3. The system displays the employee details
 	4. The Manager changes the employee details
