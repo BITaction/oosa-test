@@ -88,7 +88,6 @@
 	* can be directly triggered by an actor
 	* makes sense as a fully functional self-contained use case
 	* makes sense as part of some other base use case
- 
 - See Figure 5.7 as an example
 
 ![][uc-include1]
@@ -120,7 +119,7 @@
 	1. The Manager is logged onto the system
 - Main flow:
 	1. The use case starts when the Manager chooses to Change Employee Details
-	2. `include`(Find Employee Details)
+	2. `include(004, Find Employee Details)`
 	3. The system displays the employee details
 	4. The Manager changes the employee details
 	5. The Manager submits the changes
@@ -157,13 +156,24 @@
 
 ## &laquo;extend&raquo; Relationship &sect;5.5 ##
 
-This relationship provides a way to add new behavior to an existing use case.
+> Provides a way to add optional behavior to an existing use case
+> 
 
-The &laquo;extend&raquo; relationship implies that the base use case may optionally use the extension use case. See Figure 5.10 (p.105) for an example.
+The &laquo;extend&raquo; relationship implies that:
 
-With the &laquo;extend&raquo; relationship, the base case does not know *anything* about the extension use cases. It only provides hooks for them.
+- the base use case may optionally trigger the extension use case
+- the base case does not know *anything* about the extension use cases - it only provides hooks for them
+- the base use case is perfectly complete without the extension use cases
 
-The base use case is perfectly complete without the extension use cases.
+See Figure 5.10 for an example
+
+![][uc-extend1]
+
+<!--
+place use case descriptions here
+-->
+
+
 
 ### The extension use case &sect;5.5.1
 
@@ -203,39 +213,35 @@ Some observations from real projects:
 
 ## Hints and Tips &sect;5.7 ##
 
-### Keep use cases short and simple &sect;5.7.1
-Rule of thumb: ensure that the main flow of a use case fits on a single dise of paper. Many use cases actually are less than a 1/2 page in length.
+### Keep use cases short and simple &sect;5.7.1 ###
 
-### Focus on the *what*, not the *how* &sect;5.7.2
-Use cases describe WHAT needs to be done. Avoid focusing on *how* the system will do it.
+- include only enough detail to capture the requirements
+- ensure main flow fits on a single piece of paper (keep under 10 steps)
+- Use a short declarative sentence for each step
+- Exclude design detail like interface and data formats
+- Review and rewrite several times!
 
-Consider the fragment of use case:
+### Focus on *what*, not *how* &sect;5.7.2 ###
 
-[...]
+- Describe *what* the actors want to accomplish, not *how* they will do it
+- Keep the details of the design out of the use case
+- Including the *how* is like the analyst hallucinating a design solution much too early
 
- 4 The System asks the Customer to confirm the order.
+Consider the fragment of a use case:
 
- 5 The Customer clicks the OK button.
+	4 The System asks the Customer to confirm the order
+	5 The Customer clicks the OK button
 
-[...]
-
-This clearly shows that the ue case writers has imagined some kind of user interface - a form with an OK button - which is a primitive design and should be avoided at the Analysis stage.
+The analyst has imagined some kind of user interface (with an OK button).
 
 A better way to write this use case would be:
 
-[...]
-
- 4 The System asks the Customer to confirm the order.
-
- 5 The Customer accepts the order.
-
-[...]
-
-The details of the design (which you don't know yet!) must be kept out of the use case.
+	4 The System asks the Customer to confirm the order
+	5 The Customer accepts the order
 
 ### Avoid Functional Decomposition &sect;5.7.3 ###
 
-- DO NOT apply use cases as a way to decompose the system into levels of functionality
+- **DO NOT** apply use cases as a way to decompose the system into levels of functionality
 - See Figure 5.16
 - The following is _functional decomposition_ and it is **BAD** analysis!
 - Don't get caught in this trap
@@ -308,3 +314,10 @@ The details of the design (which you don't know yet!) must be kept out of the us
 -->
 
 [uc-func-decomp]: http://yuml.me/b5f0dea7
+
+<!-- Extend use case example
+[Librarian]-(Return Book)
+(Return Book)<(Issue Fine)
+-->
+
+[uc-extend1]: http://yuml.me/ef04d29c
