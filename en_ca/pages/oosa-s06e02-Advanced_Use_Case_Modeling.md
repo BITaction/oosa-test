@@ -12,18 +12,18 @@
 
 - Section &sect;5.8 of the UML 2 course textbook (UMLUP)
 - You will learn to:
-	* Explain generalization of actors in a use case diagram
-	* Explain generalization of use cases in a use case diagram
-	* Draw and interpret generalization in a use case diagrams
-	* Explain &laquo;include&raquo; and &laquo;extend&raquo; relationships in a use case diagram
-	* Draw and interpret &laquo;include&raquo; and &laquo;extend&raquo; relationships in a use case diagram
+	* Explain the purpose of generalization in a use case diagrams
+	* Explain the use of &laquo;abstract&raquo; actors and use cases
+	* Draw and describe generalization of actors in a use case diagram
+	* Draw and describe &laquo;include&raquo; and &laquo;extend&raquo; relationships in a use case diagram
 	* Write use case descriptions to incorporate &laquo;include&raquo; and &laquo;extend&raquo; relationships
-	* List and define general tips for using advanced features of use cases
+	* List and explain general tips for using advanced features of use cases
 	* Identify and explain the difficulty with functional decomposition in a use case diagram
 
 ## Actor Generalization &sect;5.2 ##
 
-> When two or more actors interact with the same use cases - or with most of them - we can simplify the diagram by using generalization. 
+> When two or more actors interact with the same use cases - or with most of them - we can simplify the diagram by using generalization.
+> 
 
 - Use actor generalization if it simplifies the use case model and makes it more understandable
 - See Figure 5.2 and simplification in Figure 5.3
@@ -41,13 +41,13 @@
 - Purchaser does not trigger the use cases related to it
 - Any concrete descendent of Purchaser can trigger use cases related to Purchaser
 - Customer and Sales Agent are concrete descendants of Purchaser
-- Customer and Sales Agent can trigger use cases related to Purchaser
+- Therefore, Customer and Sales Agent can trigger use cases related to Purchaser
 
 ![][uc-general2]
 
-- The more general actor can be a concrete actor that does trigger use cases
+- The more general actor can be a concrete actor that triggers use cases
 - Customer is a concrete actor
-- Customer can trigger the use cases related to it
+- Therefore, Customer can trigger the use cases related to it
 - Concrete descendants of Customer can trigger the use cases related to Customer
 - Sales Agent is a concrete descendent of Customer
 - Sales Agent can trigger the use cases related to Customer
@@ -169,33 +169,70 @@ See Figure 5.10 for an example
 
 ![][uc-extend1]
 
-<!--
-place use case descriptions here
--->
+---
 
+- Use case: Return Book
+- ID: 009
+- Purpose: The Librarian returns a borrowed book
+- Primary actors: Librarian
+- Secondary actors: none
+- Preconditions:
+	1. The Librarian is logged into the system
+- Main flow:
+	1. The use case starts when the Librarian enters the borrower ID number
+	2. The system displays the borrower details including list of borrowed books
+	3. The Librarian finds the book to be returned in the list
+	4. The Librarian returns the book
+- Postconditions:
+	1. The book as been returned
+- Alternative flows:
+
+ 		3a. The book is overdue
+		3a.1 `extension(010, Issue Fine)`
+		3a.2 Resume use case at step 4
+
+---
+
+- Use case: Issue Fine
+- ID: 010
+- Purpose: The Librarian records and prints the fine
+- Primary actors: Librarian
+- Secondary actors: none
+- Preconditions:
+	1. The returned book is overdue
+- Main flow:
+	1. The Librarian provides details of the fine
+	2. The system produces a hard copy of the fine
+- Postconditions:
+	1. The fine has been recorded 
+	2. The system has produced a hard copy of the fine
+- Alternative flows:
+	* None
+
+---
 
 
 ### The extension use case &sect;5.5.1
 
-Extension use cases are *generally* not complete use cases, but just consist of one or more behaviour fragments known as *insertion segments*.
+> Extension use cases are *generally* not complete use cases, but just consist of one or more behaviour fragments known as *insertion segments*
+> 
 
 Some rules apply:
 
-- the &laquo;extend&raquo; relationship must specify one or more extension points in the base use case.
-- The extension use case must have the same number of insertion segments as there are extension points in the &laquo;extend&raquo; relationship.
-- It is legal for two extension use cases to &laquo;extend&raquo; the same base use case at the same extension point. If it happens, the order in which the extensions execute is indeterminate.
-
-See Figure 5.12 (p.107) for an example.
+- The &laquo;extend&raquo; relationship must identify extension points in the base use case
+- The extension use case must have the same number of insertion segments as there are extension points in the &laquo;extend&raquo; relationship
+- It is legal for two extension use cases to &laquo;extend&raquo; the same base use case at the same extension point
+- See Figure 5.12 for an example.
 
 ### Multiple insertion segments &sect;5.5.2
 
-There can be multiple extension segments in an extension use case.
-
-They require clear labels. See Figure 5.13 (p.108).
+- There can be multiple extension segments in an extension use case
+- We can handle this consistently by introducing additional `extension()` calls in the alternative flow
 
 ### Conditional extensions &sect;5.5.3
 
-Extentions can be subject to a condition such as issuing a warning but not a fine if this is a first offence. See Figures 5.14 & 5.15 (p.109/110).
+- Extensions can be subject to a condition such as issuing a warning, but not a fine if this is a first offence
+- We can handle this consistently by introducing additional numbered conditions in the alternative flow
 
 ## When to use Advanced Features &sect;5.6 ##
 
