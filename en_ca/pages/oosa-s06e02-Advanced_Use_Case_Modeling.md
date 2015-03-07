@@ -188,8 +188,8 @@ See Figure 5.10 for an example
 - Alternative flows:
 
  		3a. The book is overdue
-		3a.1 `extension(010, Issue Fine)`
-		3a.2 Resume use case at step 4
+			3a.1 extension(010, Issue Fine)
+			3a.2 Resume use case at step 4
 
 ---
 
