@@ -291,7 +291,7 @@ A better way to write this use case would be:
 
 - **DO NOT** apply use cases as a way to decompose the system into levels of functionality
 - See Figure 5.16
-- The following is _functional decomposition_ and it is **BAD** analysis!
+- The following is _functional decomposition_ and it is **BAD** for use case modeling!
 - Don't get caught in this trap
 
 ![][uc-func-decomp]
