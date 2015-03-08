@@ -149,6 +149,14 @@
 
 ---
 
+- An example using &laquo;include&raquo; with complete inclusion use cases
+
+![][uc-include2]
+
+- `Register for Account` can be triggered by a public actor
+- `Login` can be independently triggered by a user actor
+- Part of registering for an account will include logging in the actor
+
 > ### In Class Activity
 > - The job of a Librarian consists of using an electronic library system to find books, lend out books, return books, and put books on reserve
 > - When a book is lent out or put on reserve, the library card must be validated
@@ -211,6 +219,9 @@ See Figure 5.10 for an example
 
 ---
 
+> ### In Class Activity
+> - Update the diagram from the prior in class activity to include the option of issuing a fine during the return of a book
+> - Add to the diagram the option of signing up for notifications when a book is placed on reserve. This will notify the user once the book is available to be lent out. 
 
 ### The extension use case &sect;5.5.1
 
@@ -326,7 +337,7 @@ A better way to write this use case would be:
 
 [uc-general2]: http://yuml.me/5d783794
 
-<!-- Showing include
+<!-- include with incomplete inclusion use case
 [Manager]-(Change Employee Details)
 [Manager]-(View Employee Details)
 [Manager]-(Delete Employee Details)
@@ -336,6 +347,14 @@ A better way to write this use case would be:
 -->
 
 [uc-include1]: http://yuml.me/53e0d000
+
+<!-- include with complete inclusion use case
+[Public]-(Register for Account)
+[User]-(Login)
+(Register for Account)>(Login)
+-->
+
+[uc-include2]: http://yuml.me/4751ea83
 
 <!-- Functional decomposition
 [Librarian]-(Run Library)
