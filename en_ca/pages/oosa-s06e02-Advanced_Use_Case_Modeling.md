@@ -77,17 +77,33 @@
 > 
 
 - &laquo;include&raquo; indicates that a **base** use case **MUST always** include the functionality of the **inclusion** use case pointed to by the arrow
+
+![][uc-base-inclusion]
+
 - Inclusion use cases can be _incomplete_ or _complete_
-- Incomplete inclusion use case:
-	* not directly connected to an actor
-	* not directly triggered by an actor
-	* partial flow of events
-	* makes sense only as part of some other base use case
-- Complete inclusion use case:
-	* directly connected to an actor
-	* can be directly triggered by an actor
-	* makes sense as a fully functional self-contained use case
-	* makes sense as part of some other base use case
+
+### Incomplete Inclusion Use Case ###
+
+![][uc-incomplete]
+
+- not directly connected to an actor
+- not directly triggered by an actor
+- the actor does not trigger the inclusion use case
+- partial flow of events
+- makes sense only as part of some other base use case
+
+### Complete Inclusion Use Case ###
+
+![][uc-complete]
+
+- directly connected to an actor
+- can be directly triggered by an actor
+- the actor can trigger the inclusion use case
+- makes sense as a fully functional self-contained use case
+- makes sense as part of some other base use case
+
+### Textbook Example ###
+
 - See Figure 5.7 as an example
 
 ![][uc-include1]
@@ -336,6 +352,27 @@ A better way to write this use case would be:
 -->
 
 [uc-general2]: http://yuml.me/5d783794
+
+<!-- General form of base and inclusion
+(Base Use Case)>(Inclusion Use Case)
+-->
+
+[uc-base-inclusion]: http://yuml.me/a4033406
+
+<!-- General incomplete use case structure
+[Actor]-(Base Use Case)
+(Base Use Case)>(&laquo;incomplete&raquo; Inclusion Use Case)
+-->
+
+[uc-incomplete]: http://yuml.me/b6a941fa
+
+<!--
+[Actor]-(Base Use Case)
+[Actor]-(&laquo;complete&raquo; Inclusion Use Case)
+(Base Use Case)>(&laquo;complete&raquo; Inclusion Use Case)
+-->
+
+[uc-complete]: http://yuml.me/ad9c5b25
 
 <!-- include with incomplete inclusion use case
 [Manager]-(Change Employee Details)
