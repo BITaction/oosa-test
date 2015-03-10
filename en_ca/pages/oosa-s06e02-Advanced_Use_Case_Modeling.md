@@ -80,9 +80,11 @@
 
 ![][uc-base-inclusion]
 
-- Inclusion use cases can be _incomplete_ or _complete_
+- the base use case will always trigger the inclusion use case
+- the base use case is not fully functional without the inclusion use case
+- a base use case can have several inclusion use cases related to it
 
-### Incomplete Inclusion Use Case ###
+### &laquo;incomplete&raquo; Inclusion Use Case ###
 
 ![][uc-incomplete]
 
@@ -92,7 +94,7 @@
 - partial flow of events
 - makes sense only as part of some other base use case
 
-### Complete Inclusion Use Case ###
+### &laquo;complete&raquo; Inclusion Use Case ###
 
 ![][uc-complete]
 
@@ -188,8 +190,9 @@
 ![][uc-base-extend]
 
 - the base use case may optionally trigger the extension use case
-- the base case does not know *anything* about the extension use case - it only provides hooks for them to be invoked
+- the base use case does not know *anything* about the extension use case - it only provides a hook for it to be invoked
 - the base use case is perfectly complete without the extension use case
+- a base use case can have several extension use cases related to it
 
 See Figure 5.10 for an example
 
