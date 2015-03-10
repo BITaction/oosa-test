@@ -183,11 +183,13 @@
 > Provides a way to add optional behavior to an existing use case
 > 
 
-The &laquo;extend&raquo; relationship implies that:
+- &laquo;extend&raquo; indicates that a **base** use case **MAY optionally** invoke the functionality of the **extension** use case at the opposite end from the arrow pointing to the base use case.
+
+![][uc-base-extend]
 
 - the base use case may optionally trigger the extension use case
-- the base case does not know *anything* about the extension use cases - it only provides hooks for them
-- the base use case is perfectly complete without the extension use cases
+- the base case does not know *anything* about the extension use case - it only provides hooks for them to be invoked
+- the base use case is perfectly complete without the extension use case
 
 See Figure 5.10 for an example
 
@@ -316,9 +318,9 @@ A better way to write this use case would be:
 
 - Note that the whole model is **never** rooted in a single use case!
 
-
 ---
 
+[uc-share]: http://yuml.me/23dcfc28
 <!-- Showing shared use cases
 [Customer]-(List Products)
 [Customer]-(Order Products)
@@ -329,8 +331,7 @@ A better way to write this use case would be:
 [Sales Agent]-(Calculate Commission)
 -->
 
-[uc-share]: http://yuml.me/23dcfc28
-
+[uc-general1]: http://yuml.me/4ec9f3c9
 <!-- Showing generalization with abstract Purchaser
 [Customer]-(List Products)
 [Customer]-(Order Products)
@@ -341,8 +342,7 @@ A better way to write this use case would be:
 [Sales Agent]-(Calculate Commission)
 -->
 
-[uc-general1]: http://yuml.me/4ec9f3c9
-
+[uc-general2]: http://yuml.me/5d783794
 <!-- Showing generalization with concrete actors
 [Customer]-(List Products)
 [Customer]-(Order Products)
@@ -351,29 +351,25 @@ A better way to write this use case would be:
 [Sales Agent]-(Calculate Commission)
 -->
 
-[uc-general2]: http://yuml.me/5d783794
-
+[uc-base-inclusion]: http://yuml.me/a4033406
 <!-- General form of base and inclusion
 (Base Use Case)>(Inclusion Use Case)
 -->
 
-[uc-base-inclusion]: http://yuml.me/a4033406
-
+[uc-incomplete]: http://yuml.me/b6a941fa
 <!-- General incomplete use case structure
 [Actor]-(Base Use Case)
 (Base Use Case)>(&laquo;incomplete&raquo; Inclusion Use Case)
 -->
 
-[uc-incomplete]: http://yuml.me/b6a941fa
-
-<!--
+[uc-complete]: http://yuml.me/ad9c5b25
+<!-- General complete use case structure
 [Actor]-(Base Use Case)
 [Actor]-(&laquo;complete&raquo; Inclusion Use Case)
 (Base Use Case)>(&laquo;complete&raquo; Inclusion Use Case)
 -->
 
-[uc-complete]: http://yuml.me/ad9c5b25
-
+[uc-include1]: http://yuml.me/53e0d000
 <!-- include with incomplete inclusion use case
 [Manager]-(Change Employee Details)
 [Manager]-(View Employee Details)
@@ -383,16 +379,25 @@ A better way to write this use case would be:
 (Delete Employee Details)>(Find Employee Details)
 -->
 
-[uc-include1]: http://yuml.me/53e0d000
-
+[uc-include2]: http://yuml.me/4751ea83
 <!-- include with complete inclusion use case
 [Public]-(Register for Account)
 [User]-(Login)
 (Register for Account)>(Login)
 -->
 
-[uc-include2]: http://yuml.me/4751ea83
+[uc-base-extend]: http://yuml.me/c974a611
+<!-- General extension use case structure
+(Base Use Case)<(Extension Use Case)
+-->
 
+[uc-extend1]: http://yuml.me/ef04d29c
+<!-- Extend use case example
+[Librarian]-(Return Book)
+(Return Book)<(Issue Fine)
+-->
+
+[uc-func-decomp]: http://yuml.me/b5f0dea7
 <!-- Functional decomposition
 [Librarian]-(Run Library)
 (Run Library)>(Maintain Books)
@@ -406,11 +411,3 @@ A better way to write this use case would be:
 (Maintain Loans)>(Return Book)
 -->
 
-[uc-func-decomp]: http://yuml.me/b5f0dea7
-
-<!-- Extend use case example
-[Librarian]-(Return Book)
-(Return Book)<(Issue Fine)
--->
-
-[uc-extend1]: http://yuml.me/ef04d29c
