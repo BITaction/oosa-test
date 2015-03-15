@@ -71,17 +71,16 @@ Could include diagram here to represent analysis metamodel from textbook
 - It is tempting to add design classes in the analysis model, but should be avoided
 - Make the analysis model a concise and simple statement of the system structure and behavior
 
-Some rules of thumb for analysis modeling:
-
-- The analysis model is ALWAYS in the language of the business domain
-- Create models that tell a story &rArr; whatever you add should add to the understanding
-- Concentrate on capturing the big picture &rArr; don't get bogged down on the details of how
-- Distinguish clearly between the problem domain and the solution domain
-- Always try to minimize coupling &rArr; reduce associations between analysis classes
-- Explore inheritance **if** there seems to be a natural and compelling hierarchy &rArr; inheritance is the strongest form of coupling between classes
-- Make an analysis model that is useful to stakeholders &rArr; should be read and understood by all stakeholders
-- Keep the analysis model simple!
-- Inside every complex analysis model is a simple analysis model struggling to get out
+Rule of Thumb | Qualification
+--------------|--------------
+Analysis model is ALWAYS in the language of the business | Abstractions in the model form part of the vocabulary of the business domain
+Create models that tell a story | Whatever you add should add to the understanding of the model
+Concentrate on capturing the big picture | Don't get bogged down on the details of how the system will work
+Distinguish clearly between the problem domain and the solution domain | Add classes that describe the business domain, not classes related to database or network communications
+Always try to minimize coupling | Reduce associations between analysis classes
+Explore inheritance **if** there seems to be a natural and compelling hierarchy | Inheritance is a strong form of coupling
+Make an analysis model that is useful to stakeholders | Should be read and understood by all stakeholders
+Keep the analysis model simple! | Inside every complex analysis model is a simple analysis model struggling to get out
 
 ---
 
