@@ -21,7 +21,7 @@
 	* List the steps of the analysis workflow
 	* List the rules of thumb for doing analysis modeling
 
-## The analysis workflow  &sect;6.2 ##
+## The Analysis Workflow  &sect;6.2 ##
 
 Within the Unified Process:
 
@@ -39,7 +39,7 @@ Within the Unified Process:
 - Some design aspects naturally become part of the analysis model due to the nature of iterations that can involve all workflows of UP
 - Some design aspects are determined early due to enterprise architectures and business goals
 
-## Analysis artifacts - metamodel &sect;6.3 ##
+## Analysis Artifacts &sect;6.3 ##
 
 In the Analysis workflow, 2 key artifacts are produced:
 
@@ -56,7 +56,7 @@ Could include diagram here to represent analysis metamodel from textbook
 - Analysis Model is a top level package
 - Contains many other packages that organize the artifacts of the model into a meaningful structure
 
-## Analysis workflow detail &sect;6.4 ##
+## Analysis Workflow Detail &sect;6.4 ##
 
 ![][up-analysis-workflow]
 
@@ -64,7 +64,7 @@ Could include diagram here to represent analysis metamodel from textbook
 - The Use Case Engineer will analyze each use case in turn
 - The Component Engineer uses this to analyze each class and subsequently analyze related packages
 
-## Analysis model - rules of thumb &sect;6.5 ##
+## Analysis Model - Rules of Thumb &sect;6.5 ##
 
 - A system of moderate size and complexity can probably contain 50 to 100 analysis classes
 - It is **vitally important** to restrict yourself to ONLY those classes that are part of the vocabulary of the problem domain
