@@ -34,14 +34,11 @@ This site includes the notes and resource materials that are relevant to the cou
 
 - [Use Case Modeling (Detail)](pages/oosa-s06e01-Use_Case_Descriptions.md)
 
----
-
 ### MIDTERM WEEK ###
-
----
 
 - [Use Case Modeling (Advanced)](pages/oosa-s07e01-Advanced_Use_Case_Modeling.md)
 
 ## Analysis Workflow ##
 
 - [Analysis Workflow Overview](pages/oosa-s08e01-Analysis_Workflow.md)
+- [Objects and Classes](pages/oosa-s08e02-Objects_Classes.md)
