@@ -254,7 +254,6 @@ Destructors are special operations that are called to dispose of an objects when
 
 ---
 
-[object-syntax]: uploads/images/Figure_7dot4.PNG
-
+[object-syntax]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot4.PNG
 
 
