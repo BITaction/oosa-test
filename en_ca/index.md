@@ -36,9 +36,12 @@ This site includes the notes and resource materials that are relevant to the cou
 
 ---
 
-## MIDTERM WEEK ##
+### MIDTERM WEEK ###
 
 ---
 
 - [Use Case Modeling (Advanced)](pages/oosa-s07e01-Advanced_Use_Case_Modeling.md)
 
+## Analysis Workflow ##
+
+- [Analysis Workflow Overview](pages/oosa-s08e01-Analysis_Workflow.md)
