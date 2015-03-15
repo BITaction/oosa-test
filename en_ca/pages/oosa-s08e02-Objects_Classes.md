@@ -113,11 +113,11 @@ Object name alone | <span style="text-decoration:underline">tonySmith</span> | i
 Object name : Class name | <span style="text-decoration:underline">tonySmith:Student</span> | fully qualified object
 
 - Bottom compartment contains a list of attributes for the object
-- Each attribute shows:
+- Each attribute can show:
 
-		attributeName [: attributeType] [= attributeValue]
+		Name [: Type] [= Value]
 
-- This syntax means `: attributeType` and `= attributeValue` are optional
+- This syntax means `: Type` and `= Value` are optional
 - You may choose to show all, some, or none of the attribute values, depending on the purpose of the diagram
 - Some example attribute specifications:
 
