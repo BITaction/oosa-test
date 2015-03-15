@@ -25,37 +25,107 @@
 
 ## What are Objects?  &sect;7.2 ##
 
-> The UML reference manual defines an object as "A discrete entity with a well-defined boundary that encapsulates state and behavior; an instance of a class".
+> Objects combine data and function into a cohesive unit.
 > 
+
+- The UML reference manual defines an object as "A discrete entity with a well-defined boundary that encapsulates state and behavior; an instance of a class"
 
 Objects have identity, state and behavior.
 
-- **Identity**: this is what makes this object distinct from all other objects. For example, in a program, each object's identity is represented by its address in memory at that time.
-- **State**: this is determined by the value of the object's attributes.
-- **Behaviour**: what the object can do - represented by its set of operations (coded as methods in Java).
+Property | Purpose | Qualification
+---------|---------|--------------
+Identity | makes an object distinct from all other objects | comes from something outside of the object itself
+State | the value of the object's attributes at a given time | object state can change over time
+Behavior | what the object can do | can varying depending on object state and can change object state
+
+For example, in a running Java program, at any given time, for any given object:
+
+- its identity can be represented by the object's address in memory
+- its state by the values of the object's attributes 
+- its behavior by the instance scope operations defined in the object's class
+
+> ### In Class Activity
+> - Look around the classroom
+> - Identify some objects
+> - What could express their identity?
+> - How can you define their current state? What is changeable about their state?
+> - How can you define their behavior? So, then what could express their _class_?
 
 ### Encapsulation  &sect;7.2.1 ###
 
-Encapsulation is the process of hiding data inside objects and providing access from the outside world by means of public operations.
+> Encapsulation is data-hiding and a primary benefit of OO programming.
+> 
+
+Encapsulation:
+
+- hides data structures and values inside objects
+- provides the only access to the outside world by means of public operations
+
+Outside world:
+
+- need **not** be concerned about an object's internal structure
+- need **only** be concerned with what the object can do - the public _services_ offered by the object
+
+See Figure 7.2 for account object example
 
 ### Messaging  &sect;7.2.2 ###
 
-Objects in a system must collaborate to perform what they were designed to do. This is done by objects forming links and exchanging messages.
+> OO systems function by objects sending messages to one another - this is collaboration.
+> 
 
-A message consists of a call to one of an object's methods - i.e. 'dArea = oMyShape.calcArea()'; 
+- A message consists of a call to one of an object's methods
+- Consider the following fragment of code
 
-In an OO system, objects are created, respond to messages by running the method that was called in the messages, to finish by being destroyed i.e. removed from memory.
+		dArea = oMyShape.calcArea()
+
+- This code would exist as the behavior of some object in an OO System
+- `oMyShape` is a reference to identify some collaborating object
+- `calcArea()` is a message being sent to object `oMyShape`
+- `dArea` is a variable to hold the value returned by `oMyShape` performing the operation (service) `calcArea()`
+
+An OO system is a collaborating set of objects where:
+
+- objects are created
+- objects send messages to one another to invoke their services
+- objects respond to messages by running a method that was called in a message
+- objects finish up by being destroyed (i.e., removed from memory)
+
+See Figure 7.3 for account object example
 
 ## UML Object Notation  &sect;7.3 ##
 
-Objects of the same class have the same operations and the same attributes but usually have different attribute values.
+> Objects of the same class have the same operations and the same attributes, but usually have different attribute values.
+> 
 
-A UML object icon is a 2-compartment shape. See example in Figure 7.4 (p.131).
+- A UML object icon is a 2-compartment shape
+- See example in Figure 7.4
 
-The top compartment contains the object identifier which is *always* underlined. This is important to avoid confusion as to whether a modeling element is an object or a class.
+![][object-syntax]
 
-The bottom compartment contains a list of attributes in the object - each showing the attribute name, a colon , the attribute type, then an equal sign followed by the value of the attribute.
-In this compartment, you may choose to show all, some or none of the attribute values, depending on the purpose of the diagram.
+- Top compartment is the object name and represents the object identifier, which is **always** underlined
+- Underlining is important to avoid confusion between an object or a class
+- Naming an object in UML is quite flexible
+
+Name Using | Example | Qualification
+-----------|---------|--------------
+Class name alone | <span style="text-decoration:underline">:Student</span> | signifies an anonymous object
+Object name alone | <span style="text-decoration:underline">tonySmith</span> | identifies a specific object, but not its class
+Object name : Class name | <span style="text-decoration:underline">tonySmith:Student</span> | fully qualified object
+
+- Bottom compartment contains a list of attributes for the object
+- Each attribute shows:
+
+		attributeName [: attributeType] [= attributeValue]
+
+- This syntax means `: attributeType` and `= attributeValue` are optional
+- You may choose to show all, some, or none of the attribute values, depending on the purpose of the diagram
+- Some example attribute specifications:
+
+		firstName : String = "Tony"
+		lastName : String = "Smith"
+		studentID = 43299524
+		birthDate : Date
+		interests
 
 ## What are Classes?  &sect;7.4 ##
 
@@ -182,6 +252,9 @@ Different languages have different standards for naming constructors. Acompletel
 
 Destructors are special operations that are called to dispose of an objects when it is no longer needed. In java, this is called *finalize()* and is automatic called when the object is finally destroyed.
 
+---
+
+[object-syntax]: uploads/images/Figure_7dot4.PNG
 
 
 
