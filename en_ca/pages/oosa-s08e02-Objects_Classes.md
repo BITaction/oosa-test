@@ -14,7 +14,14 @@
 
 - Section &sect;7.8 of the UML 2 course textbook (UMLUP)
 - You will learn to:
-
+	* Define an object in terms of identity, state, and behavior
+	* Define object principles of encapsulation and messaging
+	* Identify and explain object notation in UML
+	* Define a class and its relation to objects through instantiation
+	* Explain class instantiation
+	* Identify and explain class notation in UML
+	* Explain instance scope versus class scope
+	* Describe the use and purpose of constructors and destructors in OO
 
 ## What are Objects?  &sect;7.2 ##
 
