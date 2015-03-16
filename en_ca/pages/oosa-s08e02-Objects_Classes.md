@@ -21,7 +21,7 @@
 	* Explain class instantiation
 	* Identify and explain class notation in UML
 	* Explain instance scope versus class scope
-	* Describe the use and purpose of constructors and destructors in OO
+	* Describe the use and purpose of constructors and destructors in OO languages
 
 ## What are Objects?  &sect;7.2 ##
 
@@ -100,7 +100,7 @@ See Figure 7.3 for account object example
 - A UML object icon is a 2-compartment shape
 - See example in Figure 7.4
 
-![][object-syntax]
+![Object syntax in UML][object-syntax]
 
 - Top compartment is the object name and represents the object identifier, which is **always** underlined
 - Underlining is important to avoid confusion between an object or a class
@@ -115,9 +115,9 @@ Object name : Class name | <span style="text-decoration:underline">tonySmith:Stu
 - Bottom compartment contains a list of attributes for the object
 - Each attribute can show:
 
-		Name [: Type] [= Value]
+		name : type = value
 
-- This syntax means `: Type` and `= Value` are optional
+- The only mandatory part is the `name`
 - You may choose to show all, some, or none of the attribute values, depending on the purpose of the diagram
 - Some example attribute specifications:
 
@@ -127,23 +127,59 @@ Object name : Class name | <span style="text-decoration:underline">tonySmith:Stu
 		birthDate : Date
 		interests
 
-## What are Classes?  &sect;7.4 ##
+## What are Classes? &sect;7.4 ##
 
-Classification is possibly the single most important way that human beings have of ordering information about the world. It is also one of the most important OO concepts.
+> A class is a template that describes the common features of a set of objects.
+> 
 
-Classes allow us to describe the set of features that every object of a class *must* have - without having to describe each object in detail.
+- Every object is an instance of exactly one class
+- A class is a template, like a cookie cutter, from which an object is created
+- Classes allow us to describe the set of features that every object of a class *must* have
+- Objects made from a class have the same attributes, but the values of these attributes can vary among the objects
+- Objects made from a class respond to the same messages, but the behavior exhibited from these messages can vary among the objects
 
-A class can be defined as a descriptor for a set of objects that have the same features. Think of a class as a template for objects.
+Bank Account example:
+
+- two back account objects
+- one has a thousand dollars, the other is overdrawn
+- the message `withdraw(100)` can be sent to both bank account objects
+- each object will likely respond differently because of their state
+
+> Classification is possibly the single most important way that human beings have of ordering information about the world. It is also one of the most important OO concepts.
+> 
+
+- Given a set of objects, there are many ways to classify them
+- See Figure 7.5 and textbook discussion
+- Finding a workable classification scheme is a key goal of OO analysis
+
+> ### In Class Activity
+> - Consider the objects identified in a previous in class activity
+> - How can these objects be classified?
+> - Are there variations to the initial classification you gave?
 
 ### Classes and Objects &sect;7.4.1 ###
 
-The relationship between a class and objects of that class is an &laquo;instantiate&raquo; relationship. A relationship is defined as a "connection among model elements".
+- A relationship in UML is defined as a "connection among model elements"
+- A dependency relationship is between a supplier and a client
+- In UML it is represented by a dotted line with an open arrowhead
+- In a dependency relationship a change to the supplier can result in a change to the client
 
-Figure 7.6 (p.135) illustrates the relationship between an Account class and 3 account objects that instantiate it.
+![Client and supplier dependency][client-supplier]
+
+- Dependency relationships can be stereotyped
+- The relationship between a class and objects of that class is an &laquo;instantiate&raquo; relationship
+- See Figure 7.6
+
+![Object instantiation dependency][object-instantiate]
+
+> ### In Class Activity
+> - Name a supplier in Figure 7.6
+> - Name a client in Figure 7.6
+> - Recreate Figure 7.6 in the visual modeling tool
 
 ### Class Instantiation &sect;7.4.2 ###
 
-> Create a new object using a class as a template
+> Class instantiation creates a new object using a class as a template
 > 
 
 - In general, _instantiation_ means to create an instance of something from a given template
@@ -155,11 +191,13 @@ Figure 7.6 (p.135) illustrates the relationship between an Account class and 3 a
 
 ## UML Class Notation &sect;7.5 ##
 
-The visual UML syntax for a class is very rich, and to make the syntax manageable, it is important to apply the UML notion of optional adornments. See Figure 7.7 (p.136).
+- UML syntax for a class is very rich
+- apply the UML notion of optional adornments to a class
+- only mandatory is the name compartment with the class name listed
+- apply other adornments as necessary to enhance the understanding of the analysis model
+- See Figure 7.7 
 
-The only mandatory part of the visual syntax is the name compartment with the class name in it. All other compartments and adornments are optional.
-
-Which compartments and adornments you actually include depends entirely on the purpose of the diagram.
+![Class adornments][class-adorn]
 
 In analysis, you typically only need to show the following:
 
@@ -168,7 +206,7 @@ In analysis, you typically only need to show the following:
 - key operations
 - stereotypes (if they have business significance)
 
-You typically do *not* show the following:
+You typically **do not** show the following:
 
 - tagged values
 - operation parameters
@@ -177,10 +215,20 @@ You typically do *not* show the following:
 
 ### Name Compartment &sect;7.5.1 ###
 
-While UML does not mandate any naming convention for classes, there is a convention that is almost universally followed.
-
-- Class name is in UpperCamelCase and begins with an uppercase letter. Special symbols such as punctuation marks, dashes, underscores, ampersands, hashes and slashes are *always* avoided. There is a good reason for this: these symbols are used and interpreted by languages such as HTML, XML and by operating systems. *Don't use them*.
-- Avoid abbreviations *at all cost*. Call a class FlightSegment instead of FltSgmt. Abbreviations make the model hard to read and can lead to costly misunderstandings.
+- UML does not mandate any naming convention for classes
+- There is a convention that is almost universally followed
+- Class name is in UpperCamelCase
+	* begins with an uppercase letter
+	* Special symbols such as punctuation marks, dashes, underscores, ampersands, hashes and slashes are *always* avoided
+- Avoid abbreviations *at all cost*
+	* Call a class FlightSegment instead of FltSgmt
+	* DepositAccount is preferable to DpstAcct
+	* and so on...
+	* Abbreviations make the model hard to read and can lead to costly misunderstandings
+- Domain specific acronyms may be use if understood by all stakeholders
+	* CRM may be used instead of CustomerRelationshipManagement if it is clear to all
+	* The long form may still be more preferable for the long run if it avoids confusion
+- Classes represent things, so a class name should be a *noun* or *noun phrase*
 
 ### Attribute Compartment &sect;7.5.2 ###
 
@@ -188,12 +236,24 @@ The only mandatory part of the UML attribute syntax is the attribute name. Attri
 
 **Visibility**: the visibility adornment applies to attributes and operations within the class.
 
-See tables 7.3 (p138) and 7.4 (p.139) for details.
+- See Table 7.3 for visibility adornments and their meaning
+
+| Adornment |  Purpose  |
+|:---------:|:---------:|
+|     +     |   Public  |
+|     -     |  Private  |
+|     #     | Protected |
+|     ~     |  Package  |
+
+
+- See Table 7.4 for a comparison of visibility across 00 programming languages
 
 **Type**: the type of an attribute can be a primitive type or another class.
 
-UML defines 4 primitive types (see table 7.5 p.140). 
-If your project targets java for example, you may use java data types, but then your model will be tied to that language.
+- UML defines 4 primitive types (see Table 7.5)
+- If your project targets Java, you may use Java data types, but then your model will be tied to that language
+- Visual modeling tools typically provide a set of primitive types that can be mapped to OO programming language types
+- This approach allows you to create a *platform independent model* (PIM) during analysis that can be translated to a *platform specific model* (PSM) during design
 
 **Multiplicity**: Multiplicity is widely used in design but may also be used in analysis models as it can be used to  express certain business constraints relating to the "number of things" participating in a relationship.
 
@@ -204,14 +264,16 @@ If your project targets java for example, you may use java data types, but then 
 
 ### Operation Compartment &sect;7.5.3 ###
 
-Operations are functions that are bound to a particular class.
-Every operation of a class **must** have a unique signature. See Figure 7.10 (p.142) for details.
-Operations are named in lowerCamelCase. The usually start with or contain a verb (as verbs indicate action and an operation *does* somethhing).
+- Operations are functions that are bound to a particular class
+- Every operation of a class **must** have a unique signature
+- See Figure 7.10 for details
+- Operations are named in lowerCamelCase
+- The usually start with or contain a verb (as verbs indicate action and an operation *does* somethhing)
 
 **Parameter direction**: Operation parameters can be given a direction - that is, you can indicate if the parameter brings a value into the operation, carries a value (a result) out of the operation, or both.
 
-operation(in p1: integer, inout p2:integer, out p3:integer, return p4:integer).
-See table 7.6 (p.143) for details.
+- operation(in p1: integer, inout p2:integer, out p3:integer, return p4:integer).
+- See Table 7.6 for details
 
 **Parameter default values**: You can give a default value to an operation parameter. When the operation is called, if no value has been given for the parameter, its default value will be used.
 
@@ -219,7 +281,12 @@ See table 7.6 (p.143) for details.
 
 ### Class Stereotype Syntax &sect;7.5.4 ###
 
-There is a lot of flexibility in how stereotypes can be displayed. However, some designers just use the name in guillemets (&laquo;stereotypeName&raquo;) or the icon.
+- There is a lot of flexibility in how stereotypes can be displayed
+- See Figure 7.14 for options
+- It is common to use the name in guillemets (&laquo;stereotypeName&raquo;) or just the UML icon
+- Not all stereotypes have an equivalent icon representation
+
+![Class stereotype common options][class-stereo]
 
 ## Scope &sect;7.6 ##
 
@@ -243,17 +310,37 @@ Class scope operations can **only** access other class scope operations and attr
 
 ### Constructors &sect;7.7.1 ###
 
-Constructors are special operations that create new instances of classes - these operations **must** be class scope.
-Constructors are design considerations and are generally *not* shown on analysis models.
+- Constructors are special operations that create new instances of classes
+- Constructors **must** be class scope
+- Constructors are typically named the same as a class in modern OO programming languages
+- A class can have many constructors, each with different parameters
+- The constructor with no parameters is the _default constructor_ of a class
 
-Different languages have different standards for naming constructors. Acompletely generic approach is to just call the constructor **create(...)**. This makes the intention of the operation clear.
+![Class with two constructors][customer-construct]
+
+- Constructors are design considerations and are generally *not* shown on analysis models
+- You could include a generic <span style="text-decoration:underline">+create()</span> as a placeholder during analysis
+- Include parameters in constructors during analysis only if they are important from a business perspective
 
 ### Destructors &sect;7.7.2 ###
 
-Destructors are special operations that are called to dispose of an objects when it is no longer needed. In java, this is called *finalize()* and is automatic called when the object is finally destroyed.
+- Destructors are special operations that are called to dispose of an objects when it is no longer needed
+- Some OO languages introduce a destructor named as `~Classname(parameterList)`
+- Java provides a `finalize()` operation for each class, which is automatically called when the object is finally destroyed
 
 ---
 
 [object-syntax]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot4.PNG
 
+[object-instantiate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot6.PNG
 
+[client-supplier]: http://yuml.me/0d9e6137
+<!-- client and supplier dependency
+[Client]-.->[Supplier]
+-->
+
+[class-adorn]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot7.PNG
+
+[customer-construct]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Customer_Constructors.png
+
+[class-stereo]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/class_stereo.png
