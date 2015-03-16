@@ -238,13 +238,12 @@ The only mandatory part of the UML attribute syntax is the attribute name. Attri
 
 - See Table 7.3 for visibility adornments and their meaning
 
-| Adornment |  Purpose  |
-|:---------:|:---------:|
-|     +     |   Public  |
-|     -     |  Private  |
-|     #     | Protected |
-|     ~     |  Package  |
-
+Adornment |  Name
+----------|------
+ + | Public
+ - | Private
+ # | Protected
+ ~ | Package
 
 - See Table 7.4 for a comparison of visibility across 00 programming languages
 
