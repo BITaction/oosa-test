@@ -140,10 +140,11 @@ Object name : Class name | <span style="text-decoration:underline">tonySmith:Stu
 
 Bank Account example:
 
-- two back account objects
-- one has a thousand dollars, the other is overdrawn
+- consider two bank account objects
+- one has a balance of $1000, the other is overdrawn
 - the message `withdraw(100)` can be sent to both bank account objects
 - each object will likely respond differently because of their state
+- the first will end up with a balance of $900, and the second may respond with an error
 
 > Classification is possibly the single most important way that human beings have of ordering information about the world. It is also one of the most important OO concepts.
 > 
@@ -153,9 +154,9 @@ Bank Account example:
 - Finding a workable classification scheme is a key goal of OO analysis
 
 > ### In Class Activity
-> - Consider the objects identified in a previous in class activity
+> - Consider the objects identified in a previous activity
 > - How can these objects be classified?
-> - Are there variations to the initial classification you gave?
+> - Are there variations to the initial classification you give?
 
 ### Classes and Objects &sect;7.4.1 ###
 
@@ -187,13 +188,13 @@ Bank Account example:
 - We create new instances (objects) from a class
 - The class comes first
 - OO programming languages have special class operations called _constructors_ that perform instantiation
-- Constructors allocate memory for the object, give it an identity, sets default values, and sets default links to other objects
+- Constructors allocate memory for the object, give it an identity, set default values, and set links to other objects
 
 ## UML Class Notation &sect;7.5 ##
 
 - UML syntax for a class is very rich
 - apply the UML notion of optional adornments to a class
-- only mandatory is the name compartment with the class name listed
+- only mandatory part is the name compartment with the class name listed
 - apply other adornments as necessary to enhance the understanding of the analysis model
 - See Figure 7.7 
 
@@ -245,6 +246,7 @@ Adornment |  Name
  # | Protected
  ~ | Package
 
+- There is the UML meaning, but then OO programming languages can vary slightly from these semantics
 - See Table 7.4 for a comparison of visibility across 00 programming languages
 
 **Type**: the type of an attribute can be a primitive type or another class.
@@ -254,24 +256,33 @@ Adornment |  Name
 - Visual modeling tools typically provide a set of primitive types that can be mapped to OO programming language types
 - This approach allows you to create a *platform independent model* (PIM) during analysis that can be translated to a *platform specific model* (PSM) during design
 
-**Multiplicity**: Multiplicity is widely used in design but may also be used in analysis models as it can be used to  express certain business constraints relating to the "number of things" participating in a relationship.
+**Multiplicity**: Multiplicity is widely used in design, but may also be used in analysis models as it can be used to  express certain business constraints relating to the "number of things" participating in a relationship.
 
-- Collections - if the multiplicity expression results in an integer greater than 1, then you are specifying a collection of the type. For example, **colors: Color[7]** would model an attribute that is a collection of seven Color objects.
-- Null values: Null can mean that we don't have a value yet (same as NULL in SQL databases). It may also mean that the address of an object is null because the object it points to hasn't been created yet, or that it has ceased to exist. It is essential to distinguish between the 2 situations.
+Multiplicity on attributes can model:
 
-**Initial value** The Initial value allows you to specify the value an attribute will take when the object is created. In design, it is good style to use initial values whenever possible - it helps to ensure that objects of the class are created in a valid and useful state.
+- Collections: if the multiplicity expression results in an integer greater than 1, then you are specifying a collection. For example, `name: String[2..*]` would model a name attribute that is a collection of two or more Strings.
+- Null values: `null` can mean that we don't have a value yet (same as NULL in SQL databases). It may also mean that the address of an object is null because the object it points to hasn't been created yet, or that it has ceased to exist. It is essential to distinguish between these situations.
+
+**Initial value** The Initial value allows you to specify the value an attribute will take when the object is created. In design, it is good style to use initial values whenever possible - it helps to ensure that objects of the class are created in a valid and useful state. In analysis they can be added if they add to the understanding of important business constraints.
 
 ### Operation Compartment &sect;7.5.3 ###
 
 - Operations are functions that are bound to a particular class
 - Every operation of a class **must** have a unique signature
-- See Figure 7.10 for details
+- See Figure 7.10 for operation signature details
+
+		visibility name (direction parameterName : parameterType = defaultValue ...) : returnType
+
+- Mandatory parts of an operation signature are `name()`
 - Operations are named in lowerCamelCase
-- The usually start with or contain a verb (as verbs indicate action and an operation *does* somethhing)
+- The usually start with or contain a verb (as verbs indicate action and an operation *does* something)
+- parameterNames are expressed in lowerCamelCase as well
+- parameterName are usually a noun or noun phrase
 
 **Parameter direction**: Operation parameters can be given a direction - that is, you can indicate if the parameter brings a value into the operation, carries a value (a result) out of the operation, or both.
 
-- operation(in p1: integer, inout p2:integer, out p3:integer, return p4:integer).
+	operation(in p1: integer, inout p2:integer, out p3:integer, return p4:integer)
+	
 - See Table 7.6 for details
 
 **Parameter default values**: You can give a default value to an operation parameter. When the operation is called, if no value has been given for the parameter, its default value will be used.
@@ -282,7 +293,7 @@ Adornment |  Name
 
 - There is a lot of flexibility in how stereotypes can be displayed
 - See Figure 7.14 for options
-- It is common to use the name in guillemets (&laquo;stereotypeName&raquo;) or just the UML icon
+- It is common to use the name in guillemets (&laquo;stereotype&raquo;) or the equivalent UML icon, if it exists
 - Not all stereotypes have an equivalent icon representation
 
 ![Class stereotype common options][class-stereo]
