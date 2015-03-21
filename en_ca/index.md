@@ -29,9 +29,6 @@ This site includes the notes and resource materials that are relevant to the cou
 
 - [Gathering Requirements](pages/oosa-s05e01-Requirements_Workflow.md)
 - [Use Case Modeling (Outline)](pages/oosa-s05e02-Use_Case_Diagrams.md)
-
----
-
 - [Use Case Modeling (Detail)](pages/oosa-s06e01-Use_Case_Descriptions.md)
 
 ### MIDTERM WEEK ###
@@ -41,4 +38,4 @@ This site includes the notes and resource materials that are relevant to the cou
 ## Analysis Workflow ##
 
 - [Analysis Workflow Overview](pages/oosa-s08e01-Analysis_Workflow.md)
-- [Objects and Classes](pages/oosa-s08e02-Objects_Classes.md)
+- [Objects and Classes](pages/oosa-s09e01-Objects_Classes.md)
