@@ -23,7 +23,7 @@
 	* Define and give examples of association classes
 	* Define and give examples of &laquo;stereotype&raquo; dependency relationships among objects and classes
 
-## Relationship &sect;9.2 ##
+## What is a Relationship? &sect;9.2 ##
 
 Relationships are semantic (meaningful) connections between modeling elements - they are the UML way of connecting things together.
 You have already seen a few types of relationships:
@@ -34,7 +34,7 @@ You have already seen a few types of relationships:
 
 In this chapter, we explore connections between objects and connections between classes.
 
-## Link &sect;9.3 ##
+## What is a Link? &sect;9.3 ##
 
 To create an object-oriented program, objects need to communicate with each other. In fact, an executing OO program is a harmonious community of cooperating objects. It contains many objects that come and go, and many links (that also come and go) that join these objects. Messages are passes back and forth between objects over these links. Java implements links as object references. A minimal requirement for a link is that *at least one* of the objects must have an object reference to the other.
 
