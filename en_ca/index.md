@@ -39,3 +39,4 @@ This site includes the notes and resource materials that are relevant to the cou
 
 - [Analysis Workflow Overview](pages/oosa-s08e01-Analysis_Workflow.md)
 - [Objects and Classes](pages/oosa-s09e01-Objects_Classes.md)
+- [Relationships](pages/oosa-s10e01-Relationships.md)
