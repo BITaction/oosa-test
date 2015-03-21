@@ -42,7 +42,7 @@ To create an object-oriented program, objects need to communicate with each othe
 
 On object diagram is a diagram that shows objects and their relationships at a point in time. It's like a snapshot of part of an executing OO system at a particular instant, showing the objects and the links between them.
 
-Objects that are connected by links may adopt various roles relative to each other.In Fig 9.2 (p.178) you can see that the ila object adopts the role of chairperson in its link with the bookClub object. You indicate this on the object diagram by placing the role name at the appropriate end of the link. Because the bookClub always has the role of "club", there is no real point in showing this on the diagram.
+Objects that are connected by links may adopt various roles relative to each other.In Fig 9.2 you can see that the ila object adopts the role of chairperson in its link with the bookClub object. You indicate this on the object diagram by placing the role name at the appropriate end of the link. Because the bookClub always has the role of "club", there is no real point in showing this on the diagram.
 
 Figure 9.2 tells us that at a particular point in time, the object ila is playing the role of chairperson. However, it is important to realize that links are *dynamic* connections between objects. In other words, thay are not necessarily fixed over time.
 
@@ -93,7 +93,7 @@ In the example in Figure 9.6 you read the association as follows: "a Company emp
 
 Constraints are one of the three UML extensibility mechanisms, and multiplicity is the first type of constraint that we have seen. It is also by far the most common type of constraint.
 Multiplicity constrains the number of objects of a class that can be involved in a particular relationship *at any point in time*.
-The phrase "at any point in time" is vital to understanding multiplicities. In Figure 9.8 (p.183) you can see that at any point in time a Person object is employed by exactly one Company object. However, *over time* a Person object might be employed by a series of Company objects (one after the other).
+The phrase "at any point in time" is vital to understanding multiplicities. In Figure 9.8 you can see that at any point in time a Person object is employed by exactly one Company object. However, *over time* a Person object might be employed by a series of Company objects (one after the other).
 
 Looking at Figure 9.8, you can see something else that is interesting. A Person can never be unemployed - it is always employed by exactly one Company object. The constraint therefore embodies two business rules of this model:
 
@@ -108,7 +108,7 @@ minimum..maximum
 minimum and maximum may be integers or any expression that yields an integer result.
 If multiplicity is not explicitly stated, then it is undecided - there is no "default" multiplicity in UML.
 
-Table 9.1 (p.184) provides some examples of multiplicity syntax.
+Table 9.1 provides some examples of multiplicity syntax.
 
 The example given in Figure 9.9 illustrates that multiplicity is actually a powerful constraint that has a big effect on the business semantics of the model. If you read the example carefully, you will see that:
 
@@ -125,15 +125,16 @@ When a class has an association to itself, it is called a reflexive association.
 
 When modeling, you'll find that objects often organize themselves into hierarchies or networks. 
 
-A hierarchy has one root object, and every other node in the hierarchy has exactly one object above it. Directory trees naturally form hierarchies. So do part breakdowns in engineering, and elements in XML and HTML documents. The hierarchy is a very ordered, structured and sometime rigid way of organizing objects. An example is given in Figure 9.11 (p.186).
+A hierarchy has one root object, and every other node in the hierarchy has exactly one object above it. Directory trees naturally form hierarchies. So do part breakdowns in engineering, and elements in XML and HTML documents. The hierarchy is a very ordered, structured and sometime rigid way of organizing objects. An example is given in Figure 9.11.
 
 In a network, however, there is often no root object (although that is not precluded). In networks, each object may have many objects directly connected to it. There is no concept of "above" or "below" in a network. It is a much more flexible structure in which it is possible that no node has primacy over another. The World Wide Web forms a complex network of nodes, as illustrated in a simple way in Figure 9.12.
 
 ### Navigability &sect;9.4.3 ###
 
-Navigability shows us that is it possible to traverse from an object of the source class to one or more objects of the target class, depending on the multiplicity. In Figure 9.13 (p.187), Order objecy=ts can send messages to Product objects, but not vice versa.
+Navigability shows us that is it possible to traverse from an object of the source class to one or more objects of the target class, depending on the multiplicity. In Figure 9.13, Order objects can send messages to Product objects, but not vice versa.
 
 One of the goals of good OO analysis & design is to minimize coupling between classes, and using navigability is a good way to do this. By making the association between Order and Product unidirectional, you can navigate from Order objects to Product objects, but there is no navigability back from Product objects to Order objects. So Product objects *do not know* that they may be participating in a particular Order, and therefore there have **no** coupling to Order. 
+
 From a programming standpoint, this means that coding an Order will require knowledge of Product methods available for calling (the message that will be passed from Order objects to Product objects). On the other hand, the programmer working on Product doesn't need to know anything about the Order methods, as Product objects will **never** need to invoke them.
 
 The UML 2.0 specification suggests three idioms for using navigability on your diagrams:
@@ -142,11 +143,11 @@ The UML 2.0 specification suggests three idioms for using navigability on your d
 2. Make navigability completely invisible. No arrow or crosses are shown.
 3. Suppress all crosses. Bidirectional associations have no arrows. Unidirectional association have a single arrow.
 
-Idiom 1 tends to clutter diagrams.
-Idiom 2 should be avoided as it hides far too much important information.
-Idiom 3 is a reasonable compromise and is used almost exclusively in practice.
+- Idiom 1 tends to clutter diagrams.
+- Idiom 2 should be avoided as it hides far too much important information.
+- Idiom 3 is a reasonable compromise and is used almost exclusively in practice.
 
-There are summarized in Figure 9.14 (p.188).
+There are summarized in Figure 9.14.
 
 ### Associations and Attributes &sect;9.4.4 ###
 
@@ -155,10 +156,10 @@ When an object needs to send a message to another object, it needs to have the t
 The reference is of type 'address of object'.
 For example, if a House object were to hold the address of an Address object, the following Java code would represent the situation:
 
-public class House
-{
-   private Address oAddress;
-}
+	public class House
+	{
+	   private Address oAddress;
+	}
 
 where oAddress is the reference of an external Address object.
 
@@ -183,7 +184,7 @@ You can't really make the Person salary an attribute of the Person class as each
 The answer is that the Salary is actually a property of the association itself.
 For each employment association that a Person object has with a Company object, there is a specific salary.
 
-UL allows you to model this situation with an association class as shows in Figure 9.19 (p.192).
+UL allows you to model this situation with an association class as shows in Figure 9.19.
 
 Note that an association class is an association that is *also* a class. Not only does it connect two classes like an association, it defines a set of features that belong to the association itself. Association classes can have attributes, operations, and other associations.
 
@@ -198,7 +199,7 @@ In Figure 9.20, Job is now an ordinary class, and you can see that a Person may 
 
 You can use a qualified association to reduce an n-to-many association to an n-to-one association by specifying a unique object (or group of objects) from the target set. They are very useful modeling element as they illustrate how you can look up, or navigate to, specific objects in a collection.
 
-Consider the model in Figure 9.21 (p.194). A Club object is linked to a set of Member objects, and a Member object is liekwise linked to exactly one Club object.
+Consider the model in Figure 9.21. A Club object is linked to a set of Member objects, and a Member object is likewise linked to exactly one Club object.
 The following question arises: given a Club object that is linked to a set of Member objects, how could you navigate to one specific Member object?
 
 Clearly you need some unique key that you can use to look up a particular Member object from the set. This is known as a qualifier. Many qualifiers are possible (name, credit card number, social security number), but in the example above, every Member object has a memberID attribute value that is unique to that object. This, then, is the look-up key in this model.
@@ -211,9 +212,9 @@ A dependency indicates a relationship between two or more model elements whereby
 
 For ecxample, you may pass an object of one class (actually its reference, the object doesn't move) as a parameter to an operation of an object of a different class.There clearly is some sort of relationship between the classes of those objects, but it is not really an association.
 
-UML 2 specifies three basic types of dependency, shown in Table 9.2 (p.195).
+UML 2 specifies three basic types of dependency, shown in Table 9.2.
 
-Dependencies also occur between 
+Dependencies also occur between:
 
 - packages and packages
 - objects and classes
