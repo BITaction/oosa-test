@@ -25,50 +25,81 @@
 
 ## What is a Relationship? &sect;9.2 ##
 
-Relationships are semantic (meaningful) connections between modeling elements - they are the UML way of connecting things together.
-You have already seen a few types of relationships:
+- Relationships are meaningful connections between modeling elements
+- They are a UML way of connecting things together
+- Some familiar relationships:
+	*  between actors and use cases (associations)
+	*  between use cases and use cases (include, extend)
+	*  between actors and actors (generalization)
+	*  between objects and classes (instantiate)
+-In Chapter &sect;9, we further explore:
+	* relationships between objects (called _links_)
+	* relationships between classes (called _associations_)
 
--  between actors and use cases (associations);
--  between use cases and use cases;
--  between actors and actors (generalization).
-
-In this chapter, we explore connections between objects and connections between classes.
+> Links between objects are actually instances of the associations between their classes.
+> 
 
 ## What is a Link? &sect;9.3 ##
 
-To create an object-oriented program, objects need to communicate with each other. In fact, an executing OO program is a harmonious community of cooperating objects. It contains many objects that come and go, and many links (that also come and go) that join these objects. Messages are passes back and forth between objects over these links. Java implements links as object references. A minimal requirement for a link is that *at least one* of the objects must have an object reference to the other.
+> An executing OO application is a harmonious collective of collaborating objects.
+> 
+
+In OO applications:
+
+- Objects get created
+- Objects have connections to one other via links
+- Object send messages to one another along these links
+- Objects execute a corresponding operation when they receive a message on a link
+- Object get destroyed
+- Java implements links as object references
 
 ### Object Diagrams &sect;9.3.1 ###
 
-On object diagram is a diagram that shows objects and their relationships at a point in time. It's like a snapshot of part of an executing OO system at a particular instant, showing the objects and the links between them.
+> An object diagram is a snapshot of a collective of collaborating objects
+> 
 
-Objects that are connected by links may adopt various roles relative to each other.In Fig 9.2 you can see that the ila object adopts the role of chairperson in its link with the bookClub object. You indicate this on the object diagram by placing the role name at the appropriate end of the link. Because the bookClub always has the role of "club", there is no real point in showing this on the diagram.
+- An object diagram shows **Objects** and the **Links** between them
+- Objects that are connected by links may adopt various roles relative to each other
+- See Figure 9.2 
 
-Figure 9.2 tells us that at a particular point in time, the object ila is playing the role of chairperson. However, it is important to realize that links are *dynamic* connections between objects. In other words, thay are not necessarily fixed over time.
+![Book Club object diagram][od-bookclub]
 
-Considering the diagram on Figure 9.2 in more depth, you can wee that there are three links between four objects:
+The diagram contains 4 objects with the following links:
 
-- a link between bookClub and ila;
-- a link between bookClub and erica;
-- a link between bookClub and naomi.
+- between `bookClub` and `ila`, who is playing the role of `chairperson`
+- between `bookClub` and `erica`, who is playing the role of `secretary`
+- between `bookClub` and `naomi`, who is playing the role of `member`
 
-In Figure 9.2, the links are bidirectional. If a link is unidirectional, you use navigability to specify in which direction messages may pass over the link. Navigability is a bit like a one-way system in a city. Messages can only flow in the direction indicated by the arrowhead.
+> Links are *dynamic* connections between objects and they can change over time as objects send messages to one another.
+> 
 
-We use the following most common idiom:
+![In class activity - objects and links][od-sections]
 
-- all crosses are suppressed;
-- biridectional associations have *no* arrows;
-- unidirectional associations have a single arrow.
+> ### In Class Activity
+> - What are the objects in the above diagram?
+> - Describe the links and their roles?
 
-In Figure 9.3, the link between :PersonDetails and :Address is unidirectional. This means that the :PersonDetails object has an object reference to the :Address object, but *not* vice versa. Because :Address doesn't have the reference of :PersonDetails, it *cannot* send it any messages, but only receive messages *from* it.
+- In Figure 9.2, the links are bidirectional (messages can be sent in both directions across the link)
+- If a link is unidirectional, use a navigability arrow to specify the direction messages may pass over the link
+- Navigability is like a one-way street (messages should only flow in the direction indicated by the arrowhead)
 
-The lines used to represent links can be of three styles for drawing paths:
+We will follow these common idioms for representing navigation:
 
-- orthogonal - where the path consists of a series of horizontal and vertical segments;
-- oblique - where the path is a series of one or more sloping lines;
-- curved - where the path is a curve.
+- all crosses are suppressed (non-navigability not shown)
+- bidirectional associations have *no* arrows (use a straight line between objects)
+- unidirectional associations have a single arrow (show the arrow in the direction messages flow)
 
-Which one you use is a matter of personal preference, but the primary goal must be that of readibility, visual neatnness and general appeal.   
+![Unidirectional link][od-unidir]
+
+- In Figure 9.3, the link between `:PersonDetails` and `:Address` is unidirectional
+- That means the `:PersonDetails` object has a reference to the `:Address` object, but *not* vice versa
+- Messages are sent from `:PersonDetails` to `:Address`
+
+Lines used to represent links can be of three styles for drawing paths:
+
+- **orthogonal**: where the path consists of a series of horizontal and vertical segments;
+- **oblique**: where the path is a series of one or more sloping lines;
+- **curved**: where the path is a curve. 
 
 ## Association &sect;9.4 ##
 
@@ -221,9 +252,11 @@ Dependencies also occur between:
 
 Most of the time, you just use an unadorned dotted arrow to indicate a dependency and don't worry about what type of dependency it is.
 
+---
 
+[od-bookclub]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-ObjectRoles-Club.png
 
+[od-sections]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-ObjectRoles-RRC.png
 
-
-
+[od-unidir]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-unidir.png
 
