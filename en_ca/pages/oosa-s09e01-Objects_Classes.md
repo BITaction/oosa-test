@@ -342,7 +342,7 @@ Class scope operations can **only** access other class scope operations and attr
 
 [object-syntax]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot4.PNG
 
-[object-instantiate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot6.PNG
+[object-instantiate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch7-Instantiate.png
 
 [client-supplier]: http://yuml.me/0d9e6137
 <!-- client and supplier dependency
