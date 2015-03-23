@@ -91,9 +91,9 @@ We will follow these common idioms for representing navigation:
 
 ![Unidirectional link][od-unidir]
 
-- In Figure 9.3, the link between `:PersonDetails` and `:Address` is unidirectional
-- That means the `:PersonDetails` object has a reference to the `:Address` object, but *not* vice versa
-- Messages are sent from `:PersonDetails` to `:Address`
+- the link between `:Person` and `:Address` is unidirectional
+- the `:Person` object has a reference to the `:Address` object, but **not** vice versa
+- messages are sent from `:Person` to `:Address`
 
 Lines used to represent links can be of three styles for drawing paths:
 
