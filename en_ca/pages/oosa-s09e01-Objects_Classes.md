@@ -303,15 +303,26 @@ Multiplicity on attributes can model:
 > Attributes and operations can be _instance scope_ or _class scope_.
 > 
 
-### Instance Scope and Class Scope &sect;7.6.1 ###
+### Instance Scope &sect;7.6.1 ###
 
-Up to now, you have seen that objects have their own copies of the attributes defined in their class. Similarly, the operations that you have seen so far all act on specific objects. This is the normal case, and we say that these attributes & operations have *instance scope*.
+- Each object can have its own values for attributes defined in its class
+- In a sense, each object has its own copy of the attributes
+- Operations that you have seen so far all act on specific objects instantiated from a class
+- This is the normal case, and we say that these attributes & operations have *instance scope*.
 
-However, sometimes you need to define attributes that have a single shared value for *every* object of the class, and you need operations (such as constructors) that don't operate on any particular class instance. We say that these attributes and operations have *class scope*. Class scope features provide a set of global features for an entire class of objects.
+### Class Scope &sect;7.6.1 ###
+
+- Sometimes you need to define attributes that have a single shared value among *all* objects of the class
+- Similarly, you need operations (such as constructors) that don't operate on any particular class instance, but work without an instance
+- These kinds of attributes and operations have *class scope*
+- Class scope features provide a set of global features for an entire class of objects
 
 ### Scope Determines Access &sect;7.6.2 ###
 
-Class scope operations can **only** access other class scope operations and attributes. Class scope operations can't access instance scope attributes & operations because:
+- Class scope operations can **only** access other class scope operations and attributes
+- Class scope operations can't access instance scope attributes & operations
+
+WHY?
 
 - there might not be any objects of that class yet
 - even if there are some, you don't know which one to use
