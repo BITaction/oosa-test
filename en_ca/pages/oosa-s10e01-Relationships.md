@@ -99,7 +99,20 @@ Lines used to represent links can be of three styles for drawing paths:
 
 - **orthogonal**: where the path consists of a series of horizontal and vertical segments;
 - **oblique**: where the path is a series of one or more sloping lines;
-- **curved**: where the path is a curve. 
+- **curved**: where the path is a curve.
+
+> ### In Class Activity
+> - Consider a shopping application like Amazon
+> - Represent the classes and objects (with state and links) of a typical shopping experience
+> - There are various categories of products for sale
+> - One needs an account to purchase products
+> - One needs a payment method to purchase products
+> - Products are placed in a shopping cart to be considered for purchase
+> - Wish lists can be created and products placed in them if one wants to purchase them later
+> 
+> Draw on object diagram to represent the objects needed to for a typical shopping experience on Amazon.
+>
+
 
 ## Association &sect;9.4 ##
 
