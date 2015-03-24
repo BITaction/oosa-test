@@ -102,76 +102,174 @@ Lines used to represent links can be of three styles for drawing paths:
 - **curved**: where the path is a curve.
 
 > ### In Class Activity
-> - Consider a shopping application like Amazon
-> - Represent the classes and objects (with state and links) of a typical shopping experience
+> Consider a shopping application like Amazon online. Draw an object diagram to represent the objects and links of a typical shopping experience based on the following general statements. In the modeling tool you will need to create classes to instantiate the objects.
+>
+> - Products are placed in a shopping cart to be considered for purchase
 > - There are various categories of products for sale
+> - Consumers can purchase multiple quantities of different products
 > - One needs an account to purchase products
 > - One needs a payment method to purchase products
-> - Products are placed in a shopping cart to be considered for purchase
 > - Wish lists can be created and products placed in them if one wants to purchase them later
 > 
-> Draw on object diagram to represent the objects needed to for a typical shopping experience on Amazon.
->
-
 
 ## Association &sect;9.4 ##
 
-Associations are relationships between classes. The key point is that an association between classes *will* result in a link between instances of these classes.
+> Associations are relationships between classes, just as links are relationships between objects.
+> 
 
-Figure 9.56 shows the relationship between classes and objects, and between links and associations. Because you *can't* have a link without an association, it is clear that *links* depend on *associations*; you can model this with a dependency relationship (the dashed arrow). To make this representation explicit, you stereotype the dependency &laquo;instantiate&raquo;
+- An association between classes *will* result in a link between instances of these classes
+- See Figure 9.5
+
+![][od-relations1]
+
+- An object diagram showing the relationships among objects and classes, and between links and associations
+- `bookClub:Club` is an object that is an instance of class `Club`
+- bookClub is instantiated from Club and hence depends on Club (as a template)
+- `ila:Person` is an object that is an instance of class `Person`
+- ila is instantiated from Person and hence depends on Person (as a template)
+- bookClub has a link to ila who is in the role of chairperson
+- the link between bookClub and ila is instantiated from the association between Club and Person
+- Hence, the link between the objects depends on the association between the classes
+- The objects and link are a representation of reality (at a certain time)
+- The classes and association are an abstraction (template) of this reality
 
 ### Association Syntax &sect;9.4.1 ###
 
 An association may have:
 
-- an association name;
-- role names;
-- multiplicity;
-- navigability.
+- an association name
+- role names
+- multiplicity
+- navigability
 
-Association names should be verb phrases because they indicate an action that the source object is performing on the target object. The name may also be pre- or post-fixed with a small black arrowhead to indicate the direction in which the association should be read. Association names are in lowerCamelCase.
+Association name:
 
-In the example in Figure 9.6 you read the association as follows: "a Company employs many persons". Even though the arrow indicates the direction in which the association should be read, you cal always read the association in the other direction. So, in Figure 9.6 you can say "Each Person is employed by exactly one Company" at any point in time.
+- should be a verb phrase
+- may be pre- or post-fixed with a small black arrowhead to indicate the direction in which to read the association
+- should express the active relationship made by the association
+- should not be used in conjunction with role names (use one or the other)
+- is written in lowerCamelCase
+
+See Figure 9.6:
+
+![Association name][cls-assoc-name]
+
+- `employs` is an association name
+- The direction indicates the normal way of considering the association
+- Normally, read the association as: "a Company employs many persons"
+- However, can be read in the other direction as: "each Person is employed by exactly by one Company"
+
+Role name:
+
+- should be a noun or noun phrase
+- can be on one or both ends of the association
+- should express the role that the linked instances play in the relationship
+- should not be used in conjunction with an association name (use one or the other)
+- are written in lowerCamelCase
+
+See Figure 9.7:
+
+![Role names][cls-role-name]
+
+- `employee` is a role name stating that Person instances play the role of employee
+- `employer` is a role name stating that Company instances play the role of employer
 
 ### Multiplicity &sect;9.4.2 ###
 
-Constraints are one of the three UML extensibility mechanisms, and multiplicity is the first type of constraint that we have seen. It is also by far the most common type of constraint.
-Multiplicity constrains the number of objects of a class that can be involved in a particular relationship *at any point in time*.
-The phrase "at any point in time" is vital to understanding multiplicities. In Figure 9.8 you can see that at any point in time a Person object is employed by exactly one Company object. However, *over time* a Person object might be employed by a series of Company objects (one after the other).
+> Multiplicity constrains the number of objects of a class that can be involved in a particular relationship *at any point in time*.
+> 
 
-Looking at Figure 9.8, you can see something else that is interesting. A Person can never be unemployed - it is always employed by exactly one Company object. The constraint therefore embodies two business rules of this model:
+- Multiplicity is a common type of constraint expressed in UML
+- The phrase "at any point in time" is vital to understanding multiplicities
 
-- Person objects can only be employed by one Company objects at a time.
-- Person objects *must* always be employed.
+See Figure 9.8:
 
-Whether or not these are reasonable constraints depends entirely on the requirements of the system you are modeling, but it is what this model actually says.
-Multiplicity is specified as a comma-separated list of intervals, where each interval is of the form:
+![Multiplicity][cls-multiplicity]
 
-minimum..maximum
+- At any point in time a Person object is employed by exactly one Company object
+- However, *over time* a Person object might be employed by a series of Company objects (one after the other)
+- A Person can never be unemployed - it is always employed by exactly one Company object
+- The constraint embodies two business rules of this model:
+	* Person objects can only be employed by one Company objects at a time
+	* Person objects *must* always be employed
+- Whether or not these are reasonable constraints depends entirely on the requirements of the system being modeled
+- Multiplicity is specified as a comma-separated list of intervals, where each interval is of the form:
 
-minimum and maximum may be integers or any expression that yields an integer result.
-If multiplicity is not explicitly stated, then it is undecided - there is no "default" multiplicity in UML.
+		minimum..maximum
 
-Table 9.1 provides some examples of multiplicity syntax.
+- `minimum` and `maximum` may be integers or any expression that yields an integer result
+- If multiplicity is not explicitly stated, then it is undecided
+- There is no "default" multiplicity in UML
 
-The example given in Figure 9.9 illustrates that multiplicity is actually a powerful constraint that has a big effect on the business semantics of the model. If you read the example carefully, you will see that:
+See Table 9.1 for examples of multiplicity syntax.
 
-- a Company can have exactly 7 employees (no more, no fewer).
-- a Person can be employed by exactly one Company (meaning that in this model, a Person can't have more than one job at a time);
-- a BankAccount can have exactly one owner (no more, no fewer);
-- a BankAccount can have one or many operators;
-- a Person may have between zero and many BankAccount;
-- a Person may operate between zero and many BankAccounts.
+Multiplicity | Meaning
+-------------|--------
+0..1 | zero or one
+1 | exactly one
+0..* | zero or more
+* | zero or more
+1..* | one or more
+3..5 | three to five
 
-When reading a UML model, it is vital to figure out exactly what the model actually says, rather than making many assumptions or hallucinating semantics.
+> ### In Class Activity
+> Multiplicity is a powerful constraint that has a big effect on the business semantics of the model. Always read a model exactly as it is written (or develop it exactly as the requirements read).
+>
+> Create a class diagram (model) that represents the following:
+> 
+> - a Company can have exactly 7 employees (no more, no fewer)
+> - a Person can be employed by exactly one Company (meaning that a Person can't have more than one job at a time)
+> - a BankAccount can have exactly one Person as an owner (no more, no fewer)
+> - a BankAccount can have one or many Persons as an operator
+> - a Person may have between zero and many BankAccounts
+> - a Person may be the operator of zero or many BankAccounts
+>
 
-When a class has an association to itself, it is called a reflexive association. In Figure 9.10, each Directory can have links to zero or more Directory objects that play the role of **subdirectory**, and to zero or one **Directory** that plays the role of parent. In addition, each directory is associated with zero or more **File** objects. The top half of Figure 9.10 shows the class diagram, and the bottom half shows an example object diagram that accords with the class diagram.
+#### Reflexive Associations &sect;9.4.2.1 ####
 
-When modeling, you'll find that objects often organize themselves into hierarchies or networks. 
+> A _reflexive association_ is when a class has an association to itself.
+> 
 
-A hierarchy has one root object, and every other node in the hierarchy has exactly one object above it. Directory trees naturally form hierarchies. So do part breakdowns in engineering, and elements in XML and HTML documents. The hierarchy is a very ordered, structured and sometime rigid way of organizing objects. An example is given in Figure 9.11.
+- Objects of the class have links to other objects of the same class
 
-In a network, however, there is often no root object (although that is not precluded). In networks, each object may have many objects directly connected to it. There is no concept of "above" or "below" in a network. It is a much more flexible structure in which it is possible that no node has primacy over another. The World Wide Web forms a complex network of nodes, as illustrated in a simple way in Figure 9.12.
+![Self association][cls-assoc-self]
+
+- Instances of `Company` as a holding company can have links to other instances of `Company` as subsidiary companies
+
+> ### In Class Activity
+> The file system on your computer can be modeled with a reflexive association. Consider the following general statements about a typical file directory structure.
+>
+> Create a class diagram (model) of a file directory structure, along with an object diagram showing a specific example of directories and files (perhaps some of the files and directories on your computer).
+>
+> - A Directory object can be linked to zero or more Directory objects that play the role of **subdirectory**
+> - A Directory is normally linked to one other Directory that plays the role of **parent**
+> - The root Directory has no parent
+> - Each Directory object can be linked to zero or more File objects
+> - Each File must exist in only one Directory
+>
+
+#### Hierarchies and Networks &sect;9.4.2.2 ####
+
+> When modeling, you'll find that objects often organize themselves into hierarchies or networks.
+> 
+
+Hierarchy:
+
+- has one root object
+- the root has zero objects above it
+- every other object in the hierarchy has exactly one object above it
+- very ordered, structured, and somewhat rigid way of organizing objects
+- directory trees naturally form hierarchies
+- See Figure 9.11 for UML representation
+
+Network:
+
+- often no root object (although it may have one)
+- each object may have many objects directly connected to it
+- no concept of "above" or "below"
+- flexible structure in which it is possible that no node has primacy over another
+- The World Wide Web forms a complex network of nodes
+- See Figure 9.12 for UML representation
 
 ### Navigability &sect;9.4.3 ###
 
@@ -254,7 +352,7 @@ You can show this look-up on the model by appending a qualifier to the Club end 
 
 A dependency indicates a relationship between two or more model elements whereby a change to one element (the supplier) may affect or supply information needed by the other element (the client). In other words, the client depends in some way on the supplier.
 
-For ecxample, you may pass an object of one class (actually its reference, the object doesn't move) as a parameter to an operation of an object of a different class.There clearly is some sort of relationship between the classes of those objects, but it is not really an association.
+For example, you may pass an object of one class (actually its reference, the object doesn't move) as a parameter to an operation of an object of a different class.There clearly is some sort of relationship between the classes of those objects, but it is not really an association.
 
 UML 2 specifies three basic types of dependency, shown in Table 9.2.
 
@@ -272,4 +370,14 @@ Most of the time, you just use an unadorned dotted arrow to indicate a dependenc
 [od-sections]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-ObjectRoles-RRC.png
 
 [od-unidir]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-unidir.png
+
+[od-relations1]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-relations1.png
+
+[cls-assoc-name]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-name.png
+
+[cls-role-name]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-role.png
+
+[cls-multiplicity]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-role.png
+
+[cls-assoc-self]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-self.png
 
