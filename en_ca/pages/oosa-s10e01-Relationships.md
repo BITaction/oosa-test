@@ -329,23 +329,27 @@ See Figure 9.14 for summary of these idioms
 
 - The Java code to represent this model could be:
 
+		public class Address {
+
+		}
+
 		public class House
 		{
 		   private Address location;
 		}
 
-		public class Address {
-
-		}
-
 When multiplicities greater than 1 are present, they are implemented as either:
 
-- an attribute of type array/vector (a construct that is supported by most languages)
+- an attribute of type array (a construct that is supported by most languages)
 - an attribute of some type that is a collection
 
 > Collections are just classes whose instances have the specialized behavior of being able to store and retrieve references to other objects.
 > Many OO programming languages (like Java) support a collection framework.
 > 
+> ### READ MORE
+> - [Java Collections Framework][java-coll-over]
+> - [Java Docs Collection Interface][java-coll-docs]
+> - [Java Collections Tutorial][java-coll-tut]
 
 ### Association Classes &sect;9.4.5 ###
 
@@ -440,3 +444,8 @@ Most of the time, you just use an unadorned dotted arrow to indicate a dependenc
 [House|location:Address]1-1>[Address]
 -->
 
+[java-coll-over]: https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
+
+[java-coll-docs]: https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
+
+[java-coll-tut]: http://docs.oracle.com/javase/tutorial/collections/intro/index.html
