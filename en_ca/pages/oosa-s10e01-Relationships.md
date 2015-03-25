@@ -32,7 +32,7 @@
 	*  between use cases and use cases (include, extend)
 	*  between actors and actors (generalization)
 	*  between objects and classes (instantiate)
--In Chapter &sect;9, we further explore:
+- In Chapter &sect;9, we further explore:
 	* relationships between objects (called _links_)
 	* relationships between classes (called _associations_)
 
@@ -273,44 +273,79 @@ Network:
 
 ### Navigability &sect;9.4.3 ###
 
-Navigability shows us that is it possible to traverse from an object of the source class to one or more objects of the target class, depending on the multiplicity. In Figure 9.13, Order objects can send messages to Product objects, but not vice versa.
+> Navigation expresses there should be an efficient way for objects of a source class to send messages to objects of a target class.
+> 
 
-One of the goals of good OO analysis & design is to minimize coupling between classes, and using navigability is a good way to do this. By making the association between Order and Product unidirectional, you can navigate from Order objects to Product objects, but there is no navigability back from Product objects to Order objects. So Product objects *do not know* that they may be participating in a particular Order, and therefore there have **no** coupling to Order. 
+![][cls-source-target]
 
-From a programming standpoint, this means that coding an Order will require knowledge of Product methods available for calling (the message that will be passed from Order objects to Product objects). On the other hand, the programmer working on Product doesn't need to know anything about the Order methods, as Product objects will **never** need to invoke them.
+- Traverse from an object of the source class to one or more objects of the target class
+- Given a source object, one can efficiently send a message to a target object
+- Messages cannot necessarily be sent from target to source
+- Good OO analysis will minimize coupling between classes
+- Navigability can do this by making unidirectional associations
+- Target objects *do not know* that they may be participating with source objects, and therefore have **no** coupling to them
 
-The UML 2.0 specification suggests three idioms for using navigability on your diagrams:
+![][cls-order-product]
+
+- `Order` objects should easily navigate to `Product` objects, so Orders are coupled to Products
+- There is no navigability from `Product` objects to `Order` objects, so Products have no coupling to Orders
+
+From a programming perspective:
+
+- The programmer working on Order will require knowledge of Product operations available for calling
+- On the other hand, the programmer working on Product doesn't need to know anything about the Order methods
+
+The UML 2.0 specification suggests three idioms for navigability:
 
 1. Make navigability completely explicit. All arrows and crosses are shown.
+	* Make navigability fully visible
+	* Tends to clutter diagrams
 2. Make navigability completely invisible. No arrow or crosses are shown.
+	* hides valuable navigation information
+	* should be avoided
 3. Suppress all crosses. Bidirectional associations have no arrows. Unidirectional association have a single arrow.
+	* reasonable compromise
+	* used almost exclusively in practice
 
-- Idiom 1 tends to clutter diagrams.
-- Idiom 2 should be avoided as it hides far too much important information.
-- Idiom 3 is a reasonable compromise and is used almost exclusively in practice.
+See Figure 9.14 for summary of these idioms
 
-There are summarized in Figure 9.14.
+> If an association is not navigable it may still be traversed, but the cost will be high.
+> 
 
 ### Associations and Attributes &sect;9.4.4 ###
 
-When an object needs to send a message to another object, it needs to have the target object's reference - which is stored in the class attributes.
+> Associations can ultimately be represented as class attributes.
+> 
 
-The reference is of type 'address of object'.
-For example, if a House object were to hold the address of an Address object, the following Java code would represent the situation:
+- To send a message an object reference is needed
+- A class attribute can store an object reference
 
-	public class House
-	{
-	   private Address oAddress;
-	}
+![][cls-house-assoc]
 
-where oAddress is the reference of an external Address object.
+- Consider a House associated to an Address
+- A House could have an attribute with a reference to an Address
+
+![][cls-house-attr]
+
+- The Java code to represent this model could be:
+
+		public class House
+		{
+		   private Address location;
+		}
+
+		public class Address {
+
+		}
 
 When multiplicities greater than 1 are present, they are implemented as either:
 
-- an attribute of type array (a construct that is supported by most languages);
-- an attribute of some type that is a collection.
+- an attribute of type array/vector (a construct that is supported by most languages)
+- an attribute of some type that is a collection
 
-Collections are just classes whose instances have the specialized behaviour of being able to store and retrieve references to other objects.
+> Collections are just classes whose instances have the specialized behavior of being able to store and retrieve references to other objects.
+> Many OO programming languages (like Java) support a collection framework.
+> 
 
 ### Association Classes &sect;9.4.5 ###
 
@@ -380,4 +415,28 @@ Most of the time, you just use an unadorned dotted arrow to indicate a dependenc
 [cls-multiplicity]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-role.png
 
 [cls-assoc-self]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-self.png
+
+[cls-source-target]: http://yuml.me/33dc1a5c
+<!-- 
+// General source to target navigation
+[Source]->[Target]
+-->
+
+[cls-order-product]: http://yuml.me/2ecb2e7d
+<!--
+// Order and Product navigation
+[Order]0..*-1..*>[Product]
+-->
+
+[cls-house-assoc]: http://yuml.me/9a39aa66
+<!--
+// House and Address association
+[House]1-1 location >[Address]
+-->
+
+[cls-house-attr]: http://yuml.me/faa698b8
+<!--
+// House and Address attribute
+[House|location:Address]1-1>[Address]
+-->
 
