@@ -350,6 +350,7 @@ When multiplicities greater than 1 are present, they are implemented as either:
 > - [Java Collections Framework][java-coll-over]
 > - [Java Docs Collection Interface][java-coll-docs]
 > - [Java Collections Tutorial][java-coll-tut]
+> - [Java Collection Hierarchies][java-coll-hier]
 
 ### Association Classes &sect;9.4.5 ###
 
@@ -507,6 +508,8 @@ Dependencies occur between lots of elements in UML like:
 [java-coll-docs]: https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
 
 [java-coll-tut]: http://docs.oracle.com/javase/tutorial/collections/intro/index.html
+
+[java-coll-hier]: http://wiki3.cosc.canterbury.ac.nz/images/e/e9/JavaCollections.png
 
 [cls-client-supplier]: http://yuml.me/25c24769
 <!--
