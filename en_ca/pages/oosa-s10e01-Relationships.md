@@ -466,6 +466,6 @@ Dependencies occur between lots of elements in UML like:
 
 [cls-client-supplier]: http://yuml.me/25c24769
 <!--
-// Client and Supplier dependancy 
+// Client and Supplier dependency 
 [Client]-.->[Supplier]
 -->
