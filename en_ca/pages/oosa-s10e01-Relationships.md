@@ -353,28 +353,72 @@ When multiplicities greater than 1 are present, they are implemented as either:
 
 ### Association Classes &sect;9.4.5 ###
 
-If we consider Figure 9.18, at first glance, it seems like a fairly innocuous model:
+> Association classes can accommodate attributes that are part of many-to-many associations.
+> 
 
-- each Person object can work for many Company objects;
-- each Company object can employ many Person objects.
+Consider the following: 
 
-However, what happens if we add a rule saying that each Person has a salary with each Company they are employed by?
+![][cls-many-many]
 
-You can't really make the Person salary an attribute of the Person class as each Person can work for many Companies, and may have a different salary with each Company. Similarly, you can't really make the Person salary an attribute of Company, as each Company instance employs many Persons, all with potentially different salaries.
+- each Person object can work for many Company objects
+- each Company object can employ many Person objects
 
-The answer is that the Salary is actually a property of the association itself.
-For each employment association that a Person object has with a Company object, there is a specific salary.
+What happens if we have a requirement saying that each Person has a salary with each Company where they have a Job?
 
-UL allows you to model this situation with an association class as shows in Figure 9.19.
+1. Make the salary an attribute of the Person class
+	* each Person can work for many Companies
+	* a Person can have a different salary for each Job they hold at the different Companies
+	* so, a single attribute in Person class will not work
+2.  Make the salary an attribute of the Company class
+	* each Company employs many Persons
+	* each Person at the Company potentially has a different salary
+	* so, a single attribute in Company class will not work
 
-Note that an association class is an association that is *also* a class. Not only does it connect two classes like an association, it defines a set of features that belong to the association itself. Association classes can have attributes, operations, and other associations.
+The answer is:
 
-Instances if association classes are really *links* that have attributes and operations. The unique identity of these links is determined *exclusively* by the identities of the objects at either end. This factor constrains the semantics of the association class - you can only use it when there is a *single unique link* between two objects at any point in time. This is simply because each link, which is an instance of the association class, must have its own unique identity.
-In Figure 9.19, using the association class means that you constrain the model such that for a given Person object and a given Company object, there can only be *one* Job object. In other words, each Person can only have one Job with a given Company.
-However, you have the situation where a given Person object can have more than one Job with a given Company object, then you **can't** use an association class-the semantics just don't match!
+- the salary is actually a property of the association itself
+- for each link between a Person object and a Company object, there is a specific salary
+- an *association class* is defined that can hold attributes (and operations) that are part of the association
+- An association class is an association that is *also* a class
+- It connects two classes and defines features that belong to the association
+- Association classes can have attributes, operations, and even other associations
 
-But you still need somewhere to put the salary for each Company/Job/Person combination, so you reify (make real) the relationship by expressing it as a normal class.
-In Figure 9.20, Job is now an ordinary class, and you can see that a Person may have many Jobs where each Job is for exactly one company.
+See Figure 9.19
+
+![][cls-assoc-class]
+
+- given a Person object and a Company object, there can only be *one* Job object between them
+- each Person can only have one Job with a given Company
+
+WHY?
+
+- Instances of association classes are really *links* that have attributes and operations
+- The unique identity of these links is determined *exclusively* by the identities of the objects at either end
+- You can only use association class when there is a *single unique link* between two objects at any point in time
+- This is simply because each link, which is an instance of the association class, must have its own unique identity
+
+What if a given Person object can have more than one Job with a given Company object?
+
+- you **can not** use an association class
+- the identity of the association class does not allow multiple links between any two Person and Company objects
+- the semantics just don't match!
+
+Where do you put the salary for multiple Company/Job/Person combination?
+
+- you reify (make real) the relationship by expressing it as a normal class
+- this creates two separate associations
+- each association becomes a 1-to-many association
+
+See Figure 9.20
+
+![][cls-normal-job]
+
+- Job is now an ordinary class
+- a Person may have many Jobs where each Job is for exactly one Company
+- a Company may have many Jobs where each Job is done by exactly one Person
+
+> The difference between using an association class and a reified class is subtle, but significant and can have long term ramifications on the working OO system.
+> 
 
 ### Qualified Associations &sect; 9.4.6 ###
 
@@ -468,4 +512,15 @@ Dependencies occur between lots of elements in UML like:
 <!--
 // Client and Supplier dependency 
 [Client]-.->[Supplier]
+-->
+
+[cls-many-many]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/many-many.png
+
+[cls-assoc-class]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/class-assoc.png
+
+[cls-normal-job]: http://yuml.me/66227951
+<!--
+// Intermediate class Job
+[Company]1-*[Job|salary]
+[Job]*-1[Person]
 -->
