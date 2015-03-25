@@ -378,29 +378,43 @@ In Figure 9.20, Job is now an ordinary class, and you can see that a Person may 
 
 ### Qualified Associations &sect; 9.4.6 ###
 
-You can use a qualified association to reduce an n-to-many association to an n-to-one association by specifying a unique object (or group of objects) from the target set. They are very useful modeling element as they illustrate how you can look up, or navigate to, specific objects in a collection.
-
-Consider the model in Figure 9.21. A Club object is linked to a set of Member objects, and a Member object is likewise linked to exactly one Club object.
-The following question arises: given a Club object that is linked to a set of Member objects, how could you navigate to one specific Member object?
-
-Clearly you need some unique key that you can use to look up a particular Member object from the set. This is known as a qualifier. Many qualifiers are possible (name, credit card number, social security number), but in the example above, every Member object has a memberID attribute value that is unique to that object. This, then, is the look-up key in this model.
-
-You can show this look-up on the model by appending a qualifier to the Club end of the association. It is important to recognize that the qualifier belongs to the *association end* and **not** to the Club class.
+- Qualified associations can reduce a "many" side of an association to a "1" side, with additional specification
+- They can illustrate how you to look up, or navigate to, specific objects in a collection
+- This is leaning towards design and will be addressed in the design course
 
 ## Dependency &sect;9.5 ##
 
-A dependency indicates a relationship between two or more model elements whereby a change to one element (the supplier) may affect or supply information needed by the other element (the client). In other words, the client depends in some way on the supplier.
+> A dependency indicates a relationship between a client and a supplier.
+> 
 
-For example, you may pass an object of one class (actually its reference, the object doesn't move) as a parameter to an operation of an object of a different class.There clearly is some sort of relationship between the classes of those objects, but it is not really an association.
+![][cls-client-supplier]
 
-UML 2 specifies three basic types of dependency, shown in Table 9.2.
+- A change to the supplier may affect or supply information needed by the client
+- In other words, the client depends in some way on the supplier
 
-Dependencies also occur between:
 
-- packages and packages
+UML 2 specifies three basic types of dependency (see Table 9.2 for details):
+
+Type | Purpose
+-----|--------
+Usage | client uses some services of the supplier
+Abstraction | supplier is more abstract than the client
+Permission | supplier grants some sort of permission to the client
+
+Dependencies occur between lots of elements in UML like:
+
+- classes and other classes
+- packages and other packages
 - objects and classes
+- use cases and other use cases
 
-Most of the time, you just use an unadorned dotted arrow to indicate a dependency and don't worry about what type of dependency it is.
+> ### READ MORE
+> - &sect;9.5.1 Usage dependencies
+> - &sect;9.5.2 Abstraction dependencies
+> - &sect;9.5.3 Permission dependencies
+>
+> Under which type does the &laquo;instantiate&raquo; dependency fit?
+> 
 
 ---
 
@@ -449,3 +463,9 @@ Most of the time, you just use an unadorned dotted arrow to indicate a dependenc
 [java-coll-docs]: https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
 
 [java-coll-tut]: http://docs.oracle.com/javase/tutorial/collections/intro/index.html
+
+[cls-client-supplier]: http://yuml.me/25c24769
+<!--
+// Client and Supplier dependancy 
+[Client]-.->[Supplier]
+-->
