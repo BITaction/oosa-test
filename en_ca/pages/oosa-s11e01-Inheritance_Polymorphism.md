@@ -136,7 +136,7 @@ Concrete operations and classes:
 
 - Subclasses Square and Circle provide their own implementations of draw() and getArea()
 - Operations `draw()` and `getArea()` in these subclasses are concrete operations
-- This makes the subclasses complete classes that can instantiated
+- This makes these subclasses complete classes that can instantiated
 - Classes that can be instantiated are called concrete classes
 - Square and Circle subclasses are concrete classes
 
