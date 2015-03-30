@@ -177,7 +177,7 @@ See Figure 10.6
 
 ## Polymorphism &sect;10.4 ##
 
-Polymorphism means "many forms". A polymorphic operation is one that has meny implementations. You have already seen two polymmorphic operations in the Shape example. The abstract operations sraw() and getArea() in the Shape class have two different implementations - an implementation in the Square class and one in the Circle class.
+Polymorphism means "many forms". A polymorphic operation is one that has many implementations. You have already seen two polymorphic  operations in the Shape example. The abstract operations draw() and getArea() in the Shape class have two different implementations - an implementation in the Square class and one in the Circle class.
 
 Figure 10.7 (p. 212) illustrates polymorphism perfectly.
 We define an abstract *Shape* class with abstract operations *draw()* and *getArea()*.
@@ -220,7 +220,7 @@ In this section, we look at two advanced aspects of generalization: generalizati
 You can organize the subclasses of any superclass into one or more generalization sets.
 
 A generalization set groups subclasses according to a particular rule, or basis of specialization. Here's an example.
-Figure 10.11 (p. 216) illustrates that the superclass *Shape* has many subclasses. On examination of these subclasses, you can see that there are two distinctly different groups of *Shapes*: two-dimensional shapes and three-dimentional shapes. 
+Figure 10.11 (p. 216) illustrates that the superclass *Shape* has many subclasses. On examination of these subclasses, you can see that there are two distinctly different groups of *Shapes*: two-dimensional shapes and three-dimensional shapes. 
 
 You can indicate the partitioning of subclasses on a class diagram by associating each group of shapes with a different generalization set as illustrated in Figure 10.12 (p. 216). 
 
