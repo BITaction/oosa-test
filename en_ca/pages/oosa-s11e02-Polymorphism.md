@@ -1,6 +1,6 @@
-# Polymorphism #
+# Generalization & Polymorphism #
 
-> Inheritance and polymorphism are features that OO programming languages provide to support class generalization hierarchies.
+> Inheritance with polymorphism is a feature that OO programming languages provide to support class generalization hierarchies.
 > 
 
 ## References ##
