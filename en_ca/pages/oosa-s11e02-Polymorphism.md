@@ -71,8 +71,9 @@ See Figure 10.9
 
 - This is an object model from the class diagram in Figure 10.8
 - This object model shows that a :Canvas object holds a collection of four *Shape* objects s1, s2, s3 and s4
-- s1, s3 and s4 are circles and s2 is an object of class Square
-- the :Canvas object can iterate over this collection and send each object the message draw()
+- s1, s3 and s4 are Circle objects
+- s2 is a Square object
+- the :Canvas object can iterate over its collection and send each object the message draw()
 - each object does the right thing - Square objects draw squares and Circle objects draw circles
 - the object's class determines *what* the object draws (by the implementation in its class)
 
