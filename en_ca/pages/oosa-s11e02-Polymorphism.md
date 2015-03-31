@@ -16,6 +16,7 @@
 - You will learn to:
 	* Define polymorphism
 	* Draw and interpret class models with polymorphic operations
+	* Draw and interpret related object models and explain the use of polymorphic operations on objects
 	* Identify and define the 3 main pillars of Object Oriented systems
 
 ## Polymorphism &sect;10.4 ##
