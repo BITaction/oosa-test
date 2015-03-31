@@ -1,6 +1,6 @@
 # Polymorphism #
 
-> Inheritance with polymorphism are features that OO programming languages provide to support class generalization hierarchies.
+> Inheritance and polymorphism are features that OO programming languages provide to support class generalization hierarchies.
 > 
 
 ## References ##
@@ -14,44 +14,69 @@
 
 - Section &sect;10.6 of the UML 2 course textbook (UMLUP)
 - You will learn to:
-	* 
+	* Define polymorphism
+	* Draw and interpret class models with polymorphic operations
 	* Identify and define the 3 main pillars of Object Oriented systems
 
 ## Polymorphism &sect;10.4 ##
 
-Polymorphism means "many forms". A polymorphic operation is one that has many implementations. You have already seen two polymorphic  operations in the Shape example. The abstract operations draw() and getArea() in the Shape class have two different implementations - an implementation in the Square class and one in the Circle class.
+- Polymorphism means "many forms"
+- A polymorphic operation is one that has many implementations
+- We have seen polymorphic operations in the Shape example
+- The abstract operations *draw()* and *getArea()*a in the Shape class have two different implementations
+- An implementation in the Square class and an implementation in the Circle class
 
-Figure 10.7 (p. 212) illustrates polymorphism perfectly.
-We define an abstract *Shape* class with abstract operations *draw()* and *getArea()*.
-Square and Circle inherit from *Shape* and provide implementation for the polymorphic operations *Shape::draw()* and *Shape::getArea()*. All concrete subclasses *must* provide concrete draw() and getArea() operations, because they are abstract in the superclass.
-A set of abstract operations is therefore a way to define a set of operations that *all* concrete subclasses **must** implement. This is known as a contract.
+**NOTE**: Study Figure 10.7 and examples provided in the notes.
 
-Clearly, the implementation of draw() and getArea() will be different for Square and for Circle. This is the essence of polymorphism - objects of different classes have operations with the *same* signature, but different implementations (different code).
+- We define an abstract *Shape* class with abstract operations *draw()* and *getArea()*
+- Square and Circle inherit from *Shape* and provide implementations for polymorphic operations *Shape::draw()* and *Shape::getArea()*
+- All concrete subclasses *must* provide concrete draw() and getArea() operations
+- Square and Circle are concrete classes, thus provide implementations for these operations
 
-Three main pillars of Object Oriented systems and OO programming languages:
+**NOTE**: You can also override concrete operations instead of abstract operations to provide polymorphism. One must be careful with this since you are changing the implementation of an inherited operation.
+
+Essence of Polymorphism: 
+
+- Clearly, the implementation of draw() and getArea() will be different for Square and for Circle
+- Objects of different classes have operations with the *same* signature, but different implementations (different code)
+- Substitutability principle allows us to consider abstract Shapes and substitute concrete Squares and Circles
+- All Shapes support draw() and getArea() and all substitutes will have concrete implementations for these operations
+- Polymorphism allows you to send the *same* message to objects of *different* classes and have each respond appropriately
+
+Three main pillars of OO systems and OO programming languages are:
 
 1. Encapsulation
 2. Inheritance
 3. Polymorphism
 
-Polymorphism allows you to send to objects of *different* classes the *same* message (a call to an operation) and have the objects respond appropriately.
-
-If you send a message draw() to objects of the Square class, they will each draw a square, and if you send that same message to objects of class Circle, they will each draw a circle. The objects seem to exhibit some kind of intelligence.
-
 ### Polymorphism Example &sect; 10.4.1 ###
 
-Here is an example of polymorphism in action. Suppose that you have a Canvas class that maintains a collection of Shapes. Although this is a somewhat simplified picture, many graphics systems actually work very much in this way. 
-The model for this simplified system is shown in Figure 10.8 (p. 213).
+- A Canvas maintains a collection of Shapes
 
-Now, you know that you can;t create an instance of Shape because it is abstract - but, according to the substitutability principle, you can create instances of its concrete classes and substitute these anywhere a Shape is called for.
+See Figure 10.8
 
-So, although Figure 10.8 shows that objects of type Canvas contain collections of many Shape objects, the only objects that you can actually put in the collection are instances of concrete classes of Shape because Shape itself is abstract and **can't** be instantiated. In this case, there are two concrete subclasses, Circle and Square, so the collection may contain Circle objects and Square objects.
+![][cls-shape-canvas]
 
-In Figure 10.9 (p. 214), we have created an object model from the class diagram in Figure 10.8. This object model shows that a :Canvas object holds a collection of four *Shape* objects s1, s2, s3 and s4, where s1, s3 and s4 and circles and s2 is an object of class Square.
+- You cannot create an instance of Shape because it is abstract
+- You can create instances of its concrete classes and substitute these anywhere a Shape is expected
+- A Canvas contains a collection of many Shape objects
+- Shape itself is abstract and **can't** be instantiated
+- Thus, the only objects you can link to a Canvas are instances of concrete classes of Shape
+- That is, Circle and Square concrete classes, so the collection may contain Circle objects and Square objects
 
-What happens when the :Canvas object iterates over this collection and sends each object in the collection the message draw()? Well, not surprisingly, each object does the right thing - Square objects draw squares and Circle objects draw circles. It is the object's class that determines *what* the object draws.
+See Figure 10.9
 
-All objects of the same class will react the same way when the same operation is invoked, but the results may be different: this is because even though all Circle objects will draw themselves the same way (the meaning of the operation remains the same), the actual output depends on the value of each circle's radius - circles of different radii will cause the drawing of circles of different sizes to be drawn. 
+![][obj-canvas-shapes]
+
+- This is an object model from the class diagram in Figure 10.8
+- This object model shows that a :Canvas object holds a collection of four *Shape* objects s1, s2, s3 and s4
+- s1, s3 and s4 are circles and s2 is an object of class Square
+- the :Canvas object can iterate over this collection and send each object the message draw()
+- each object does the right thing - Square objects draw squares and Circle objects draw circles
+- the object's class determines *what* the object draws (by the implementation in its class)
 
 ---
 
+[cls-shape-canvas]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/class-shape-canvas.png
+
+[obj-canvas-shapes]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/obj-canvas-shape.png
