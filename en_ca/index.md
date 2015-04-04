@@ -42,3 +42,4 @@ This site includes the notes and resource materials that are relevant to the cou
 - [Relationships](pages/oosa-s10e01-Relationships.md)
 - [Generalization and Inheritance](pages/oosa-s11e01-Inheritance.md)
 - [Generalization and Polymorphism](pages/oosa-s11e02-Polymorphism.md)
+- [Analysis Classes](pages/oosa-s12e01-Analysis_Classes.md)
