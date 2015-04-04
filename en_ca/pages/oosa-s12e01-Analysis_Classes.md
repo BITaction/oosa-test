@@ -82,20 +82,39 @@ The problem domain is:
 
 ### Anatomy of Analysis Classes &sect;8.3.1 ###
 
-Analysis classes should present a very "high level" set of attributes. They *indicate* the attributes that the resultant design classes will *probably* have. We might say that analysis classes capture candidate attributes for the design classes.
-Analysis class operations specify, at a high level, the key services that the class must offer. In design they will become actual, implementable operations. However, one analysis-level operation will often break down into more than one design-level operation.
-We have already covered the UML syntax for classes in great detail in Chapter 7, but in analysis only a small subset of that syntax is actually used. 
-Of course, the analyst is always free to add any adornments felt to be necessary to make the model clearer. However, the basic syntax of an analysis class always avoids implementation details. After all, in analysis we are trying to capture the big picture.
-A minimal form for an analysis class consists of the following.
+Analysis class attributes:
 
- - Name - this is mandatory.
- - Attributes - attribute names are mandatory although only an important subset of candidate attributes may be modeled at this point. Attribute types are considered optional.
- - Operations - in analysis, operations might just be very high-level statements of the responsibilities of the class. Operation parameters and return types are only shown where they are important for understanding the model.
- - Visibility - generally not shown.
- - Stereotypes - may be shown if they enhance the model.
- - Tagged values - may be shown if they enhance the model.
-An example is given in Figure 8.3 (p. 160).
-The idea of an analysis class is that you try to capture the essence of the abstraction and leave the implementation details until you come to design.
+- present a very "high level" set of attributes
+- include attributes that the resultant design classes will *probably* have
+- capture candidate attributes for the design classes
+
+Analysis class operations:
+
+- specify, at a high level, the key services that the class must offer
+- will become actual, implementable operations at design level
+- will often break down into more than one design-level operations
+
+Analysis class syntax:
+
+- uses a small subset of the class syntax covered so far
+- tries to avoid implementation details
+- captures the big picture information
+
+Adornment | Add? | Advice
+----------|------|-------
+Name | mandatory | All classes must have a name.
+Attributes | attribute names are mandatory, if given | Only an important subset of candidate attributes may be modeled and attribute types are considered optional.
+Operations | operation names and parenthesis are mandatory, if given | Operation parameters and return types are only shown where they are important for understanding.
+Visibility | generally not shown | Added if they enhance understanding.
+Stereotypes | shown if they enhance the model | Stereotypes to separate problem domain from user interface classes are the first to be identified.
+Tagged values | shown if they enhance the model | They offer a flexible way to add specification and understanding where needed, but use sparingly.
+
+See Figure 8.3
+
+![][cls-bank]
+
+> The general idea of an analysis class is that you try to capture the essence of the abstraction and leave the implementation details until you come to design.
+> 
 
 ### Good Analysis Classes &sect;8.3.2 ###
 
@@ -335,5 +354,10 @@ The output from this activity is a set of analysis classes where each class may 
 [Architecture Description]->(Analyze a use case)
 (Analyze a use case)->[Analysis Classes]
 (Analyze a use case)->[Use Case Realizations]
+-->
 
+[cls-bank]: http://yuml.me/fe4e6434
+<!--
+// Bank Account example from Figure 8.3
+[BankAccount|accountNumber;owner;balance|withdraw();calculateInterest();deposit()]
 -->
