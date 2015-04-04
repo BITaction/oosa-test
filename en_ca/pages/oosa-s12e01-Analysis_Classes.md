@@ -15,7 +15,7 @@
 - Section &sect;8.6 of the UML 2 course textbook (UMLUP)
 - You will learn to:
 	* Explain the process of analyzing a use case, including inputs and outputs
-	* Define analysis class
+	* Define the anatomy of an analysis class
 	* List and explain characteristics of good analysis classes
 	* List and explain characteristics of bad analysis classes
 	* Describe and use the process of noun/verb analysis to discover analysis classes
@@ -26,7 +26,7 @@
 
 ## UP Activity: Analyze Use Case &sect;8.2 ##
 
-- Analyze a use case is a process of UP within the Analysis workflow
+- "Analyze a use case" is a process of UP within the Analysis workflow
 - The inputs can include:
 	* Business Model (you may or may not have this)
 	* Requirement Model (discussed in Chapter &sect;3)
@@ -43,30 +43,44 @@ See Figure 8.2
 - This chapter will focus on discovering analysis classes
 - Chapter &sect;12 will consider use case realizations
 
-## What are Analysis Classes? &sect;8.3 ##
+## Analysis Classes &sect;8.3 ##
 
-Analysis classes are classes that
+> They represent important concepts of the problem domain in the vocabulary of the business stakeholders
+> 
 
- - represent a crisp abstraction in the problem domain;
- - should map on to real-world business concepts (and be carefully named accordingly).
+Analysis classes are classes that:
 
+- represent a crisp abstraction in the problem domain
+- should map to real-world business concepts (and be carefully named to match)
 
-The problem domain is the domain in which the need for a software system (and hence a software development activity) first arises. This is usually a specific area of the business such as online selling or customer relationship management. However, it is important to note that the problem domain might not be any specific business activity at all, but might arise from a piece of physical hardware that needs software to operate it. Ultimately, all commercial software development serves some business need, be that automating an existing business process or developing a new product that has a significant software component. 
+The problem domain is:
 
-The most important aspect of an analysis class is that it should map in a clear and unambiguous way to some real-world business concept such as customer, product, or account. However, this statement assumes that the business concepts themselves are clear and unambiguous, and this is rarely, the case. It is therefore the job of the OO analyst to try to clarify confused or inappropriate business concepts into something that can form the basis of an analysis class. This is why 00 analysis can be difficult.
+- the domain in which the need for a software system first arises
+- usually a specific area of the business such as online selling or customer relationship management
+- sometimes a piece of physical hardware that needs software to operate it
 
-So the first step in building OO software is to clarify the problem do¬main. If it contains clearly defined business concepts and has a simpler functional structure, the solution is virtually there for the taking. Much of this work will be done in the requirements workflow in the activities of capturing requirements and creating a use case model and project glossary. However, much more clarification occurs in the construction of analysis classes and use case realizations.
+> Ultimately, all commercial software development serves some business need within a problem domain
+> 
 
-It is important that *all* classes in the analysis model are analysis classes rather than classes arising from design considerations (the solution domain).
+- An analysis class should map to some real-world business concept:
+	* Customer, Product, Order, Account, etc.
+	* Student, Instructor, Course, Grade, etc.
+	* Shape, Circle, Square, Canvas, etc.
+	* User, Tweet, Profile, etc.
+- The job of the OO analyst is to clarify confused or inappropriate business concepts
+- They must discover something that can form the basis of an analysis class
+- If the classes are not right in analysis, then the rest of the SEP workflows will be in jeopardy
+- Spend sufficient time in the analysis workflow to ensure that the right set of analysis classes are identified
+- Your time will be well spent, as it will most certainly save time later
+- This is why 00 analysis can be difficult!
 
-When you get down to detailed design, you may find that analysis classes are ultimately refined into one or more design classes.
+> Finding the right analysis classes is a key factor in good OO analysis (and future design)
+> 
 
-Although, in the previous chapter, we necessarily began by considering, specific objects, you will now understand that the real goal of OO analysis is finding the classes of those objects. 
-In fact, finding the right analysis classes is the key to 00 analysis and design. If the classes are not right in analysis, then the rest of the software engineering process, which is predicated on the requirements and analysis workflows, will be in jeopardy. It is therefore crucial that you spend sufficient time in the analysis workflow to ensure that the right set of analysis classes has been identified. Your time will be well spent, as it will almost certainly save time later.
+- *All* classes in the analysis model must be analysis classes rather than classes arising from design considerations
+- When you get to detailed design, analysis classes will be refined into design classes
 
-In this book, we focus on development of business systems, as that is what most OO analysts and designers are involved in. However, development of embedded systems is really just a special case of normal business development and all the same principles apply. Business systems are usually dominated by functional requirements and so it is generally the requirements and analysis activities that are the most difficult. Embedded systems are often dominated by non-functional requirements that arise from the hardware in which the system is embedded. In this case analysis tends to be straightforward, but design can be difficult. Requirements are important for all types of system, and for some embedded systems, such as controllers for x-ray machines, they can be a matter of life and death.
-
-### What are Analysis Classes? &sect; 8.3.1
+### Anatomy of Analysis Classes &sect;8.3.1 ###
 
 Analysis classes should present a very "high level" set of attributes. They *indicate* the attributes that the resultant design classes will *probably* have. We might say that analysis classes capture candidate attributes for the design classes.
 Analysis class operations specify, at a high level, the key services that the class must offer. In design they will become actual, implementable operations. However, one analysis-level operation will often break down into more than one design-level operation.
@@ -83,7 +97,7 @@ A minimal form for an analysis class consists of the following.
 An example is given in Figure 8.3 (p. 160).
 The idea of an analysis class is that you try to capture the essence of the abstraction and leave the implementation details until you come to design.
 
-### What makes a good analysis class? &sect; 8.3.2
+### Good Analysis Classes &sect;8.3.2 ###
 
 We can summarize what makes a good analysis class in the following points:
 
@@ -118,7 +132,7 @@ But these responsibilities do not seem to fit with the intent or intuitive seman
 Finally, good classes have the minimum amount of coupling to other classes. We measure coupling between classes by the number of other classes with which a given class has relationships. An even distribution of responsibilities between classes will tend to result in low coupling. Localization of control or of many responsibilities in a single class tends to increase coupling to that class. We consider ways of maximizing cohesion and minimizing coupling in Chapter 15.
 
 
-### Analysis class rules of thumb &sect; 8.3.3 
+### Analysis Class: Rules of Thumb &sect;8.3.3 ###
 
 Here are some rules of thumb for creating well-formed analysis classes.
 
@@ -135,7 +149,10 @@ In the last bullet, we need to clarify what we mean by a "deep" inheritance tree
 In design, where the tree consists of classes from the solution domain, the definition of "deep" depends on the implementation language you are targeting. In Java, C++, C#, Python, and Visual Basic, we still consider three or more levels to be deep. In Smalltalk, however, inheritance trees can go much deeper than this, due to the structure of the Smalltalk system.
 
 
-## Finding Classes &sect; 8.4
+## Finding Classes &sect; 8.4 ##
+
+> Finding the right analysis classes is a key to OO analysis (and a basis for future design)
+> 
 
 
 In the rest of this chapter we consider the core issue of OO analysis and design, finding the analysis classes.
