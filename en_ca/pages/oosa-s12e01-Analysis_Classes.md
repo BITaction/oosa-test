@@ -173,21 +173,41 @@ Characteristics of a good analysis class:
 
 ### Analysis Class: Rules of Thumb &sect;8.3.3 ###
 
-Here are some rules of thumb for creating well-formed analysis classes.
+Rules of thumb for creating well-formed analysis classes:
 
- - About three to five responsibilities per class - typically, classes should be kept as simple as possible, and this usually limits the number of responsibilities that they can support to between three and five. Our previous example of a ShoppingBasket is a good example of a focused class with a small and manageable number of responsibilities.
- - No class stands alone - the essence of good OO analysis and design is that classes collaborate with each other to deliver benefit to users. As such, each class should be associated with a small number of other classes with which it collaborates to deliver the desired benefit. Classes may delegate some of their responsibilities to other 'helper" classes that are dedicated to that specific function.
- - Beware of many very small classes - it can sometimes be hard to get the balance right. If the model seems to have lots and lots of very small classes with just one or two responsibilities each, then you should look at this very carefully with a view to consolidating some of the small classes into larger ones.
- - Beware of few but very large classes - the converse of the above is a model that has few classes, where many of them have a large number (> 5) of responsibilities. The strategy here is to look at these classes in turn and see if each can be decomposed into two or more smaller classes with the right number of responsibilities.
- - Beware of "functoids" - a functoid is really a normal procedural function disguised as a class. Grady Booch tells the amusing anecdote of a model of a very simple system that had thousands of classes. On closer inspection, each class had exactly one operation called doltO. Functoids are always a danger when analysts accustomed to the technique of top-down functional decomposition approach OO analysis and design for the first time.
- - Beware of omnipotent classes - these are classes that seem to do every¬thing. Look for classes with "system" or 'controller" in their name! The strategy for dealing with this problem is to see if the responsibilities of the omnipotent class fall into cohesive subsets. If so, perhaps each of these cohesive sets of responsibilities can be factored out into a separate class. These smaller classes would then collaborate to implement the behavior offered by the original omnipotent class.
- - Avoid deep inheritance trees - the essence of designing a good inheritance hierarchy is that each level of abstraction in the hierarchy should have a well- defined purpose. It is easy to add many levels that don't really serve any useful purpose. In fact, a common mistake is to use inheritance to implement a kind of functional decomposition where each level of abstraction has only one responsibility. This is, in every respect, pointless and just leads to a complex, difficult to understand model. In analysis, inheritance is only used where there is a clear, and obvious, inheritance hierarchy arising directly from the problem domain.
-
-
-In the last bullet, we need to clarify what we mean by a "deep" inheritance tree. In analysis, where the classes represent business things, "deep" would be three levels of inheritance or more. This is because business things tend to form inheritance hierarchies that are broad rather than deep.
-
-In design, where the tree consists of classes from the solution domain, the definition of "deep" depends on the implementation language you are targeting. In Java, C++, C#, Python, and Visual Basic, we still consider three or more levels to be deep. In Smalltalk, however, inheritance trees can go much deeper than this, due to the structure of the Smalltalk system.
-
+- About three to five responsibilities per class
+	- classes should be kept as simple as possible
+	- responsibilities become formal class operations in design
+- No class stands alone (coupling is a necessity)
+	- classes collaborate with each other (the object instances send messages to one another)
+	- associate a class with a small number of other classes with which it collaborates
+	- classes may delegate some responsibilities to other 'helper" classes
+- Beware of many very small classes
+	- can be difficult to get right balance
+	- watch for lots and lots of very small classes with just one or two responsibilities each
+	- you may consolidate some of the small classes into larger ones
+- Beware of few, but very large classes
+	- the converse problem of the above
+	- few classes, where many of them have a large number (> 5) of responsibilities
+	- look at these classes and decompose into two or more smaller classes with fewer responsibilities
+- Beware of "functoids"
+	- a "functoid" is a normal procedural function disguised as a class
+	- functoids are a danger when analysts are accustomed to top-down functional decomposition
+	- functional decomposition in use cases could lead to functoids in the classes
+	- Grady Booch tells an amusing anecdote of a model of a very simple system that had thousands of classes. On closer inspection, each class had exactly one operation called doIt(). Each class was serving as a "functoid"
+- Beware of omnipotent classes - these are classes that seem to do everything
+ 	- look for classes with "system" or 'controller" in their name
+ 	- check if the responsibilities of the omnipotent class fall into cohesive subsets
+ 	- cohesive sets of responsibilities can be factored out into a separate classes
+ 	- these smaller classes would collaborate to implement the behavior offered by the original omnipotent class
+- Avoid deep inheritance trees
+	- each level of abstraction in a class hierarchy should have a well-defined purpose
+	- it counter-productive to add many levels that don't really serve any useful purpose
+	- a common mistake is to use inheritance to implement a functional decomposition where each level has only one responsibility
+	- leads to a complex, difficult to understand model
+	- inheritance is used where there is a clear inheritance hierarchy arising directly from the problem domain
+	- in analysis, "deep" would be three levels of inheritance or more
+	- in design, inheritance trees can be much deeper because of frameworks being utilized
 
 ---
 
