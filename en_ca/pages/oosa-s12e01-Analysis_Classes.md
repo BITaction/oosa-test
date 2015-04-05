@@ -118,38 +118,58 @@ See Figure 8.3
 
 ### Good Analysis Classes &sect;8.3.2 ###
 
-We can summarize what makes a good analysis class in the following points:
+Characteristics of a good analysis class:
 
-- its name reflects its intent;
-- it is a crisp abstraction that models one specific element of the problem domain;
-- it maps on to a clearly identifiable feature of the problem domain; • it has a small, well-defined set of responsibilities;
-- it has high cohesion;
-- it has low coupling.
+- it is a crisp abstraction that models one specific element of the problem domain
+- its name reflects its intent
+- it maps on to a clearly identifiable feature of the problem domain
+- it has a small, well-defined set of responsibilities
+- it has high cohesion
+- it has low coupling
 
+#### Abstraction ####
 
-In analysis you are trying to model one aspect of the problem domain accurately and concisely from the perspective of the system you are trying to construct. For example, if you are modeling a customer in a banking system,  you would want to capture the customer's name, address, and so on, but you would be unlikely to be interested in his preference for window or aisle seats on an aircraft. You need to focus on the aspects of real-world things that are important from the perspective of the system you are building.
+- If you model a customer in a banking system,  you would want to capture the customer's name, address, financial goals, and so on
+- You would not capture their preference for window or aisle seats on an aircraft, or their favorite dessert
+- Focus on the aspects of real-world things that are important from the perspective of the system you are building
 
-You can often get a first idea as to whether or not a class is a "good" class simply from its name. If you consider an e-commerce system, Customer would seem to refer to something quite precise in the real world and would be a good candidate for a class. ShoppingBasket would also seem to be a good abstraction - we know, almost intuitively, what its semantics will be. However, something like WebSiteVisitor seems to have rather vague semantics, and in fact really sounds like a role that a Customer plays in relation to the e-commerce system. You should always be looking for a "crisp abstraction"— something that has clear and obvious semantics.
+#### Analysis Class Name ####
 
-A responsibility is a contract or obligation that a class has to its clients.
+- You can get a first idea as to whether or not a class is "good" from its name
+- For an e-commerce system, Customer would be quite precise in the real world and a good candidate for a class
+- ShoppingBasket would also be a good candidate since its semantics are quite clear from the name
+- WebSiteVisitor seems to have vague semantics, and in fact sounds like a role that a Customer would play
+- You should always be looking for a "crisp abstraction" — something that has clear and obvious semantics
 
-Essentially, a responsibility is a service that a class offers to other classes. It is crucial that your analysis classes have a cohesive set of responsibilities that directly accord with the intent of the class (as expressed by its name) and with the real-world "thing" that the class is modeling. Going back to the ShoppingBasket example, you would expect this class to have responsibilities such as 
- - add item to basket;
- - remove item from basket;
- - show items in basket.
+#### Analysis Class Responsibilities (Cohesion) ####
 
-This is a cohesive set of responsibilities, all about maintaining a collection of items that the customer has chosen. It is cohesive because all the responsibilities are working toward the same goal—maintaining the customer's shopping basket. In fact, we could summarize these three responsibilities as a very high-level responsibility called "maintain basket".
-Now, you could also add the following responsibilities to the ShoppingBasket:
+- A responsibility is a contract or obligation that a class has to its clients
+- It is a service that a class offers to other classes
+- Each responsibility must go hand in hand with the intent of the class
+- A ShoppingBasket class would have responsibilities such as:
+	- add item to basket
+	- remove item from basket
+	- show items in basket
+	- calculate basket total
+	- and so on, responsibilities related to eCommerce shopping basket objects
+- Consider the following responsibilities for ShoppingBasket:
+	- validate credit card
+	- accept payment
+ 	- print receipt
+- These responsibilities do not fit well with the intent of shopping baskets
+- They are not cohesive and clearly should be assigned elsewhere, perhaps to:
+	- a CreditCard class
+	- a Checkout class
+	- a Receipt class
+- It is important to distribute responsibilities over analysis classes to maximize cohesion within each class
 
+#### Analysis Class Relationships (Coupling) ####
 
- - validate credit card;
- - accept payment;
- - print receipt.
-
-But these responsibilities do not seem to fit with the intent or intuitive semantics of shopping baskets. They are not cohesive and clearly should be assigned elsewhere—perhaps to a CreditCardCompany class, a Checkout class, and a ReceiptPrinter class. It is important to distribute responsibilities appropriately over analysis classes to maximize cohesion within each class. 
-
-Finally, good classes have the minimum amount of coupling to other classes. We measure coupling between classes by the number of other classes with which a given class has relationships. An even distribution of responsibilities between classes will tend to result in low coupling. Localization of control or of many responsibilities in a single class tends to increase coupling to that class. We consider ways of maximizing cohesion and minimizing coupling in Chapter 15.
-
+- Good classes have a minimum amount of coupling to other classes
+- Coupling is measured by the number of other classes with which a given class has relationships
+- Coupling is also related to the type of relationship (e.g., Generalization is a stronger coupling than a simple Association)
+- An even distribution of responsibilities among classes will tend to reduce coupling
+- Localization of control (or too many responsibilities in a single class) tends to increase coupling
 
 ### Analysis Class: Rules of Thumb &sect;8.3.3 ###
 
@@ -165,6 +185,7 @@ Here are some rules of thumb for creating well-formed analysis classes.
 
 
 In the last bullet, we need to clarify what we mean by a "deep" inheritance tree. In analysis, where the classes represent business things, "deep" would be three levels of inheritance or more. This is because business things tend to form inheritance hierarchies that are broad rather than deep.
+
 In design, where the tree consists of classes from the solution domain, the definition of "deep" depends on the implementation language you are targeting. In Java, C++, C#, Python, and Visual Basic, we still consider three or more levels to be deep. In Smalltalk, however, inheritance trees can go much deeper than this, due to the structure of the Smalltalk system.
 
 
