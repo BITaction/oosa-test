@@ -155,7 +155,7 @@ Characteristics of a good analysis class:
 - Consider the following responsibilities for ShoppingBasket:
 	- validate credit card
 	- accept payment
- 	- print receipt
+	- print receipt
 - These responsibilities do not fit well with the intent of shopping baskets
 - They are not cohesive and clearly should be assigned elsewhere, perhaps to:
 	- a CreditCard class
