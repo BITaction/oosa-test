@@ -11,144 +11,243 @@
 
 - Section &sect;8.6 of the UML 2 course textbook (UMLUP)
 - You will learn to:
-	* Describe and use the process of noun/verb analysis to discover analysis classes
-	* Describe the process of CRC analysis to discover analysis classes
+	* Describe the process of noun/verb analysis
+	* Apply the process of noun/verb analysis to discover analysis classes
+	* Apply the process of noun/verb analysis to discover analysis class attributes and responsibilities 
+	* Describe the process of CRC analysis to discover analysis classes, their responsibilities, and collaborations
 	* List and define the RUP stereotypes
 	* Explain the purpose of the RUP stereotypes in an analysis model
+	* Describe the process of finding RUP stereotyped classes
 	* Create a first cut analysis model using the techniques in this chapter
 
 ## Finding Classes &sect;8.4 ##
 
-> Finding the right analysis classes is a key to OO analysis (and a basis for future design)
+> Finding the right analysis classes is a key to OO analysis (and a basis for future design).
 > 
 
-In the rest of this chapter we consider the core issue of OO analysis and design, finding the analysis classes.
+- There is no simple algorithm for finding the right analysis classes (see Meyer in *Object Oriented Software Construction*)
+- Such an algorithm would give an infallible way to design 00 software
+- It's existence is tantamount to finding an infallible way to prove any mathematical theorem
+- Instead, there are tried and tested techniques that lead toward a good analysis classes
+- They involve analyzing text and interviewing users and domain experts
 
-As Meyer points out in *Object Oriented Software Construction*, there is no simple algorithm for finding the right analysis classes. If such an algorithm did exist, then it would amount to an infallible way to design 00 software and this is just as unlikely as finding an infallible way to prove mathematical theorems.
+> Finding the right analysis classes depends greatly on the perspective, skill, and experience of the OO analyst!
+> 
 
-Still, there are tried and tested techniques that lead toward a good answer, and we present them here. They involve analyzing text and interviewing users and domain experts. But ultimately, despite all the techniques, finding the "right" classes depends on the perspective, skill, and experience of the individual analyst.
+### Noun/Verb Analysis &sect;8.4.1 ###
 
-### Finding classes by using noun/verb analysis &sect; 8.4.1
+> Noun/Verb Analysis is generally known as Textual Analysis and is supported directly in some modeling tools.
+> 
 
-Noun/verb analysis is a very simple way of analyzing text to try to find classes, attributes, and responsibilities. In essence, nouns and noun phrases in the text indicate classes or attributes of classes, and verbs and verb phrases indicate responsibilities or operations of a class. Noun/verb analysis has been used for many years and works well as it is based on a direct analysis of the language of the problem domain. However, you have to be very aware of synonyms and homonyms as these can give rise to spurious classes.
+- Noun/verb analysis is a simple way of analyzing text to find classes, attributes, and responsibilities
+	* _nouns_ and _noun phrases_ in text indicate classes or attributes of classes
+	* _verbs_ and _verb phrases_ indicate responsibilities or operations of a class
+- Noun/verb analysis works well as a direct analysis of the language of the problem domain
+- Must be aware of synonyms and homonyms as these can give rise to spurious classes &rArr; examine project glossary
+- Trickiest aspect of noun/verb analysis is finding any "hidden" classes
+- _Hidden classes_ are intrinsic to the problem domain but might never be mentioned explicitly
 
-You also have to be very careful if the problem domain is poorly understood and defined. In this case, try to collect as much information about the domain from as many people as possible. Look for similar problem domains outside your organization.
+For example, in a reservation system for a holiday company: 
 
-Perhaps the trickiest aspect of noun/verb analysis is finding the "hidden" classes. These are classes that are intrinsic to the problem domain but that might never be mentioned explicitly. For example, in a reservation system for a holiday company, you will hear the stakeholders talk about reservations, bookings, and so on, but the single most important abstraction, Order, may never be mentioned explicitly if it does not exist in current business systems. You generally know when you have found a hidden class because the whole model seems to gel suddenly with the introduction of this single, new abstraction. This happens surprisingly often — in fact, if we're ever having trouble with an analysis model and it just doesn't seem to be making sense, we go on a search for hidden classes. If nothing else, this makes us ask some penetrating questions and improves our understanding of the problem domain.
+![][cls-holiday]
 
-#### Noun/verb analysis procedure &sect; 8.4.1.1
+- stakeholders talk about customers, reservations, bookings, and so on
+- how do we capture that a booking and reservation are more tightly related 
+- the single most important abstraction, Order, may never be mentioned explicitly by stakeholders
+- it may not even exist in current business system
+- if you have trouble with an analysis model, go on a search for hidden classes
+- this results in asking some penetrating questions and improves understanding of the problem domain
 
-The first step in noun/verb analysis is to collect as much relevant information as possible. Suitable sources of information are 
+![][cls-holiday-order]
 
- - the requirements model;
- - the use case model;
- - the project glossary;
- - anything else (architecture, vision documents, etc.).
+#### Noun/Verb Analysis Procedure &sect;8.4.1.1
+
+1. Collect input sources of information:
+	- Business model
+	- the requirements model
+	- the use case model
+	- the project glossary
+	- anything else (architecture, vision documents, etc.)
+2. Analyze text by highlighting (or recording in some other way) the following:
+	- nouns - for example, flight, student, course, product, order, etc.
+	- noun phrases - for example, flight number, student identifier, produce code, etc.
+	- verbs - for example, allocate, add, insert, delete, checkout
+	- verb phrases - for example, verify credit card, calculate order total
+3. Organize results into a table of candidates:
+	- Nouns and noun phrases may indicate classes or class attributes
+	- Verbs and verb phrases may indicate responsibilities of classes
+
+Term | Candidate | Classifier | Keep/Discard | Reason
+-----|-----------|------------|--------------|-------
+flight | class | Flight | Keep | possible analysis class
+flight number | attribute | Flight | Keep | possible attribute
+system | class | none | Discard | too general to be useful
+check status | responsibility | Flight | Keep | possible operation to gain status of a flight
+flight info | attribute | Flight | Discard | too general and likely a summary of data returned by check status
+allocate | responsibility | Flight | Keep | possible operation to allocate a flight to a leg of a trip
+
+- New terms discovered should be clarified with domain expert and added project glossary
+- Use project glossary to resolve any synonyms and homonyms
+- Create a first cut set of UML analysis classes with attributes and responsibilities 
+- You may have gained some idea of relationships between certain classes
+- Add these as candidate associations
+
+### Finding Classes with CRC Analysis &sect; 8.4.2 ###
+
+> In the hands of a skilled facilitator, CRC can be a very good (and fun) way to get user involvement in finding analysis classes.
+> 
+
+- CRC stands for Class, Responsibilities, Collaborators
+- Uses the world's most powerful analysis tool - the sticky note! (sometimes index cards)
+
+> One company actually marketed sticky notes already sectioned out with class name, responsibilities, and collaborators.
+> 
+
+See Figure 8.4
+
+- A note is divided into three compartments
+- Top compartment holds the name of the candidate class
+- Left compartment holds the responsibilities, which become potential operations in design
+- Right compartment holds the collaborators, which are other classes that collaborate with this class
+- The collaborators compartment provides a way of recording relationships between classes
+- Another way to capture relationships is to stick the notes on a whiteboard and draw lines between collaborating classes
+
+#### Phase 1: Brainstorm &sect;8.4.2.2 ####
+
+Book a meeting with participants that include:
+
+- facilitator
+- OO analysts
+- stakeholders
+- domain experts
+
+The procedure includes steps:
+
+1. Explain that this is a true brainstorm.
+	- All ideas are accepted as good ideas
+	- Ideas are recorded but not debated
+	- Never argue at this stage, just write it down and then move on
+	- Everything will be analyzed later
+2. Ask the team members to name the "things" that operate in their business domain
+	- For example, customer, product, student, course, etc.
+	- Write each thing on a sticky note - it is a candidate class, or attribute of a class
+	- Stick the note on a wall or whiteboard
+3. Ask the team to state responsibilities that those things might have
+	- Record these in the responsibilities compartment of the note
+	- Limit each class to 3 to 5 responsibilities
+4. Identify classes that might work together
+	- Rearrange the notes on the whiteboard to reflect the organization
+	- Have team members play the role of different classes
+	- Get them to discuss their responsibilities and discover ways to collaborate
+	- Have everyone be pessimistic to argue away responsibilities
+	- Have everyone be optimistic and argue for taking responsibilities
+	- Draw lines between classes to represent collaborations
+	- Alternatively, record collaborators in the collaborators compartment of the note
+
+#### Phase 2: Analyze &sect;8.4.2.3 ####
+
+Book a meeting with participants that include:
+
+- OO analysts
+- domain experts
+
+Analyze the CRC Cards (sticky notes): 
+
+- decide which sticky notes are classes
+- decide which sticky notes are attributes of classes
+- recall that analysis classes must represent a crisp abstraction within the problem domain
+- if a note logically seems to be a part of another note, it may be an attribute instead of a class
+- if a note doesn't seem to be particularly important, it may an attribute of another class
+- if a note has very little interesting behavior, it may be an attribute on another class
+- if in doubt about a note just make it a class
+- make a best guess and drive this process to closure; you can always refine the model later
+- don't get caught up in *analysis paralysis*
+
+### Finding Classes with RUP Stereotypes &sect;8.4.3 ###
+
+- Determine three distinct kinds of analysis class during analysis activity
+- Three distinct stereotypes represent these classes
+- The technique is a way of focusing analysis on specific aspects of the system
+- The technique complements noun/verb and CRC analysis
+
+See Table 8.1 for stereotypes:
+
+Stereotype | Purpose | Example
+-----------|---------|--------
+&laquo;boundary&raquo; | mediates interaction between the system and its environment | CourseRegistrationInterface
+&laquo;control&raquo; | encapsulates use case specific behavior such as business flow | RegistrationManager
+&laquo;entity&raquo; | models persistent information about some business aspect | Student, Course, Registration
+
+#### Finding &laquo;boundary&raquo; classses &sect;8.4.3.1 ####
+
+- they exist on the boundary of your system
+- they communicate with external actors
+- consider the subject (system boundary) and identify classes that mediate between the subject and its environment
+
+According to RUP, there are three types of &laquo;boundary&raquo; class:
+
+Type | Purpose
+-----|--------
+user interface class | classes that interface between the system and humans
+system interface class | classes that interface with other external systems
+device interface classes | classes that interface with external hardware
+
+- Consider actors outside the subject to determine proper boundary types
+- A boundary class can service several actors
+- When a boundary class services more than one actor, they should generally be of the same type
+- Bad design may result if a boundary class services actors of different types!
+- Model boundary classes at an analysis level of abstraction
 
 
-After collecting the documentation, analyze it in a very simple way by highlighting (or recording in some other way) the following:
+If modeling a GUI boundary:
 
- - nouns - for example, flight;
- - noun phrases - for example, flight number; • verbs - for example, allocate;
- - verb phrases - for example, verify credit card.
+- just model the top-level window
+- leave out all fields, buttons, and fancy widgets that make interfaces exciting to the end user
+- sometimes just introduce a dummyUI class that represents the whole user interface for a given use case
+- for example, an InventoryUI class can represent a human actor's way of interacting with the inventory
 
-Nouns and noun phrases may indicate classes or class attributes. Verbs and verb phrases may indicate responsibilities of classes.
+If modeling an external System boundary:
 
-If you come across any terms that you don't understand during this process, seek immediate clarification from a domain expert and add the term to the project glossary. Take the list of nouns, noun phrases, verbs, and verb phrases and use the project glossary to resolve any synonyms and homonyms. This creates a list of candidate classes, attributes, and responsibilities.
+- just model the whole API as a class
+- leave out the details about API calls, parameters, protocols, callbacks, etc.
+- just introduce a dummyAPI class that represents the interface to the external system
+- for example, a PaymentAPI class can represent a way for the system to interact with an external payment system
 
-Once you have this list of candidate classes, attributes, and responsibilities, you make a tentative allocation of the attributes and responsibilities to the classes. You can do this by entering the classes into a modeling tool and adding the responsibilities as operations to the classes. If you have found any candidate attributes, then you can tentatively assign these to classes as well. You might also have gained some idea of relationships between certain classes (the use cases are a good source of these), so you can add some candidate associations. This gives you a first-cut class model that you can refine by further analysis.
+#### Finding &laquo;control&raquo; classes &sect;8.4.3.2 ####
 
-### Finding classes by using CRC analysis &sect; 8.4.2 
+- These stereotyped classes are controllers
+- Their instances coordinate system behavior that corresponds to one or more use cases
+- They include business workflow that is independent of a boundary
+- Find control classes by considering the behavior of the system as described by the use cases
+- Determine how that behavior should be partitioned among analysis classes
+- Localize the behavior into suitable controller class (e.g., OrderManager)
+- Modelers often indicate control classes by appending a suffix to the class name like "Manager" or "Controller"
+- Control classes should arise naturally from the problem domain analysis
+- Controllers arising directly from the problem domain tend to cut across several use cases
+- For example, a controller such as a RegistrarManager may cut across several use cases in a course registration system
+- Similarly, a single use case may require the participation of many control classes
+- The analyst must examine and refine control classes into structures that model the problem domain
 
-A very good (and fun) way to get user involvement in finding classes is to use CRC analysis—CRC stands for class, responsibilities, and collaborators. This technique uses the world's most powerful analysis tool, the sticky note! So popular is the CRC method that there is a (possibly apocryphal) story that at one point a company actually marketed sticky notes already marked out with class name, responsibilities, and collaborators.
-You begin by marking up some sticky notes as shown in Figure 8.4 (p.165). The note is divided into three compartments. In the top compartment you record the name of the candidate class; in the left compartment, the responsibilities; and in the right, the collaborators. Collaborators are other classes that may collaborate with this class to realize a piece of system functionality. The collaborators compartment provides a way of recording relationships between classes. Another way to capture relationships (which we prefer) is to stick the notes on a whiteboard and draw lines between the collaborating classes.
+#### Finding &laquo;entity&raquo; classes &sect;8.4.3.3 ####
 
-#### CRC analysis procedure &sect; 8.4.2.1 
+- These are classes that represent persistent information about the problem domain:
+	- Student, Address, Course
+	- Order, Product, ShoppingCart, Invoice
+	- SalesQuote, Vehicle, Accessory
+- Entity classes express the logical data structure of the system
+- If you have a data model, then entity classes are intimately related to entities or tables in this model
 
-CRC analysis should always be used in conjunction with noun/verb analysis of use cases, requirements, glossary, and other relevant documentation, unless the system is very simple. The CRC analysis procedure is straightforward and the key is to separate information gathering from information analysis. CRC is therefore best run as a two-phase activity.
+Entity class rules of thumb:
 
-#### Phase 1: Brainstorm - gather the information &sect; 8.4.2.2
+- they cut across many use cases
+- they are manipulated by control classes
+- they provide information to, and can accept messages from, boundary classes
+- they represent key business concepts managed by the system (like Customer, Product, Invoice, etc.)
+- they are often persistent
 
-The participants are OO analysts, stakeholders, and domain experts. You also need a facilitator. The procedure is as follows.
+<!-- This was skipped as part of first run of OOSA in 2015-Jan term
 
-- 1. Explain that this is a true brainstorm.
-- 1.1. All ideas are accepted as good ideas.
-- 1.2. Ideas are recorded but not debated- never argue about something, just write it down and then move on. Everything will be analyzed later.
-- 2. Ask the team members to name the "things" that operate in their business domain - for example, customer, product.
-- 2.1. Write each thing on a sticky note - it is a candidate class, or attribute of a class.
-- 2.2. Stick the note on a wall or whiteboard.
-- 3.	Ask the team to state responsibilities that those things might have - record these in the responsibilities compartment of the note.
-- 4.	Working with the team, try to identify classes that might work together. Rearrange the notes on the whiteboard to reflect this organization and draw lines between them. Alternatively, record collaborators in the collaborators compartment of the note.
-
-#### Phase 2: Analyze information &sect; 8.4.2.3
-
-The participants are OO analysts and domain experts. How do you decide which sticky notes should become classes and which should become attributes?
-Go back and look at section 8.3.2 - analysis classes must represent a crisp abstraction in the problem domain. Certain sticky notes will represent key business concepts and clearly need to become classes. Other notes may become classes or attributes. If a note logically seems to be a part of another note, this is a good indication that it represents an attribute. Also, if a note doesn't seem to be particularly important or has very little interesting behavior, see if it can be made an attribute of another class.
-
-If in doubt about a note just make it a class. The important point is to make a best guess and then drive this process to closure; you can always refine the model later.
-
-### Finding classes by using the RUP stereotypes &sect; 8.4.3
-
-
-A useful technique comes from RUP in the form of RUP stereotypes. The idea is that you consider three distinct types of analysis class during your analysis activity. This is a way of focusing your analysis on specific aspects of the system. We consider this an optional technique that you can use to complement the core noun/verb and CRC card analysis techniques presented earlier.
-
-Three distinct types of analysis class can be distinguished by the stereo types shown in Table 8.1 (p. 167).
-
-< insert Table 8.1 here>
-
-We look at how to find each of these types of analysis class in the next three subsections.
-
-#### Finding classes by using the RUP stereotypes &sect; 8.4.3.1
-
-These classes exist on the boundary of your system and communicate with external actors.
-You find these classes by considering the subject (system boundary) and discovering what classes mediate between the subject and its environment. According to RUP there are three types of boundary> class:
-
-1.	user interface classes - classes that interface between the system and humans;
-2.	system interface classes	classes that interface with other systems;
-
-3.	device interface classes - classes that interface with external devices such as sensors.
-Each communication between an actor and a use case in your model must be enabled by some object in your system. These objects are instances of boundary classes. You can work out what type of boundary class is indicated by considering what the actor represents (Table 8.2).
-
-<insert TABLE 8.2 here>
-
-When a boundary class services more than one actor, these actors should generally be of the same kind (representing a human, system, or device). It can be an indication of bad design if a boundary class services actors of different types!
-
-Because you are still in analysis, it is important to keep these classes at the right level of abstraction. For example, when modeling a «boundary» class that represents a GUI, Just model the top-level window and leave all the details of the widgets that compose the window to design. Alternatively, you can introduce a dummy class that represents the whole user interface.
-
-Similarly, with system interface classes and device interface classes, you are concerned with capturing the fact that there is a class that mediates between your system and something else, but not with the specific details of that class. You will decide on these details later in design.
-
-For example, if you are writing an e-commerce system that needs to interface to an Inventory system, you can represent the interface to the Inventory system by a class called InventoryInterface that is stereotyped «boundary». This is sufficient detail for an analysis model.
-
-#### Finding «control» classes &sect; 8.4.3.2
-
-These classes are controllers—their instances coordinate system behavior that corresponds to one or more use cases.
-
-You find control classes by considering the behavior of the system as described by the use cases and working out how that behavior should be partitioned among the analysis classes. Simple behavior can often be distributed between boundary or entity classes, but more complex behavior, such as order processing, is generally best localized by introducing a suitable controller class such as an OrderManager. Some modelers (ourselves included!) often indicate control classes by appending Manager or Controller to the name of the class.
-
-The key point when working with control classes is to let the classes arise naturally from the problem domain itself. Some modelers artificially introduce a control class for each use case to control or execute that use case. This is a dangerous approximation that leads to a model that looks more like a top-down functional decomposition than a true 00 analysis model. In fact, this is one of the reasons that we consider using the RUP stereotypes as optional—they can lead novice modelers astray!
-
-In the real world, controllers arising directly from the problem domain (rather than as a by-product of a specific analysis technique) tend to cut across several use cases. A good example might be a controller such as a Registrar class that is involved in many of the use cases that describe a course registration system. Similarly, a single use case may require the participation of many control classes.
-
-If you find that a controller class has a very complicated behavior, this indicates that you may be able to break it down into two or more simpler controllers that each implement a cohesive subset of that behavior. Each of the simpler classes that you identify must still be something that naturally occurs in the problem domain. For example, when designing a course regis¬tration system, you might originally introduce a control class called 
-CourseRegistrationController that coordinates the whole process. But such a class has a complex behavior, and so you might decide to break it up into a set of collaborating classes with each class handling one or two aspects of that behavior. The CourseRegistrationControUer might be decomposed into Registrar, CourseManager, and PersonnelManager classes. Notice that each of these classes represents a thing that exists in the problem domain.
-
-A good way to explore controller classes is to imagine yourself in the role of the class. What would you have to do in that situation?
-
-#### Finding «entity» classes &sect; 8.4.3.3
-
-These classes model information about something and usually have very simple  ehavior that amounts to little more than getting and setting values. Classes that represent persistent information such as addresses (an Address class) and people (a Person class) are entity classes.
-
-Entity classes 
-
- - cut across many use cases;
- - are manipulated by control classes;
- - provide information to, and accept information from, boundary classes;
- - represent key things managed by the system (e.g., Customer);
- - are often persistent.
-
-Entity classes express the logical data structure of the system. If you have a data model, then entity classes are intimately related to entities or tables in this model.
-
-### Finding classes from other sources &sect; 8.4.4
+### Finding classes from other sources &sect;8.4.4 ###
 
 Along with noun/verb analysis, CRC analysis, and RUP stereotypes, it is worth  remembering that there are many other potential sources of classes that should be considered. As you are looking for crisp abstractions that map to real-world things in the problem domain then, obviously, you can look to the real world for classes.
 
@@ -175,20 +274,46 @@ We provide the following archetype patterns:
 
 Each of these patterns is very detailed and inclusive. If you can reuse one of these patterns, you can save yourself many man-days or even man-months of work. Even if the pattern isn't completely appropriate for what you are trying to model, it may give you useful ideas for your own analysis classes rather than starting from a blank page.
 
-This is probably the most efficient way of finding classes for your models—just take them off the shelf!
+This is probably the most efficient way of finding classes for your models &rArr; just take them off the shelf!
 
+-->
 
-## Creating a first-cut analysis model &sect; 8.5
+## Creating a First-Cut Analysis Model &sect;8.5 ##
 
-To create a first-cut analysis model, you need to consolidate the outputs of noun/verb analysis, CRC analysis, RUP stereotypes, and a consideration of other sources of classes (especially archetype patterns) into a single UML model in a modeling tool. Perform consolidation as follows.
+To create a first-cut analysis model:
 
-- 1. Compare all sources of classes.
-- 2. Consolidate the analysis classes, attributes, and responsibilities from the different sources and enter them into a modeling tool.
-- 2.1. Use the project glossary to resolve synonyms and homonyms.
-- 2.2. Look for differences in the results of the three techniques - differences indicate areas where there is uncertainty or where more work might be done. Resolve these differences now, or highlight for later work.
-- 3. Collaborators (or lines between sticky notes on the whiteboard) represent relationships between classes. You will see how to model these in Chapter 9.
-- 4. Improve the naming of classes, attributes, and responsibilities to follow any standard naming conventions that your company has, or follow the simple naming conventions described in Chapter 7.
+1. Compare all sources of classes (noun/verb analysis, CRC, RUP stereotypes)
+2. Consolidate the analysis classes, attributes, and responsibilities and enter them into a modeling tool
+3. Use the project glossary to resolve synonyms and homonyms
+4. Look for differences in the results
+	- differences indicate areas where there is uncertainty
+	- resolve these differences now, or highlight for later work
+5. Collaborators represent relationships between classes
+6. Improve the naming of classes, attributes, and responsibilities
+	- follow some standard naming convention
+	- standards may be provided by the company
+	- you may follow the simple naming conventions described in Chapter &sect;7
 
-The output from this activity is a set of analysis classes where each class may have some key attributes and should have between three to five responsibilities. This is your first-cut analysis model.
+The output of this process will be:
+
+- a set of analysis classes
+- each class may have some key attributes
+- each class should have between three to five responsibilities
+- collaborating classes have associations among them
 
 ---
+
+[cls-holiday]: http://yuml.me/bd7f2e13
+<!--
+// Holiday Booking no Order
+[Customer]1-*[Booking]
+[Customer]1-*[Reservation]
+-->
+
+[cls-holiday-order]: http://yuml.me/2a535a41
+<!--
+// Holiday Booking with Order
+[Customer]1-0..*>[Order]
+[Order]1-*[Booking]
+[Order]1-*[Reservation]
+-->

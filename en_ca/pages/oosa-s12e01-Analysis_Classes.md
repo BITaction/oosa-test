@@ -14,15 +14,11 @@
 
 - Section &sect;8.6 of the UML 2 course textbook (UMLUP)
 - You will learn to:
-	* Explain the process of analyzing a use case, including inputs and outputs
+	* Explain the overall process of analyzing a use case, including inputs and outputs
 	* Define the anatomy of an analysis class
 	* List and explain characteristics of good analysis classes
 	* List and explain characteristics of bad analysis classes
-	* Describe and use the process of noun/verb analysis to discover analysis classes
-	* Describe the process of CRC analysis to discover analysis classes
-	* List and define the RUP stereotypes
-	* Explain the purpose of the RUP stereotypes in an analysis model
-	* Create a first cut analysis model using the techniques in this chapter
+	* Explain general rules of thumb for creating well-formed analysis classes
 
 ## UP Activity: Analyze Use Case &sect;8.2 ##
 
