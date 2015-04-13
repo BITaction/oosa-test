@@ -92,6 +92,12 @@ allocate | responsibility | Flight | Keep | possible operation to allocate a fli
 - You may have gained some idea of relationships between certain classes
 - Add these as candidate associations
 
+> ### In Class Activity
+> - Read use case provided by Instructor
+> - Highlight nouns, noun phrases, verbs, verb phrases
+> - Organize results into a table of candidates
+> - Submit work as directed by Instructor
+
 ### Finding Classes with CRC Analysis &sect; 8.4.2 ###
 
 > In the hands of a skilled facilitator, CRC can be a very good (and fun) way to get user involvement in finding analysis classes.
