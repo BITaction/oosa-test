@@ -26,10 +26,16 @@ This site presents the summary notes and resource materials that are relevant to
 
 - [Gathering Requirements](pages/oosa-s05e01-Requirements_Workflow.md)
 - [Use Case Modeling (Outline)](pages/oosa-s05e02-Use_Case_Diagrams.md)
+
+---
+
+## MIDTERM WEEK ##
+
+---
+
+## Requirements Workflow (continued) ##
+
 - [Use Case Modeling (Detail)](pages/oosa-s06e01-Use_Case_Descriptions.md)
-
-### MIDTERM WEEK ###
-
 - [Use Case Modeling (Advanced)](pages/oosa-s07e01-Advanced_Use_Case_Modeling.md)
 
 ## Analysis Workflow ##
