@@ -10,7 +10,11 @@ This site presents the summary notes and resource materials that are relevant to
 - [Project Initiation](pages/oosa-s02e02-Project_Initiation.md)
 - [Project Participants](pages/oosa-s02e03-Project_Participants.md)
 - [Project Planning](pages/oosa-s02e04-Project_Planning.md)
+
+<!--
+We are moving this to the OOSD course
 - [Feasibility Analysis](pages/oosa-s02e05-Feasibility.md)
+-->
 
 ## Unified Process ##
 
