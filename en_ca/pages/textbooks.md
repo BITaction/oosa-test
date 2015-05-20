@@ -6,7 +6,7 @@
 	- [Available at the Bookstore][jepm-bookstore]
 	- [Available on Amazon][jepm-amazon]
 - Arlow, Jim, & Neustadt, Ila (2005). *UML 2 and the Unified Process* (2nd ed.). Westford, MA: Pearson Education Inc.
-	- [Available from the Bookstore][umlup-bookstore]
+	- [Available at the Bookstore][umlup-bookstore]
 	- [Available on Amazon][umlup-amazon]
 
 ## Optional ##
