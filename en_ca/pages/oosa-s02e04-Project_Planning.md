@@ -120,31 +120,42 @@ How much time should be spent on planning a project?
 > 
 
 - Creating a WBS is a major step of detailed project planning
-- A WBS is list of tasks that must be performed
+- A WBS is a timeline of general tasks that must take place in the project
 - Tasks are numbered to represent an organized tree structure
-- Compare graphical WBS Figure 3-3 with Outline WBS Figure 3-4
+- Compare graphical WBS with the outline WBS shown in Figure 3-4
 
-![Graphical WBS][wbs-fig3-3]
+![Dream House Graphical WBS][wbs-ex-house]
+
+Ref ID | WBS Code | Task | Deliverable | Estimate | Assignment | Comp Date
+-------|----------|------|-------------|----------|------------|----------
+01 | 1.1 | Clear site | Cleared site | $6,000 | Jones Chainsaws | Aug 15
+02 | 1.2 | Build foundation | Solid foundation | _$27,000_ |  | _Oct 1_
+03 | 1.2.1 | Excavate foundation | Graded site | $9,000 | Smith Diggers | Sep 10
+04 | 1.2.2 | Pour footers | Footers in proper location | $12,000 | Jailor Construction | Sep 20
+05 | 1.2.3 | Lay concrete block | Concrete walls erected | $6,000 | Blockbusters | Oct 1
+06 | 1.3 | Build house | House on foundation | _$91,000_ |  | _Dec 21_
+07 | 1.3.1 | Frame house | Lumber framed | $37,000 | Pyramid Builders | Oct 31
+08 | 1.3.2 | Put on roof | Trusses in place | $21,000 | Mountain Boys | Nov 15
+09 | 1.3.3 | Install plumbing | Pipes roughed in | $14,000 | Barney | Dec 15
+10 | 1.3.4 | Install electrical | Electrical roughed in | $19,000 | Mountain Electric | Dec 21
+... | ... | ... | ...
+99 | 1.9 | Turn over keys | Completed house |  | Joe Agent | Jul 14
+
 
 - Good judgement, which comes from experience and training, is the key to good WBS structure
 - A WBS structure should include:
-	- Reference number for each task (natural number) 
+	- Reference number id for each task (natural number) 
 	- WBS hierarchy numbering using dotted notation (1.1, 1.1.1, 1.1.2, etc.)
-	- Task names
-	- Durations (can use PERT formula to help determine these)
-	- Predecessors (use reference number field)
+	- Task names written as actionable verb phrase
+	- Duration or Completion Date (can use PERT formula to help determine these)
+	- Predecessors (use reference number id)
 	- Resource assignments
-	- Measurable deliverable for each task, where possible
+	- Measurable deliverable for each item, where possible
 - Organizations will develop WBS templates over time
 - Project Managers will look to use templates as a basis for future projects
 
-> __READ MORE__: See [Sample OO Project Plan][ootemplate] used as a basis for planning projects in the BIT Project Course
-> 
-
-Microsoft Office Sample Templates
-
-- [Microsoft Word WBS Template][ms-word-wbs]
-- [Microsoft Project WBS Template][ms-proj-wbs]
+> ### READ MORE
+> - [Sample OO Project Plan][ootemplate] used for planning some projects in BIT Project Course
 
 ### Assigning Resources ###
 
@@ -155,7 +166,7 @@ Microsoft Office Sample Templates
 	- How can we make up for resource shortfalls?
 	- What consequence will resource slippage have on the schedule?
 - Discuss shortfalls with project sponsor to mitigate risks
-- Assign resources by name ([Fred Penner][fredpenner]) or by role (Musician) if specific details are not yet known
+- Assign resources by name ([Fred Penner][fredpenner]) or by role (Singer/Songwriter) if specific details are not yet known
 
 ### Schedule the Work ###
 
@@ -186,23 +197,20 @@ Microsoft Office Sample Templates
 - Can do many, many specialized things...
 - Can be relatively expensive and overkill for smaller projects
 
-> __READ MORE__: Some example Project Management Software:
-> 
->	- [Microsoft Project][msproject] on Windows
->	- [OmniPlan][omniplan] on Mac
->	- [OpenProj][openproj] a free, open source, platform independent distribution
+> ### READ MORE
+> Some examples of Project Management Software:
+>
+> - [Microsoft Project][msproject] on Windows
+> - [OmniPlan][omniplan] on Mac
+> - [OpenProj][openproj] a free, open source, platform independent distribution
 
 ---
 
 [4steps-pm-plan]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-plan.png
 
-[wbs-fig3-3]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/WBS-ex.png
+[wbs-ex-house]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/WBS-ex-house.png
 
 [ootemplate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/documents/OO_Project_Template.xlsx
-
-[ms-word-wbs]: http://office.microsoft.com/en-ca/templates/work-breakdown-structure-TC001141726.aspx
-
-[ms-proj-wbs]: http://office.microsoft.com/en-ca/templates/work-breakdown-structure-TC103360093.aspx
 
 [msproject]: http://products.office.com/en-CA/project/project-professional-2013-desktop-software
 
