@@ -376,7 +376,7 @@ Deployment | Models the physical deployment of artifacts onto hardware
 [mda]: http://www.omg.org/mda
 [emf]: http://www.eclipse.org/modeling/emf/
 
-[uml-diags]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/uml-diags.png
+[uml-diags]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/uml-diags.png
 
 [omg-ocl]: http://www.omg.org/spec/OCL/
 

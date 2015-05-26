@@ -206,9 +206,9 @@ Ref ID | WBS Code | Task | Deliverable | Estimate | Assignment | Comp Date
 
 ---
 
-[4steps-pm-plan]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-plan.png
+[4steps-pm-plan]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/4steps-pm-plan.png
 
-[wbs-ex-house]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/WBS-ex-house.png
+[wbs-ex-house]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/WBS-ex-house.png
 
 [ootemplate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/documents/OO_Project_Template.xlsx
 

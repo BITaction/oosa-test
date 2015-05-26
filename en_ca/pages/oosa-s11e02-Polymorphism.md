@@ -79,6 +79,6 @@ See Figure 10.9
 
 ---
 
-[cls-shape-canvas]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/class-shape-canvas.png
+[cls-shape-canvas]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/class-shape-canvas.png
 
-[obj-canvas-shapes]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/obj-canvas-shape.png
+[obj-canvas-shapes]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/obj-canvas-shape.png

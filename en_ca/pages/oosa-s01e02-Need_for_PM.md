@@ -99,6 +99,6 @@
 
 [gantt-read]: http://www.gantt.com/
 
-[network-diag]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/network-diag.jpg
+[network-diag]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/network-diag.jpg
 
 [pm-sw-comp]: http://en.wikipedia.org/wiki/Comparison_of_project_management_software "PM Software Comparison"

@@ -463,21 +463,21 @@ Dependencies occur between lots of elements in UML like:
 
 ---
 
-[od-bookclub]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-ObjectRoles-Club.png
+[od-bookclub]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-ObjectRoles-Club.png
 
-[od-sections]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-ObjectRoles-RRC.png
+[od-sections]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-ObjectRoles-RRC.png
 
-[od-unidir]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-unidir.png
+[od-unidir]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-unidir.png
 
-[od-relations1]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-relations1.png
+[od-relations1]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-relations1.png
 
-[cls-assoc-name]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-name.png
+[cls-assoc-name]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-assoc-name.png
 
-[cls-role-name]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-role.png
+[cls-role-name]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-assoc-role.png
 
-[cls-multiplicity]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-role.png
+[cls-multiplicity]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-assoc-role.png
 
-[cls-assoc-self]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch09-assoc-self.png
+[cls-assoc-self]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch09-assoc-self.png
 
 [cls-source-target]: http://yuml.me/33dc1a5c
 <!-- 
@@ -517,9 +517,9 @@ Dependencies occur between lots of elements in UML like:
 [Client]-.->[Supplier]
 -->
 
-[cls-many-many]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/many-many.png
+[cls-many-many]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/many-many.png
 
-[cls-assoc-class]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/class-assoc.png
+[cls-assoc-class]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/class-assoc.png
 
 [cls-normal-job]: http://yuml.me/66227951
 <!--

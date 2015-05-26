@@ -220,4 +220,4 @@ See Figure 10.6
 [Truck]^-[FordF150]
 -->
 
-[cls-shape-abstract]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/class-shape-abstract.png
+[cls-shape-abstract]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/class-shape-abstract.png

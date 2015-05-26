@@ -174,9 +174,9 @@ Read and study the real world examples given in the textbook.
 
 ---
 
-[software-project]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/software-project.jpg "Software Project Cartoon"
+[software-project]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/software-project.jpg
 
-[4steps-pm]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm.png "4 Steps of Project Management"
+[4steps-pm]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/4steps-pm.png
 
 [3constraint-article]: http://www.tutorialspoint.com/management_concepts/project_management_triangle.htm
 

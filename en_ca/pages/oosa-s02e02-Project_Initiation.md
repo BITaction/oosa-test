@@ -171,7 +171,9 @@ SWOT analysis groups key pieces of information into two main categories:
 - Perform integrated change control: coordinating changes that affect the project’s deliverables and organizational process assets
 - Close the project: finalizing all project activities to formally close the project
 
-[4steps-pm-init]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/4steps-pm-init.png
+---
+
+[4steps-pm-init]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/4steps-pm-init.png
 
 [gantt]: http://www.gantt.com/images/image005.gif
 [gantt-read]: http://www.gantt.com
@@ -180,6 +182,6 @@ SWOT analysis groups key pieces of information into two main categories:
 [charter2]: http://office.microsoft.com/en-ca/templates/project-charter-TC001141418.aspx
 [charter3]: http://www.pmdocuments.com/project-initiation-documents/project-charter-document/
 
-[project-participants]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/project-participants.png
+[project-participants]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/project-participants.png
 
 [swot]: http://articles.bplans.com/how-to-perform-swot-analysis

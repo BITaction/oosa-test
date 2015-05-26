@@ -351,17 +351,17 @@ WHY?
 
 ---
 
-[object-syntax]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot4.PNG
+[object-syntax]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Figure_7dot4.PNG
 
-[object-instantiate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Ch7-Instantiate.png
+[object-instantiate]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Ch7-Instantiate.png
 
 [client-supplier]: http://yuml.me/0d9e6137
 <!-- client and supplier dependency
 [Client]-.->[Supplier]
 -->
 
-[class-adorn]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Figure_7dot7.PNG
+[class-adorn]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Figure_7dot7.PNG
 
-[customer-construct]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/Customer_Constructors.png
+[customer-construct]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/Customer_Constructors.png
 
-[class-stereo]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/class_stereo.png
+[class-stereo]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/class_stereo.png

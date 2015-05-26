@@ -84,7 +84,7 @@ Keep the analysis model simple! | Inside every complex analysis model is a simpl
 
 ---
 
-[up-chart]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/up-chart.png
+[up-chart]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/up-chart.png
 
 [up-analysis-workflow]: http://yuml.me/c67b2d76
 <!-- steps for analysis workflow

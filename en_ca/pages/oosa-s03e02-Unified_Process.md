@@ -231,5 +231,5 @@ Transition | Product Release | Table 2.4
 
 [axiom-wolfram]: http://mathworld.wolfram.com/Axiom.html
 
-[up-phases]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/up-linear.png
-[up-chart]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/up-chart.png
+[up-phases]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/up-linear.png
+[up-chart]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/up-chart.png

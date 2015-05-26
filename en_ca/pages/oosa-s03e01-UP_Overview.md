@@ -301,7 +301,8 @@ Consider the following approaches that you might encounter as part of your caree
 
 ---
 
-[sep-use]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/SEP-use.png
+[sep-use]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/SEP-use.png
+
 [ivar]: http://en.wikipedia.org/wiki/Ivar_Jacobson
 [ivar-intl]: http://www.ivarjacobson.com
 [grady]: http://en.wikipedia.org/wiki/Grady_Booch
@@ -316,9 +317,10 @@ Consider the following approaches that you might encounter as part of your caree
 
 [rup-best]: https://www.ibm.com/developerworks/rational/library/content/03July/1000/1251/1251_bestpractices_TP026B.pdf "RUP Best Practices White Paper"
 
-[sep-prototype]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/sep-prototype.png
+[sep-prototype]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/sep-prototype.png
 
-[waterfall]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/waterfall.png
+[waterfall]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/waterfall.png
+
 [waterfall-techrep]: http://www.techrepublic.com/article/understanding-the-pros-and-cons-of-the-waterfall-model-of-software-development/
 
 [agile-manifesto]: http://agilemanifesto.org/

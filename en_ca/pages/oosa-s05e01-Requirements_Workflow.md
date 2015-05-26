@@ -258,7 +258,7 @@ Good technique during interviews:
 
 ---
 
-[up-chart]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/images/up-chart.png
+[up-chart]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/up-chart.png
 
 [tonybuzan]: http://thinkbuzan.com/
 [mind-map-sw]: http://en.wikipedia.org/wiki/List_of_concept-_and_mind-mapping_software
