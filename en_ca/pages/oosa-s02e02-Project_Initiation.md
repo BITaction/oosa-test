@@ -178,7 +178,7 @@ SWOT analysis groups key pieces of information into two main categories:
 [gantt]: http://www.gantt.com/images/image005.gif
 [gantt-read]: http://www.gantt.com
 
-[charter1]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/charters.pdf
+[charter1]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/pdf/charters.pdf
 [charter2]: http://office.microsoft.com/en-ca/templates/project-charter-TC001141418.aspx
 [charter3]: http://www.pmdocuments.com/project-initiation-documents/project-charter-document/
 

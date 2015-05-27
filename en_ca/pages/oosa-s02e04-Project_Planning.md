@@ -210,7 +210,7 @@ Ref ID | WBS Code | Task | Deliverable | Estimate | Assignment | Comp Date
 
 [wbs-ex-house]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/WBS-ex-house.png
 
-[ootemplate]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/documents/OO_Project_Template.xlsx
+[ootemplate]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/documents/OO_Project_Template.xlsx
 
 [msproject]: http://products.office.com/en-CA/project/project-professional-2013-desktop-software
 

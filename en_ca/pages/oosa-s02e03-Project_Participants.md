@@ -252,6 +252,6 @@ The main characteristics of ineffective project managers include:
 
 [participants]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/project-participants.png
 
-[stakeholders]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/stakeholders.pdf
+[stakeholders]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/pdf/stakeholders.pdf
 
 

@@ -37,4 +37,4 @@
 
 ---
 
-[fame]: https://s3-us-west-2.amazonaws.com/oosa-wiki/uploads/pdf/FeasibilityAnalysisMatrix.pdf "Feasibility Analysis Matrix Example"
+[fame]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/pdf/FeasibilityAnalysisMatrix.pdf
