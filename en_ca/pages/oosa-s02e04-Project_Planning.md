@@ -155,6 +155,9 @@ Ref ID | WBS Code | Task | Deliverable | Estimate | Assignment | Comp Date
 - Project Managers will look to use templates as a basis for future projects
 
 > ### READ MORE
+> Some sample WBS structure templates to review:
+>
+> - [Sample WBS Template][wbstemplate] from [Project Management Docs][pmdocs] site
 > - [Sample OO Project Plan][ootemplate] used for planning some projects in BIT Project Course
 
 ### Assigning Resources ###
@@ -211,6 +214,9 @@ Ref ID | WBS Code | Task | Deliverable | Estimate | Assignment | Comp Date
 [wbs-ex-house]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/images/WBS-ex-house.png
 
 [ootemplate]: https://dl.dropboxusercontent.com/u/698657/oosa-wiki/uploads/documents/OO_Project_Template.xlsx
+
+[wbstemplate]: http://www.projectmanagementdocs.com/template/Work-Breakdown-Structure.pdf
+[pmdocs]: http://www.projectmanagementdocs.com
 
 [msproject]: http://products.office.com/en-CA/project/project-professional-2013-desktop-software
 

@@ -33,11 +33,14 @@
 - Adding associations between analysis classes is a start to use case realization
 - Representing messages sent between instances provides more detailed discovery
 
-Use case realizations:
+Goals of use case realization:
 
 - intend to gain a high-level perspective of the dynamic behavior of a system
-- show how classes collaborate to realize functionality of a use case
-- implicitly form part of the model by adding other elements as shown in Table 12.1
+- discover the classes that collaborate to realize the behavior of a use case
+- show how classes collaborate by the messages they send to one another
+- discover additional key attributes and operations of analysis classes
+
+Use case realizations implicitly form part of the model by adding other elements as shown in Table 12.1
 
 Element | Purpose
 --------|--------
